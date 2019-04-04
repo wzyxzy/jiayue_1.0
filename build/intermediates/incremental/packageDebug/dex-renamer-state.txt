@@ -1,0 +1,7 @@
+#Tue Mar 26 10:16:13 CST 2019
+base.0=/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_541f253583aad6b3898f68290ab14396a64f0707
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_3561e23a3ca522302e7b6c6b1cd34eff5795e5f3/classes.dex
+base.1=/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_3561e23a3ca522302e7b6c6b1cd34eff5795e5f3
+file.0=/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_541f253583aad6b3898f68290ab14396a64f0707/classes.dex

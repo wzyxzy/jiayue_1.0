@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:banner_default_image="@drawable/zhibo_default"
+        app:banner_layout="@layout/banner_custom_viewpager"
+        app:indicator_drawable_selected="@drawable/banner_select"
+        app:indicator_drawable_unselected="@drawable/banner_unselect"
+        app:indicator_height="5dp"
+        app:indicator_margin="3dp"
+        app:indicator_width="5dp"
+        app:title_background="#80999999"
+        app:title_height="30dp"
+        app:title_textcolor="@color/white"
+        app:title_textsize="16sp"
+    />
+</LinearLayout>

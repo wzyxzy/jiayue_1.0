@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@android:color/transparent"
+	android:orientation="vertical">
+	<LinearLayout 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="bottom|center_horizontal"
+	android:padding="10dp"
+	android:background="@color/grey_dialog"
+	android:orientation="vertical"
+	android:id="@+id/ll_toast">
+		<Button 
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@drawable/inputbox_bg"
+    style="@style/tv_style03"
+    android:gravity="center"
+    android:text="退 出 登 录"
+    android:id="@+id/btn_right"
+    android:onClick="btnExitClick"
+    android:layout_marginBottom="5dp"
+        />
+	<Button 
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@drawable/inputbox_bg"
+    android:gravity="center"
+    android:text="取            消"
+    android:id="@+id/btn_left"
+    android:onClick="btnExitClick"
+    style="@style/tv_style03"
+    android:layout_marginBottom="30dp"
+        />
+	</LinearLayout>
+</LinearLayout>

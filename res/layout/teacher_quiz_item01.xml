@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginTop="16.67dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="书籍选择"
+                android:textSize="16.17sp" />
+
+            <Button
+                android:id="@+id/book_select"
+                android:layout_width="wrap_content"
+                android:layout_height="33.33dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/techer_quiz_select"
+                android:paddingRight="30dp"
+                android:text=""
+                android:textSize="16.17sp" />
+        </LinearLayout>
+
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="一级目录"
+                android:textSize="16.17dp" />
+
+            <Button
+                android:id="@+id/one_level"
+                android:layout_width="wrap_content"
+                android:layout_height="33.33dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/techer_quiz_select"
+                android:paddingRight="30dp"
+                android:text=""
+                android:textSize="16.17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="二级目录"
+                android:textSize="16.17dp" />
+
+            <Button
+                android:id="@+id/two_level"
+                android:layout_width="wrap_content"
+                android:layout_height="33.33dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/techer_quiz_select"
+                android:paddingRight="30dp"
+                android:text=""
+                android:textSize="16.17sp" />
+        </LinearLayout>
+<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="试卷选择"
+                android:textSize="16.17dp" />
+
+            <Button
+                android:id="@+id/exam_select"
+                android:layout_width="wrap_content"
+                android:layout_height="33.33dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/techer_quiz_select"
+                android:paddingRight="30dp"
+                android:text=""
+                android:textSize="16.17sp" />
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="47.00dp"
+            android:layout_marginTop="26.67dp"
+            android:background="@drawable/btn_login_shape"
+            android:onClick="btnLogin"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

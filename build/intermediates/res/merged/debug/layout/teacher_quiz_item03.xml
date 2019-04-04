@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62.67dp"
+        android:layout_marginLeft="42dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/exam_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="试卷编号：2015/1/2/98576"
+            android:textSize="16.17sp" />
+
+        <TextView
+            android:id="@+id/exam_designation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="试卷名称：未命名"
+            android:textSize="16.17sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/login_hint_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginTop="20dp" 
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="课程名称"
+                android:textSize="16.17dp" />
+
+            <Button
+                android:id="@+id/curriculum_name"
+                android:layout_width="wrap_content"
+                android:layout_height="33.33dp"
+                android:layout_marginBottom="26.67dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/techer_quiz_select"
+                android:paddingRight="30dp"
+                android:text="" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <CheckBox
+            android:id="@+id/checkbox_slelect"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="18.67dp"
+            android:layout_marginTop="2dp"
+            android:layout_height="18.67dp" />
+        <TextView
+            	android:focusable="false"
+            	android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="答题时间限定为"
+                android:textSize="16.17dp" />
+        <!-- <com.wyst.view.UnderlineEditText 
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:numeric="integer"
+            android:hint=""
+            android:background="@null"
+            /> -->
+            <LinearLayout android:layout_width="40dp"
+                android:layout_height="wrap_content"
+               	android:focusableInTouchMode="false"
+                android:orientation="vertical">
+                <EditText 
+                    android:id="@+id/et_time"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:focusable="true"
+                    android:text="5"
+                    android:background="@null"
+                    />
+                <View 
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/background"
+                    
+                    />
+            </LinearLayout>
+          <TextView
+              android:focusable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分钟"
+                android:textSize="16.17dp" />
+        </LinearLayout>
+        <TextView 
+            android:id="@+id/tv_suggest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(共5道题，建议答题时间为5分钟)"
+            android:layout_gravity="right"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="47.00dp"
+            android:layout_marginTop="26.67dp"
+            android:background="@drawable/btn_login_shape"
+            android:onClick="btnSend"
+            android:text="确定发出"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+body {
+  background-color: #000000;
+  margin: 0px;
+  overflow: hidden; }
+
+#uiBox {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 100%;
+  color: #ffffff;
+  padding: 5px;
+  font-family: Monospace;
+  font-size: 13px;
+  text-align: right; }
+
+#logBox {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 160px;
+  background-color: #fbffff; }
+
+#infoBox {
+  position: absolute;
+  padding: 6px;
+  top: 10px;
+  left: 10px;
+  width: 80%;
+  max-width: 640px;
+  height: 60%;
+  opacity: 0.4;
+  font-size: 20px;
+  filter: alpha(opacity=40);
+  background-color: #ffffff;
+  display: none;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px; }
+
+a {
+  color: #ff0080;
+  text-decoration: none; }
+
+a:hover {
+  color: #0080ff; }

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="vertical" >
+
+   <TextView
+        android:id="@+id/chatname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:maxEms="8"
+        android:ellipsize="middle"
+        android:text="dsap家三等奖搜啊3213"
+        />
+
+    <TextView
+        android:id="@+id/chatcontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:lineSpacingExtra="2dp"
+        android:minHeight="50dp"
+        android:textSize="12sp"
+        android:text="asda12312vbdb24阿萨德就卡死的就开始对健康是对方考虑是对方考虑就啥都if坚实的开了房"
+        />
+
+</LinearLayout>

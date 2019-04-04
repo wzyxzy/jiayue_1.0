@@ -1,0 +1,312 @@
+<resources>
+
+    <!-- <string name="app_name">外研视听</string> -->
+    <string name="app_name">加阅</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">加阅</string>
+    <string name="registration">注册账户</string>
+    <string name="username_hint">用户名</string>
+    <string name="password_hint">密码</string>
+    <string name="islogin">islogin</string>
+    <string name="title_book">jiayue</string>
+    <string name="add_book">添加书籍</string>
+    <string name="read_code">请输入读取码</string>
+    <string name="verification_code">请输入验证码</string>
+    <string name="book_name">书籍名称</string>
+    <string name="read">带来知识，带来改变</string>
+    <string name="title">带来知识 带来改变</string>
+    <string name="pwd">找回密码</string>
+    <string name="reset">重置密码</string>
+    <string name="send">发送验证码</string>
+    <string name="book_syn">书籍附件</string>
+    <string name="book_syn_yes_no">此书还未进行同步，是否同步？</string>
+    <string name="file_video">视频文件</string>
+    <string name="file_word">word文件</string>
+    <string name="file_excel">excel文件</string>
+    <string name="file_pdf">PDF文件</string>
+    <string name="file_mp3">MP3/MP4文件</string>
+    <string name="file_ppt">PPT文件</string>
+    <string name="book_descrip">书籍简介</string>
+    <string name="related_recommend">相关推荐</string>
+    <string name="uiMessageEditProfileErrorMsg">未能成功更新用户基本信息！</string>
+    <string name="card_center">会员中心</string>
+    <string name="digital_community">数字社区</string>
+    <string name="setting_center">设置中心</string>
+    <string name="syn_manage">同步管理</string>
+    <string name="my_info">我的信息</string>
+    <string name="other_set">其他设置</string>
+    <string name="auto_syn">自动同步</string>
+    <string name="new_username">请输入新的用户名</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="scan_pic">将识别图片放入框内, 即可自动扫描</string>
+    <string name="can_input_string">
+        1234567890_qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM
+    </string>
+    <string name="no_media_warning">Storage Media not present</string>
+    <string name="no_media_hint">Sharing the storage media with a PC can make it inaccessible
+    </string>
+    <string name="open_failed">Unable to open document</string>
+    <!-- <string name="cancel">Cancel</string> -->
+    <string name="search_backwards">Search backwards</string>
+    <string name="search_forwards">Search forwards</string>
+    <string name="search_document">Search document</string>
+    <string name="picker_title">MuPDF</string>
+    <string name="outline_title">Table of Contents</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="text_not_found">Text not found</string>
+    <string name="searching_">Searching...</string>
+    <string name="link_control">Link highlighting and enabling</string>
+    <string name="xlistview_header_hint_normal">下拉加载上一页</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">加载下一页</string>
+    <string name="xlistview_footer_hint_ready">松开载入下一页</string>
+    <string name="head">这里是HeadView</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <string name="time">00:00:00</string>
+    <string name="vitamio_library_app_name">VitamioLibrary</string>
+    <string name="vitamio_init_decoders">正在解析中...</string>
+    <string name="permission_group_tools_label">Vitamio tools</string>
+    <string name="permission_group_tools_description">Access Vitamio package and resources.</string>
+    <string name="permission_receive_messages_label">Receive Vitamio messages</string>
+    <string name="permission_receive_messages_description">Receive all broadcasts from Vitamio
+        service.
+    </string>
+    <string name="permission_write_providers_label">Write Vitamio providers</string>
+    <string name="permission_write_providers_description">Delete, update or create new items in
+        Vitamio providers.
+    </string>
+    <string name="VideoView_error_title">Cannot play video</string>
+    <string name="VideoView_error_text_invalid_progressive_playback">Sorry, this video is not valid
+        for streaming to
+        this device.
+    </string>
+    <string name="VideoView_error_text_unknown">Sorry, this video cannot be played.</string>
+    <string name="VideoView_error_button">OK</string>
+    <string name="mediacontroller_play_pause">Play/Pause</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="open_epub">打开</string>
+    <string name="see_details">查看详情</string>
+    <string name="delete_epub">删除</string>
+    <string name="book_title">Adventure</string>
+    <string name="book_author">Loweice</string>
+    <string name="sortOption">书籍排序</string>
+    <string name="sortByTitle">通过标题</string>
+    <string name="sortByAuthor">通过作者</string>
+    <string name="sortByLastRead">通过最后阅读时间</string>
+    <string name="sortByDownload">不排序</string>
+    <string name="setting">设置</string>
+    <string name="network">网络</string>
+    <string name="allow3g4g">3G/4G 下载</string>
+    <string name="theme">样式</string>
+    <string name="themewhite">白色背景</string>
+    <string name="themebrown">褐色背景</string>
+    <string name="themeblack">夜间模式</string>
+    <string name="pagetransitioneffect">页面转换效果</string>
+    <string name="noneeffect">无</string>
+    <string name="slideeffect">滑动效果</string>
+    <string name="curleffect">旋转效果</string>
+    <string name="layout">布局</string>
+    <string name="doublepaged">双分页模式</string>
+    <string name="lockrotation">旋转锁定</string>
+    <string name="information">信息</string>
+    <string name="reader">SkyReader version 1.0</string>
+    <string name="skyepub">Powered By SkyEpub for Android</string>
+    <string name="title_activity_setting">设置</string>
+    <string name="globalPagination">全局页码</string>
+    <string name="searchhint">请输入关键字</string>
+    <string name="contents">章节</string>
+    <string name="bookmark">书签</string>
+    <string name="highlight">笔记</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="chara">A</string>
+    <string name="searchmore">查找更多</string>
+    <string name="searchfinished">查找完成</string>
+    <string name="searchfound">查找</string>
+    <string name="delete">删除</string>
+
+
+    <!-- BAO -->
+    <string name="pay">去结算</string>
+    <string name="submit">确认支付</string>
+    <string name="submitdone">提交订单完成，请尽快完成支付！</string>
+    <string name="daifu">待付金额:</string>
+    <string name="bianhao">订单编号:</string>
+    <string name="xuanze">请选择支付方式</string>
+    <string name="zhifubao">支付宝支付</string>
+    <string name="wx">微信支付</string>
+    <string name="jiarugou">加入购物车</string>
+    <string name="jinrugou">进入购物车</string>
+    <string name="edit">编辑</string>
+    <string name="shopping">购物车</string>
+    <string name="dingdanzhifu">订单支付</string>
+    <string name="location">本地</string>
+    <string name="done">完成</string>
+    <string name="querenshanchu">确认删除</string>
+    <string name="shifouqueding">是否确定删除选中的选项？</string>
+
+    <string name="yijingjiaru">已加入购物车</string>
+    <string name="sumprice">合计：%.2f</string>
+    <string name="checkbooks">请选择需要购买的书籍</string>
+    <string name="tishi">提示</string>
+    <string name="fufeitishi">此资源为付费资源，请购买后再下载。</string>
+    <string name="download">下载</string>
+    <string name="back">返回</string>
+    <string name="zhibo">直播</string>
+    <string name="wodedingyue">订阅</string>
+    <string name="zhengzaizhibo">正在直播</string>
+    <string name="yugao">预告</string>
+    <string name="zhiboing">温馨提示：正在直播</string>
+    <string name="tijiao">提交</string>
+    <string name="tijiaowenti">请输入您的问题</string>
+
+    <string name="yugao_jiage">%s元/课</string>
+    <string name="yugao_dingyue">(%1$s元/课*%2$s课=%3$s元)</string>
+    <string name="xiugai">修改宝宝信息</string>
+    <string name="yugao_time">%1$s至%2$s期间的%3$s %4$s播出</string>
+    <string name="yugao_date">%1$s至%2$s</string>
+    <string name="zhiboshibai">直播信息获取失败</string>
+    <string name="source">资源</string>
+
+
+    <array name="options">
+        <item>相册</item>
+        <item>拍照</item>
+    </array>
+
+
+    <string name="shunxu">按时间顺序</string>
+    <string name="daoxu">按时间倒序</string>
+    <string name="wangqi">往期</string>
+    <string name="biaoti">标题：</string>
+    <string name="teacher">讲师：</string>
+    <string name="jianjie">简介：</string>
+    <string name="shijian">时间：</string>
+    <string name="guanjianci">关键词：</string>
+    <string name="jieduan">阶段：</string>
+
+
+    <string name="feedback">为了能够更好的为您服务，欢迎您在此填写意见反馈，您的每一次发声，都是我们前进的力量。</string>
+    <string name="can_input_number">1234567890</string>
+
+
+    <string name="chat_press_talk">按住 说话</string>
+    <string name="chat_image">图片</string>
+    <string name="chat_photo">拍摄</string>
+    <string name="chat_video">小视频</string>
+    <string name="chat_release_send">松开 结束</string>
+    <string name="chat_up_finger">手指上滑，取消发送</string>
+    <string name="chat_video_too_short">录制过短，请重试</string>
+    <string name="time_day">日</string>
+    <string name="time_month">月</string>
+    <string name="time_year">年</string>
+    <string name="time_yesterday">昨天</string>
+    <string name="summary_image">[图片]</string>
+    <string name="summary_group_admin_change">管理员变更</string>
+    <string name="summary_group_info_change">群资料变更</string>
+    <string name="summary_group_mem_change">群成员变更</string>
+    <string name="summary_group_mem_add">加入群</string>
+    <string name="summary_group_mem_quit">退出群</string>
+    <string name="summary_group_mem_kick">被踢出群</string>
+    <string name="summary_group_mem_modify">资料变更</string>
+    <string name="summary_voice">[语音]</string>
+    <string name="summary_video">[小视频]</string>
+    <string name="chat_audio_too_short">录音过短，请重试</string>
+    <string name="chat_resend">重新发送</string>
+    <string name="chat_file_too_large">文件过大，发送失败</string>
+    <string name="chat_file_not_exist">文件不存在，发送失败</string>
+    <string name="save_succ">保存成功</string>
+    <string name="download_fail">下载失败</string>
+    <string name="downloading">正在下载，请稍候</string>
+    <string name="save_fail">保存失败</string>
+    <string name="save_exist">文件已存在</string>
+    <string name="summary_file">[文件]</string>
+    <string name="chat_content_bad">内容含有敏感词</string>
+    <string name="chat_del">删除</string>
+    <string name="chat_save">保存</string>
+    <string name="chat_image_preview_title">图片预览</string>
+    <string name="chat_image_preview_send">发送</string>
+    <string name="chat_image_preview_load_err">图片加载失败</string>
+    <string name="chat_image_preview_ori">原图发送</string>
+
+
+    <!--扫一扫-->
+    <string name="title_activity_scan_qr_code">扫一扫</string>
+    <string name="qc_code_close">关闭</string>
+    <string name="qr_code_select_picture">照片</string>
+    <string name="qr_code_open_flash_light">打开闪光灯</string>
+    <string name="qr_code_close_flash_light">关闭闪光灯</string>
+    <string name="qr_code_auto_scan_notification">将二维码放入框内，即可自动扫描</string>
+    <string name="qr_code_notification">提示</string>
+    <string name="qr_code_camera_not_open">您的相机功能好像没有打开哦~去\"设置>隐私>相机\"设置一下吧</string>
+    <string name="qr_code_positive_button_know">知道了</string>
+    <string name="qr_code_positive_button_confirm">确认</string>
+    <string name="qr_code_could_not_read_qr_code_from_picture">没有读出图片中的链接，换张图片试试吧~</string>
+    <string name="qr_code_could_not_read_qr_code_from_scanner">对不起，无法打开扫出的内容</string>
+    <string name="qr_code_camera_not_found">未检测到相机</string>
+    <string name="camera">Camera</string>
+    <string name="contacts">Contacts</string>
+    <string name="permission_status_granted">Granted</string>
+    <string name="permission_status_unknown">Unknown</string>
+    <string name="permission_status_denied_once">Denied Once</string>
+    <string name="permission_status_denied_forever">Denied Forever</string>
+    <string name="permission_status_rationale">Show Rationale</string>
+    <string name="location_rationale">The location permission is necessary to locate hotels near
+        you
+    </string>
+    <string name="location_deny_dialog">Without location permission we can\'t show hotels near you
+    </string>
+    <string name="camera_rationale">Wee need camera permission to take a picture of your swimming
+        pool
+    </string>
+    <string name="camera_deny_dialog">Without camera permission swimming pool selfies are disabled
+    </string>
+
+
+    <string name="group_member_quiet_ing">禁言中</string>
+    <string name="group_member_quiet_ten_min">十分钟</string>
+    <string name="group_member_quiet_one_hour">一小时</string>
+    <string name="group_member_quiet_one_day">一天</string>
+    <string name="group_member_quiet_cancel">取消禁言</string>
+    <string name="group_member_quiet_err">设置禁言失败</string>
+
+    <string name="loading">正在加载中...</string>
+    <string name="load_failed">加载失败，请点我重试</string>
+    <string name="load_end">没有更多数据</string>
+    <string name="select_fov">Select fov</string>
+    <string name="select_fov_subtitle">(field of view)</string>
+    <string name="angle_60">60°</string>
+    <string name="angle_80">80°</string>
+    <string name="angle_90">90°</string>
+    <string name="angle_130">130°</string>
+    <string name="best_angel_des">The best viewing experience</string>
+
+
+    <string name="not_supported">not supported</string>
+    <string name="no_further_occurrences_found">no further occurrences found</string>
+    <string name="dismiss">dismiss</string>
+    <string name="okay">ok</string>
+    <string name="cannot_open_document">cannot open document</string>
+    <string name="cannot_open_document_Reason">cannot open document Reason</string>
+
+
+    <string name="buy">购买</string>
+    <string name="queren">确认购买该资源吗？</string>
+    <string name="tip">温馨提示</string>
+    <string name="kaitong">开通</string>
+    <string name="kaitong_no">暂缓开通</string>
+
+    <string name="app_tip">提示</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+</resources>

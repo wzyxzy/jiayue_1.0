@@ -1,0 +1,1938 @@
+[
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\yidingyue.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\yidingyue.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\sad_yuding.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\sad_yuding.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\vip_05.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\vip_05.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\head_me.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\head_me.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\bg_kuang.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\bg_kuang.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/green_circle.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/green_circle.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\wx.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\wx.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\booksyn_download_button.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\booksyn_download_button.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/seven.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/seven.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\setting_position.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\setting_position.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/ic_keyboard_hover.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/ic_keyboard_hover.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/microphone4.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/microphone4.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\weidingyue.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\weidingyue.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/music_cancel.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/music_cancel.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\yuanjiaokuang.9.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\yuanjiaokuang.9.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/pink.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/pink.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/qcloud_player_icon_audio_vol_mute.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/qcloud_player_icon_audio_vol_mute.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/loading.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/loading.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/welcome_add.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/welcome_add.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\kuang2.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\kuang2.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\three.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\three.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/simple.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/simple.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\sqian.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\sqian.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\booksyn_read_button.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\booksyn_read_button.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/choose2.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/choose2.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/jpg.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/jpg.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\microphone3.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\microphone3.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\qcloud_player_icon_audio_vol.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\qcloud_player_icon_audio_vol.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/zhibojian2.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/zhibojian2.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/music_pause.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/music_pause.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/bg_kuang.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/bg_kuang.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\pink.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\pink.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\fenge_line.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\fenge_line.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\vr.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\vr.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/dangdang.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/dangdang.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/jiesuo_kuang.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/jiesuo_kuang.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/testpaper.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/testpaper.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/list_03.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/list_03.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\payfor.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\payfor.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/ask.9.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/ask.9.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\booksyn_search.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\booksyn_search.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/qcloud_player_media_fullscreen_shrink.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/qcloud_player_media_fullscreen_shrink.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\enter.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\enter.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\line2.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\line2.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\ic_keyboard_hover.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\ic_keyboard_hover.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/share1.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/share1.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/play_start.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/play_start.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\refresh.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\refresh.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\booksyn_search_img.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\booksyn_search_img.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/english.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/english.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\yugao_line.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\yugao_line.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\qcloud_player_media_fullscreen_shrink.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\qcloud_player_media_fullscreen_shrink.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\ic_share.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\ic_share.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/more_gray.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/more_gray.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\share1.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\share1.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/music_logo.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/music_logo.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\splash_btn.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\splash_btn.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/booksyn_search_img.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/booksyn_search_img.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\switch_off.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\switch_off.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\yugao_btn_normal.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\yugao_btn_normal.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/tab_click_image5.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/tab_click_image5.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\loading.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\loading.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\testpaper.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\testpaper.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/buy.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/buy.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/vn_display_side_by_side.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/vn_display_side_by_side.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/zero.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/zero.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/vip_05.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/vip_05.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/four.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/four.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\shujia.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\shujia.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/line1.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/line1.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/ic_voice_hover.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/ic_voice_hover.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/qcloud_player_icon_audio_vol.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/qcloud_player_icon_audio_vol.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\dingyue.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\dingyue.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/search_shape.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/search_shape.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/ic_player_angle.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/ic_player_angle.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/play_pause.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/play_pause.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/tab_normal_image4.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/tab_normal_image4.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/blue.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/blue.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/show.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/show.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/liebiao.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/liebiao.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\green_checked.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\green_checked.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\ic_more.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\ic_more.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/tijiaokuang.9.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/tijiaokuang.9.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\english.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\english.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/kuang2.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/kuang2.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/share.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/share.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\music_logo.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\music_logo.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/sjikuang.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/sjikuang.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/white.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/white.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/bao.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/bao.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/pink_checked.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/pink_checked.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\checkbox_normal.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\checkbox_normal.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\sad_zhibo.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\sad_zhibo.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/jiesuoenter.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/jiesuoenter.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\jingdong.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\jingdong.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\zan.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\zan.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/green.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/green.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/zhibo_default.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/zhibo_default.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\ic_image.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\ic_image.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\yamaxun.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\yamaxun.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/allbook.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/allbook.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\line1.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\line1.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\send.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\send.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/shopping_record.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/shopping_record.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/ktou.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/ktou.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/green_checked.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/green_checked.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/list_04.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/list_04.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\quxiao_btn.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\quxiao_btn.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\shopping_cart.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\shopping_cart.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\play_pause.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\play_pause.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\play_start.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\play_start.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/tab_normal_image3.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/tab_normal_image3.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\bookshelf.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\bookshelf.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\play_yugao.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\play_yugao.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\tab_normal_image1.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\tab_normal_image1.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\star.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\star.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/photo.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/photo.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\search_shape.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\search_shape.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/mediaplayer_base_bg.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/mediaplayer_base_bg.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/teacher_confirm_add.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/teacher_confirm_add.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\vn_display_mono.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\vn_display_mono.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/time.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/time.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/syn_18.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/syn_18.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/ic_error.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/ic_error.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\tab_normal_image3.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\tab_normal_image3.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/tb_03.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/tb_03.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/mediaplayer_pause.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/mediaplayer_pause.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\qr_img.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\qr_img.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/switch_on.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/switch_on.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/eight.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/eight.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\microphone2.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\microphone2.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\sanjiao.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\sanjiao.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\vn_projection_plane.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\vn_projection_plane.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\zhibo_default.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\zhibo_default.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\allbook.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\allbook.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/reader_communication_message.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/reader_communication_message.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/lock.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/lock.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/zan.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/zan.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\tab_normal_image5.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\tab_normal_image5.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\jiesuoenter.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\jiesuoenter.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/qcloud_player_media_play.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/qcloud_player_media_play.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/music.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/music.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/three.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/three.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\vn_double_eye.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\vn_double_eye.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\close.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\close.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/sad_zhibo.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/sad_zhibo.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\ic_keyboard.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\ic_keyboard.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\btn_video_hover.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\btn_video_hover.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/recognition.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/recognition.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\qcloud_player_icon_moreoverflow.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\qcloud_player_icon_moreoverflow.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/tab_click_image1.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/tab_click_image1.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/switch_off.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/switch_off.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/microphone1.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/microphone1.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\author_desc_answer.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\author_desc_answer.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/show2.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/show2.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/yugao_btn_normal.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/yugao_btn_normal.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/mode_one.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/mode_one.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\mode_random.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\mode_random.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/shopping_cart.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/shopping_cart.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/booksyn_disc_img.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/booksyn_disc_img.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/setting_position.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/setting_position.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/zhibojian1.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/zhibojian1.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/dian.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/dian.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\syn_18.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\syn_18.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/dingyue_logo.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/dingyue_logo.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/zhifubao.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/zhifubao.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\time.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\time.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/ic_image.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/ic_image.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\ic_expression.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\ic_expression.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\bao.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\bao.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\vn_projection_sphere.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\vn_projection_sphere.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/bubble_blue.9.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/bubble_blue.9.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/send_hover.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/send_hover.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\green_circle.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\green_circle.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/qcloud_player_icon_moreoverflow.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/qcloud_player_icon_moreoverflow.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\blue_checked.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\blue_checked.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\vn_projection_dome.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\vn_projection_dome.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/qcloud_player_media_pause.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/qcloud_player_media_pause.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\mediaplayer_play.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\mediaplayer_play.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/bubble_blue_hover.9.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/bubble_blue_hover.9.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/sad_yugao.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/sad_yugao.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/tab_normal_image5.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/tab_normal_image5.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\blue.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\blue.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\reader_communication_message.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\reader_communication_message.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\btn_video.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\btn_video.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/author_desc_question.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/author_desc_question.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\ktou.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\ktou.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\qcloud_player_media_fullscreen_stretch.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\qcloud_player_media_fullscreen_stretch.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\ic_expression_hover.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\ic_expression_hover.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\vn_double_eye_light.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\vn_double_eye_light.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\zhuanjia.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\zhuanjia.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/vn_projection_sphere_light.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/vn_projection_sphere_light.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/onlin_video.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/onlin_video.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\two.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\two.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\sjikuang.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\sjikuang.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\wdian.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\wdian.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/close.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/close.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/quxiao.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/quxiao.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/jiaoan.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/jiaoan.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\yiding.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\yiding.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/bubble_gray.9.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/bubble_gray.9.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/tab_click_image3.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/tab_click_image3.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\welcome.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\welcome.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\ask.9.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\ask.9.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\ic_favorite.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\ic_favorite.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\zero.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\zero.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\btn.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\btn.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\teacher_input_add.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\teacher_input_add.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/shujia.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/shujia.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\music_play.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\music_play.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\mode_all.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\mode_all.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\simple.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\simple.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/dont.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/dont.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/send.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/send.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\one.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\one.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\communication_praise.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\communication_praise.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\save_kuang.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\save_kuang.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/wdian.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/wdian.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\bubble_blue.9.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\bubble_blue.9.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/live.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/live.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/ic_expression.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/ic_expression.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\syn_13.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\syn_13.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\checkbox_pressed.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\checkbox_pressed.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\bubble_gray.9.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\bubble_gray.9.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\message.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\message.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\default_img.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\default_img.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/ic_share.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/ic_share.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\microphone5.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\microphone5.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\seven.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\seven.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/tijiao.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/tijiao.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/book3d.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/book3d.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/green_btn.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/green_btn.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/list_01.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/list_01.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\jiesuo_kuang.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\jiesuo_kuang.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\nine.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\nine.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/six.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/six.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\mediaplayer_next.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\mediaplayer_next.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\list_02.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\list_02.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/ic_perm_identity.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/ic_perm_identity.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/mp3.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/mp3.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\line_kuang_btn.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\line_kuang_btn.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\choose2.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\choose2.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\tab_click_image2.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\tab_click_image2.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\dangdang.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\dangdang.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/vn_projection_dome_light.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/vn_projection_dome_light.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/input_kuang.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/input_kuang.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/wx.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/wx.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/weidingyue.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/weidingyue.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\bofangjian.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\bofangjian.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/yiding.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/yiding.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\green.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\green.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\jiaoan.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\jiaoan.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/ic_expression_hover.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/ic_expression_hover.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\yugao_btn_click.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\yugao_btn_click.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\qcloud_player_media_pause.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\qcloud_player_media_pause.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\search_bar_edit_selector.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\search_bar_edit_selector.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/ic_voice.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/ic_voice.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\dianheng.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\dianheng.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\zhanghu.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\zhanghu.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\send_hover.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\send_hover.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/allbook_kuang.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/allbook_kuang.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/bofangjian.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/bofangjian.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/vn_projection_sphere.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/vn_projection_sphere.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/btn.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/btn.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\bubble_blue_hover.9.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\bubble_blue_hover.9.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/booksyn_syn.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/booksyn_syn.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\tab_normal_image2.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\tab_normal_image2.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\switch_on.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\switch_on.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/search_bar_edit_selector.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/search_bar_edit_selector.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\ic_voice.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\ic_voice.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/teacher_quiz_textline.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/teacher_quiz_textline.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/blue_checked.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/blue_checked.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/qcloud_player_icon_brightness.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/qcloud_player_icon_brightness.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\vn_projection_plane_light.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\vn_projection_plane_light.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/booksyn_search.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/booksyn_search.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/five.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/five.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/quxiao_btn.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/quxiao_btn.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/download.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/download.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\live.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\live.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\pinglun.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\pinglun.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/dingyueok.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/dingyueok.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\search_book_icon.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\search_book_icon.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/mediaplayer_pre.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/mediaplayer_pre.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/head_other.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/head_other.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\list_01.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\list_01.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/vn_display_mono.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/vn_display_mono.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\eight.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\eight.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\delete.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\delete.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\tijiao.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\tijiao.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\gouwuche.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\gouwuche.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\vn_display_over_under.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\vn_display_over_under.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\yzmkuang.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\yzmkuang.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\mediaplayer_base_bg.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\mediaplayer_base_bg.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\vn_display_side_by_side.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\vn_display_side_by_side.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/microphone2.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/microphone2.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\circle_shape.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\circle_shape.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\tab_click_image4.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\tab_click_image4.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\mp3.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\mp3.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\bubble_gray_hover.9.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\bubble_gray_hover.9.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/yzmakuang.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/yzmakuang.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/tab_normal_image2.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/tab_normal_image2.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/line2.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/line2.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\microphone1.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\microphone1.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\pdf.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\pdf.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/booksyn_read_button.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/booksyn_read_button.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\info.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\info.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/dianheng.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/dianheng.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\show2.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\show2.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/ok.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/ok.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\music.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\music.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\gray_line.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\gray_line.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/vn_projection_plane.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/vn_projection_plane.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\teacher_quiz_textline.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\teacher_quiz_textline.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/ic_keyboard.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/ic_keyboard.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/pinglun.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/pinglun.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\list_04.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\list_04.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/ic_more_hover.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/ic_more_hover.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/tab_click_image4.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/tab_click_image4.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/save_kuang.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/save_kuang.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\zhibojian2.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\zhibojian2.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/yzmkuang.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/yzmkuang.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/info.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/info.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/input.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/input.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/sqian.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/sqian.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\mediaplayer_seek_thumb.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\mediaplayer_seek_thumb.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/booksyn_download_button.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/booksyn_download_button.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\yzmakuang.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\yzmakuang.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/syn_13.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/syn_13.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/zhanghu.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/zhanghu.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\download.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\download.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/qr_img.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/qr_img.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\html.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\html.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/mediaplayer_hide.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/mediaplayer_hide.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/ic_video.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/ic_video.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/btn_video_hover.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/btn_video_hover.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/line_kuang_btn.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/line_kuang_btn.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/teacher_input_add.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/teacher_input_add.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\zhifubao.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\zhifubao.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\ic_more_hover.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\ic_more_hover.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\tb_03.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\tb_03.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\dingyue_logo.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\dingyue_logo.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\ic_action_search.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\ic_action_search.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/splash_btn.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/splash_btn.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/sad_yuding.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/sad_yuding.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\photo.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\photo.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\qr_background.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\qr_background.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/techer_quiz_select.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/techer_quiz_select.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\qcloud_player_media_play.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\qcloud_player_media_play.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\five.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\five.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\input.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\input.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/yugao_line.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/yugao_line.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\mediaplayer_pre.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\mediaplayer_pre.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\zhibojian1.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\zhibojian1.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/qr_background.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/qr_background.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/url.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/url.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/delete.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/delete.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\tab_click_image5.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\tab_click_image5.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/pdf.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/pdf.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/more.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/more.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/bookshelf.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/bookshelf.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\mma.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\mma.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/gouwuche.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/gouwuche.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\share.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\share.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/zhuanjia.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/zhuanjia.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/dingyue.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/dingyue.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/vn_double_eye.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/vn_double_eye.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\ic_photography.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\ic_photography.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\vn_projection_dome_light.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\vn_projection_dome_light.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/microphone3.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/microphone3.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/ic_more.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/ic_more.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\shopping_record.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\shopping_record.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\welcome_add.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\welcome_add.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\book3d.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\book3d.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/checkbox_normal.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/checkbox_normal.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\white.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\white.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\play.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\play.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/vn_double_eye_light.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/vn_double_eye_light.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/nine.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/nine.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\quxiao.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\quxiao.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/message.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/message.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/communication_join.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/communication_join.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\pink_checked.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\pink_checked.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/vr.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/vr.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\lock.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\lock.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\url.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\url.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/ic_action_search.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/ic_action_search.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/mode_all.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/mode_all.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/microphone5.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/microphone5.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\ic_player_angle.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\ic_player_angle.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\communication_join.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\communication_join.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\jpg.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\jpg.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\dian.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\dian.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/tjiao.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/tjiao.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\dont.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\dont.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\qcloud_player_icon_audio_vol_mute.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\qcloud_player_icon_audio_vol_mute.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/yidingyue.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/yidingyue.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\music_pause.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\music_pause.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/tab_normal_image1.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/tab_normal_image1.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\input_kuang.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\input_kuang.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/yuanjiaokuang.9.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/yuanjiaokuang.9.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\buy.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\buy.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/yugao_bg.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/yugao_bg.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/bubble_gray_hover.9.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/bubble_gray_hover.9.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\dingyueok.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\dingyueok.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/vn_projection_plane_light.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/vn_projection_plane_light.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/author_desc_answer.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/author_desc_answer.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/yugao_btn_click.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/yugao_btn_click.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/vn_projection_dome.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/vn_projection_dome.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/list_02.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/list_02.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/play_yugao.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/play_yugao.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\yugao_bg.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\yugao_bg.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\head_other.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\head_other.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\six.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\six.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/yamaxun.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/yamaxun.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\microphone4.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\microphone4.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/enter.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/enter.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\ic_video.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\ic_video.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\mediaplayer_hide.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\mediaplayer_hide.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/mma.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/mma.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\allbook_kuang.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\allbook_kuang.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/kuang.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/kuang.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\liebiao.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\liebiao.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\more_gray.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\more_gray.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/play.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/play.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\tijiaokuang.9.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\tijiaokuang.9.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/jingdong.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/jingdong.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/one.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/one.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/gray_line.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/gray_line.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/vn_display_over_under.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/vn_display_over_under.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/video.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/video.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/payfor.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/payfor.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/html.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/html.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/other.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/other.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\booksyn_disc_img.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\booksyn_disc_img.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\author_desc_question.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\author_desc_question.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\more.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\more.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\mode_one.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\mode_one.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\mediaplayer_pause.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\mediaplayer_pause.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\list_03.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\list_03.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\tjiao.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\tjiao.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/default_img.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/default_img.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\tab_click_image1.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\tab_click_image1.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\ic_voice_hover.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\ic_voice_hover.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/music_play.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/music_play.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\qcloud_player_icon_brightness.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\qcloud_player_icon_brightness.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/head_me.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/head_me.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/btn_video.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/btn_video.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\sad_yugao.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\sad_yugao.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/search_book_icon.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/search_book_icon.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\tab_click_image3.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\tab_click_image3.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\kuang.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\kuang.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\vn_projection_sphere_light.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\vn_projection_sphere_light.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\ok.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\ok.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/refresh.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/refresh.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\four.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\four.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/checkbox_pressed.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/checkbox_pressed.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\teacher_confirm_add.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\teacher_confirm_add.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\show.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\show.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\green_btn.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\green_btn.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\ic_error.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\ic_error.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/mode_random.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/mode_random.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/sanjiao.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/sanjiao.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/mediaplayer_play.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/mediaplayer_play.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/tab_click_image2.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/tab_click_image2.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\other.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\other.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\techer_quiz_select.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\techer_quiz_select.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\ic_perm_identity.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\ic_perm_identity.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\booksyn_syn.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\booksyn_syn.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/mediaplayer_next.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/mediaplayer_next.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/two.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/two.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\music_cancel.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\music_cancel.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/ic_photography.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/ic_photography.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/qcloud_player_media_fullscreen_stretch.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/qcloud_player_media_fullscreen_stretch.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/circle_shape.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/circle_shape.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\onlin_video.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\onlin_video.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/fenge_line.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/fenge_line.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\tab_normal_image4.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\tab_normal_image4.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/star.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/star.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/communication_praise.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/communication_praise.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/mediaplayer_seek_thumb.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/mediaplayer_seek_thumb.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/welcome.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/welcome.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/res/merged/release/drawable-xxhdpi/ic_favorite.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/res/drawable-xxhdpi/ic_favorite.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\video.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\video.png"
+    },
+    {
+        "merged": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi\\recognition.png",
+        "source": "/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/E:\\work\\workspace_AS\\jiayue_1.4.9\\res\\drawable-xxhdpi\\recognition.png"
+    }
+]

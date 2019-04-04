@@ -1,0 +1,44 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.snail.videoplayertest.MainActivity" >
+
+    <item
+        android:id="@+id/projection_type"
+        android:icon="@drawable/vn_projection_sphere"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="projection_type"/>
+    <item
+        android:id="@+id/vsplice_format"
+        android:icon="@drawable/vn_display_side_by_side"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="Settings"/>
+    <item
+        android:id="@+id/vn_eyesmode"
+        android:icon="@drawable/vn_double_eye"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="EyesMode"/>
+    <item 
+        android:id="@+id/sensor_mode"
+        android:icon="@drawable/sensor"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="SensorMode"/>
+    <item
+        android:id="@+id/fov_set"
+        android:icon="@drawable/ic_player_angle"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="Fov_set"
+        />
+    <item
+        android:id="@+id/scale_set"
+        android:icon="@drawable/x_10"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="Scale_set"
+        />
+
+</menu>

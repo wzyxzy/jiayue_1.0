@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="55.0dp"
+    android:background="#f3f1f2"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+
+    <LinearLayout
+        android:id="@+id/nav01"
+        android:layout_width="wrap_content"
+        android:layout_height="55.0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="btnNavOnclick"
+        android:orientation="vertical"
+    >
+
+        <!-- 设置 -->
+
+        <ImageView
+            android:id="@+id/nav_iv01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tab_click_image1"/>
+
+        <TextView
+            android:id="@+id/nav_tv01"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="知阅"
+            android:textColor="@color/tab_text_click"
+            android:textSize="10dp"
+        android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/nav05"
+        android:layout_width="wrap_content"
+        android:layout_height="55.0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="btnNavOnclick"
+        android:orientation="vertical" >
+
+        <!-- 书架 -->
+
+        <ImageView
+            android:id="@+id/nav_iv05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tab_normal_image5" />
+
+        <TextView
+            android:id="@+id/nav_tv05"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="书架"
+            android:textColor="@color/tab_text_normal"
+            android:textSize="10dp"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+    
+
+
+    <!--
+    <LinearLayout
+        android:id="@+id/nav02"
+        android:layout_width="wrap_content"
+        android:layout_height="55.0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="btnNavOnclick"
+        android:orientation="vertical" >
+
+        会员中心
+
+        <ImageView
+            android:id="@+id/nav_iv02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tab_normal_image2" />
+
+        <TextView
+            android:id="@+id/nav_tv02"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="menuFromTab"
+            android:text="现实"
+            android:textColor="@color/tab_text_normal"
+            android:textSize="10dp" />
+    </LinearLayout>
+    -->
+
+
+    <!--
+    <LinearLayout
+        android:id="@+id/nav03"
+        android:layout_width="wrap_content"
+        android:layout_height="55.0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="btnNavOnclick"
+        android:orientation="vertical" >
+
+        数字社区
+
+        <ImageView
+            android:id="@+id/nav_iv03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tab_normal_image3" />
+
+        <TextView
+            android:id="@+id/nav_tv03"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="menuFromTab"
+            android:text="资源库"
+            android:textColor="@color/tab_text_normal"
+            android:textSize="10dp" />
+    </LinearLayout>
+    -->
+
+    <LinearLayout
+        android:id="@+id/nav03"
+        android:layout_width="wrap_content"
+        android:layout_height="55.0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="btnNavOnclick"
+        android:orientation="vertical" 
+        android:visibility="gone">
+
+        <!-- 购物车 -->
+
+        <ImageView
+            android:id="@+id/nav_iv03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tab_normal_image3" />
+
+        <TextView
+            android:id="@+id/nav_tv03"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="购物车"
+            android:textColor="@color/tab_text_normal"
+            android:textSize="10dp"
+            android:layout_marginLeft="3dp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/nav04"
+        android:layout_width="wrap_content"
+        android:layout_height="55.0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="btnNavOnclick"
+        android:orientation="vertical" 
+        >
+
+        <!-- 商城 -->
+
+        <ImageView
+            android:id="@+id/nav_iv04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tab_normal_image4" />
+
+        <TextView
+            android:id="@+id/nav_tv04"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="商城"
+            android:textColor="@color/tab_text_normal"
+            android:textSize="10dp"
+            android:layout_marginTop="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nav02"
+        android:layout_width="wrap_content"
+        android:layout_height="55.0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="btnNavOnclick"
+        android:orientation="vertical" >
+
+        <!-- 设置 -->
+
+        <ImageView
+            android:id="@+id/nav_iv02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tab_normal_image2" />
+
+        <TextView
+            android:id="@+id/nav_tv02"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="@color/tab_text_normal"
+            android:textSize="10dp"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+    
+    
+
+</LinearLayout>

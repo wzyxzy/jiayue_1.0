@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:clickable="true"
+    android:tag="r1_syn"
+    android:background="@drawable/bg_syn">
+	    <ProgressBar
+	    style="@style/myProgressBar"
+	    android:layout_width="fill_parent"
+	    android:layout_height="5dp"
+	    android:max="100"
+	    android:progress="0"
+	    android:id="@+id/pb_syn"
+	    android:layout_margin="10dp"
+	     />
+	    <TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal" 
+	    android:id="@+id/tv_syn_name"
+	    android:padding="10dp"
+	    android:text="1、我的父亲"
+	    android:layout_below="@id/pb_syn"
+	    style="@style/tv_style01"/>
+	    
+	    <ImageView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/btn_wrong"  
+	    android:layout_below="@id/pb_syn"
+	    android:layout_alignParentRight="true"
+	    android:clickable="true"
+	    android:layout_marginRight="5dp"
+	    android:id="@+id/iv_syn_cancel"
+	        />
+	    <ImageView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/stop_click" 
+	    android:layout_below="@id/pb_syn"
+	    android:layout_toLeftOf="@id/iv_syn_cancel"
+	    android:paddingRight="10dp"
+	    android:clickable="true"
+	    android:id="@+id/iv_syn_status"
+	        />
+	    <TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal"   
+	    android:layout_below="@id/pb_syn"
+	    android:text="下载完成"
+	    android:padding="10dp"
+	    android:layout_toLeftOf="@id/iv_syn_status"
+	    style="@style/tv_style02"
+	    android:id="@+id/tv_syn_status"
+	        />
+    </RelativeLayout>
+
+</LinearLayout>

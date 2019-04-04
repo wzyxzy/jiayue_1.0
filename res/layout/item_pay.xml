@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="127.3dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="89.3dp"
+            android:orientation="horizontal"
+            android:paddingLeft="19.3dp"
+            android:paddingRight="19.3dp"
+            android:paddingTop="16.7dp">
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:button="@drawable/chenckbox_selector"
+                android:checked="true"
+                android:text="@null"/>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="72.6dp"
+                android:layout_height="72.6dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="11.3dp"
+                android:background="@drawable/cover_normal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="正在加载中..."
+                    android:textColor="#000000"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8.6dp"
+                    android:maxLength="20"
+                    android:text="电视剧开了房间三路口发生发生的几率看风景时打开了房间开连锁店是东方会计师"
+                    android:textColor="@color/text_grey"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:gravity="bottom|right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="16.7dp"
+                android:layout_marginRight="38.3dp"
+                android:text="¥56.21"
+                android:textColor="@color/text_red"
+                android:textSize="20sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="19.3dp"
+                android:layout_marginRight="19.3dp"
+                android:background="#eeeeee"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

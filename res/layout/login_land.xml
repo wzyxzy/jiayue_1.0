@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <include layout="@layout/activity_no_return_title" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="218.67dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_img" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="289.00dp"
+                    android:layout_height="0.67dp"
+                    android:background="@color/login_line" />
+
+                <LinearLayout
+                    android:id="@+id/ll_username"
+                    android:layout_width="289.00dp"
+                    android:layout_height="47.00dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/login_username_icon" />
+
+                    <EditText
+                        android:id="@+id/et_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.00dp"
+                        android:layout_marginRight="35dp"
+                        android:background="@null"
+                        android:digits="@string/can_input_string"
+                        android:hint="@string/username_hint"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColorHint="@color/login_hint_color"
+                        android:textSize="15.00dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="289.00dp"
+                    android:layout_height="0.67dp"
+                    android:background="@color/login_line" />
+
+                <LinearLayout
+                    android:id="@+id/ll_password"
+                    android:layout_width="289.00dp"
+                    android:layout_height="47.00dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/login_password_icon" />
+
+                    <EditText
+                        android:id="@+id/et_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18.00dp"
+                        android:layout_marginRight="35dp"
+                        android:background="@null"
+                        android:digits="@string/can_input_string"
+                        android:hint="@string/password_hint"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColorHint="@color/login_hint_color"
+                        android:textSize="15.00dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="289.00dp"
+                    android:layout_height="0.67dp"
+                    android:background="@color/login_line" />
+
+                <Button
+                    android:layout_width="289.00dp"
+                    android:layout_height="47.00dp"
+                    android:layout_marginTop="31dp"
+                    android:background="@drawable/btn_login_shape"
+                    android:onClick="btnLogin"
+                    android:text="登录"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:gravity="right"
+                        android:onClick="btnForgot"
+                        android:text="忘记密码 ?       "
+                        android:textColor="@color/background"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:gravity="left"
+                        android:onClick="btnRegist"
+                        android:text="注册   "
+                        android:textColor="@color/background"
+                        android:textSize="15dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

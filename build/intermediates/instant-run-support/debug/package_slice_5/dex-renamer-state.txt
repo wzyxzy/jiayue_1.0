@@ -1,0 +1,4 @@
+#Tue Mar 26 10:16:13 CST 2019
+base.0=/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5
+renamed.0=classes.dex
+file.0=/Users/wzy/Documents/tb/wzy/workspace_AS/jiayue_1.4.9/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex

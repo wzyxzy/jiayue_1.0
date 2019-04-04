@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="search_normal">#bfbfbf</color>
+    <color name="text_grey">#898989</color>
+    <color name="text_black">#1b1b1b</color>
+    <color name="background">#12bb92</color>
+    <color name="setting_background">#f0f0f0</color>
+    <color name="login_line">#DCDCDC</color>
+    <color name="login_hint_color">#D2D2D2</color>
+    <color name="red">#FFD700</color>
+    <color name="white">#ffffff</color>
+    <color name="grey">#C3BFBF</color>
+    <color name="grey01">#888888</color>
+    <color name="brown">#F6B344</color>
+    <color name="brown01">#460C0C</color>
+    <color name="blue">#bfbfbe</color>
+    <color name="green">#6e9a2e</color>
+    <color name="new_green">#12bb92</color>
+    <color name="btn_grey">#6e9a2e</color>
+	<color name="gray">#aaaaaa</color>
+	<color name="black">#000000</color>
+	  <color name="light_blue">#6593cb</color>
+    
+    <color name="grey_text_color">#6e9a2e</color>
+    <color name="org_color">#6e9a2e</color>
+    <color name="grey_dialog">#44000000</color>
+    
+    <color name="tab_bg">#545252</color>
+    <color name="tab_text_click">#1eccca</color>
+    <color name="tab_text_normal">#9d9a9a</color>
+
+    
+    
+    
+    <color name="viewfinder_frame">#ff000000</color>
+  <color name="viewfinder_laser">#ffff0000</color>
+  <color name="viewfinder_mask">#60000000</color>
+  <color name="result_view">#b0000000</color>
+  <color name="possible_result_points">#c0ffff00</color>
+      
+    <color name="canvas">#FF404040</color>
+    <color name="bar">#C0202020</color>
+    <color name="read_text_color">#6a4617</color>
+        <color name="transparent">#00000000</color>
+    <color name="mediacontroller_bg_pressed">#ff53c1bd</color>
+    <color name="mediacontroller_bg">#99000000</color>
+    
+    
+    <color name="text_red">#f33c4a</color>
+    <color name="orange">#f19149</color>
+    <color name="bg_grey">#eeeeee</color>
+    <color name="gropress_green">#097c25</color>
+    
+    
+    <color name="zhibo_black">#041300</color>
+	<color name="zhibo_black2">#333333</color>
+	<color name="yugao_black">#222222</color>
+	<color name="yugao_grey">#808080</color>
+	<color name="yugao_fenxiang">#999999</color>
+    <color name="dingyue_text">#666666</color>
+    <color name="text_gray2">#767676</color>
+    
+    
+
+
+
+    <color name="orange2">#ea5220</color>
+    <color name="black3">#4d4d4d</color>
+    
+    <color name="line">#DDDDDD</color>
+    <color name="background_gray1">#EBEBEB</color>
+    <color name="text_gray1">#777777</color>
+    <color name="line_btn">#BBBBBB</color>
+    <color name="background_gray3">#D4D4D4</color>
+    <color name="panel_black">#25272A</color>
+    <color name="text_blue1">#1173CB</color>
+    <color name="text_black2">#7d7d7d</color>
+    <color name="divider">#d9d9d9</color>
+    
+    <color name="btn_black">#434343</color>
+
+    
+    <color name="audio_black">#393838</color>
+    <color name="audio_red">#f76666</color>
+    
+    
+    <!--蒙版-->
+    <color name="colorMask">#66000000</color>
+    
+    <color name="qr_code_white">#FFFFFFFF</color>
+    <color name="qr_code_flashlight_bg">#66000000</color>
+    <color name="qr_code_finder_mask">#80000000</color>
+    <color name="qr_code_flash_light_text_color">#66FFFFFF</color>
+    <color name="qr_code_finder_frame">#FFFFFFFF</color>
+    <color name="qr_code_finder_laser">#ef8394</color>
+    
+    
+    <color name="wifi_text_color_normal">#cccccc</color>
+    <color name="dsb_progress_color">#ff009688</color>
+    <color name="dsb_track_color">#ff939393</color>
+    <color name="dsb_disabled_color">#66939393</color>
+    <color name="dsb_ripple_color_pressed">#77939393</color>
+    <color name="dsb_ripple_color_focused">#99999999</color>
+    <color name="track_color">#164551</color>
+    <color name="positive_normal_color">#009cc3</color>
+    <color name="toolbar_title_color">#cccccc</color>
+
+
+
+    <color name="green_buy">#10bb8f</color>
+    <color name="bg_record">#f7f7f7</color>
+    <color name="record_black">#5a6167</color>
+    <color name="zhiyue_red">#e9393c</color>
+    <color name="zhiyue_green">#528f74</color>
+    <color name="attach_green">#e1fef5</color>
+
+</resources>
