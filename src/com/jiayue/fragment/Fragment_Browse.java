@@ -88,18 +88,18 @@ public class Fragment_Browse extends Fragment {
 			public boolean shouldOverrideUrlLoading(WebView view, String url) {
 				// TODO Auto-generated method stub
 				// 返回值是true的时候控制去WebView打开，为false调用系统浏览器或第三方浏览器
-				Log.d(TAG, "url====" + url);
-				// ActivityUtils.showToast(JDWebViewActivity.this,
-				// webView.getUrl().equals(URL)+url);
-				if (model == MODEL_SHANGCHENG && !url.equals("http://www.pndoo.com/link_list.html")) {
-					Log.d(TAG, "111111111111111111111====" + url);
-					Intent intent = new Intent(getActivity(), BrowerActivity.class);
-					intent.putExtra("filePath", url);
-					intent.putExtra("model", BrowerActivity.MODEL_BROWSER);
-					startActivity(intent);
-					return true;
-				}
-				return super.shouldOverrideUrlLoading(view, url);
+//				Log.d(TAG, "url====" + url);
+//				// ActivityUtils.showToast(JDWebViewActivity.this,
+//				// webView.getUrl().equals(URL)+url);
+//				if (model == MODEL_SHANGCHENG && !url.equals("http://www.pndoo.com/link_list.html")) {
+//					Log.d(TAG, "111111111111111111111====" + url);
+//					Intent intent = new Intent(getActivity(), BrowerActivity.class);
+//					intent.putExtra("filePath", url);
+//					intent.putExtra("model", BrowerActivity.MODEL_BROWSER);
+//					startActivity(intent);
+//					return true;
+//				}
+				return false;
 			}
 		});
 		

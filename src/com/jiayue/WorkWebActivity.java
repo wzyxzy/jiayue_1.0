@@ -65,7 +65,7 @@ public class WorkWebActivity extends BaseActivity {
         mWebView = (ProgressWebview) findViewById(wv_brower);
         WebSettings ws = mWebView.getSettings();
 
-        ws.setJavaScriptEnabled(true);
+        ws.setJavaScriptEnabled(false);
         // 通过addJavascriptInterface()将Java对象映射到JS对象
         //参数1：Javascript对象名
         //参数2：Java对象名
@@ -91,12 +91,30 @@ public class WorkWebActivity extends BaseActivity {
                 if (url.startsWith("file://") || url.contains("jiayue"))
                     view.loadUrl(url);
                 else
-                    ActivityUtils.showToast(WorkWebActivity.this,"非加阅应用选项，不可操作！");
-                    return true;
+                    ActivityUtils.showToast(WorkWebActivity.this, "非加阅应用选项，不可操作！");
+                return true;
+//                return false;
             }
         });
 
         mWebView.loadUrl(filepath);
+    }
+
+    @Override
+    public void onAttachedToWindow() {
+        /*此处我们呼应下面代码中禁用JavaScript的支持的部分代码
+         * 原因也已经解释的非常详细了
+         * 但是此处需要注意，就是先reload再次启用JavaScript这个顺序不要乱掉，否则
+         * 可能还没有调用reload之前，前一个页面已经执行了JavaScript导致页面上面的埋点两次执行。
+         *
+         * 关于性能的隐忧，由于我们重新reload了页面，地址链接并没有改变，因此并不会去服务器上面重新获取页面
+         * 此处的性能隐忧，应该是不存在的
+         *
+         * 至于是不是需要手工设置一下Chrome内核的缓存时间，这个在目前的实际实验观察看来，是不需要的。
+         *
+         * */
+        mWebView.reload();
+        mWebView.getSettings().setJavaScriptEnabled(true);
     }
 
     @Override

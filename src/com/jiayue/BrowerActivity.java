@@ -75,7 +75,7 @@ public class BrowerActivity extends BaseActivity {
 		mWebView = (ProgressWebview) findViewById(wv_brower);
 		WebSettings ws = mWebView.getSettings();
 
-		ws.setJavaScriptEnabled(true);
+		ws.setJavaScriptEnabled(false);
 		ws.setAllowFileAccess(true);
 		ws.setAllowFileAccessFromFileURLs(true);
 		ws.setAllowUniversalAccessFromFileURLs(true);	
@@ -89,22 +89,39 @@ public class BrowerActivity extends BaseActivity {
 			public boolean shouldOverrideUrlLoading(WebView view, String url) {
 				// TODO Auto-generated method stub
 				// 返回值是true的时候控制去WebView打开，为false调用系统浏览器或第三方浏览器
-				Log.d(TAG, "url====" + url);
-				// ActivityUtils.showToast(JDWebViewActivity.this,
-				// webView.getUrl().equals(URL)+url);
-				if (model == MODEL_SHANGCHENG && !url.equals("http://www.pndoo.com/link_list.html")) {
-					Log.d(TAG, "111111111111111111111====" + url);
-					Intent intent = new Intent(BrowerActivity.this, BrowerActivity.class);
-					intent.putExtra("filePath", url);
-					intent.putExtra("model", BrowerActivity.MODEL_BROWSER);
-					startActivity(intent);
-					return true;
-				}
-				return super.shouldOverrideUrlLoading(view, url);
+//				Log.d(TAG, "url====" + url);
+//				// ActivityUtils.showToast(JDWebViewActivity.this,
+//				// webView.getUrl().equals(URL)+url);
+//				if (model == MODEL_SHANGCHENG && !url.equals("http://www.pndoo.com/link_list.html")) {
+//					Log.d(TAG, "111111111111111111111====" + url);
+//					Intent intent = new Intent(BrowerActivity.this, BrowerActivity.class);
+//					intent.putExtra("filePath", url);
+//					intent.putExtra("model", BrowerActivity.MODEL_BROWSER);
+//					startActivity(intent);
+//					return true;
+//				}
+				return false;
 			}
 		});
 		
 		mWebView.loadUrl(filepath);
+	}
+
+	@Override
+	public void onAttachedToWindow() {
+		/*此处我们呼应下面代码中禁用JavaScript的支持的部分代码
+		 * 原因也已经解释的非常详细了
+		 * 但是此处需要注意，就是先reload再次启用JavaScript这个顺序不要乱掉，否则
+		 * 可能还没有调用reload之前，前一个页面已经执行了JavaScript导致页面上面的埋点两次执行。
+		 *
+		 * 关于性能的隐忧，由于我们重新reload了页面，地址链接并没有改变，因此并不会去服务器上面重新获取页面
+		 * 此处的性能隐忧，应该是不存在的
+		 *
+		 * 至于是不是需要手工设置一下Chrome内核的缓存时间，这个在目前的实际实验观察看来，是不需要的。
+		 *
+		 * */
+		mWebView.reload();
+		mWebView.getSettings().setJavaScriptEnabled(true);
 	}
 
 	@Override
