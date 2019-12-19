@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/title_layout"
@@ -26,7 +26,7 @@
                 android:layout_marginLeft="25dp"
                 android:background="@drawable/login_return"
                 android:textColor="#ffffff"
-                android:textSize="18dp"/>
+                android:textSize="18dp" />
         </LinearLayout>
 
         <TextView
@@ -39,7 +39,7 @@
             android:onClick="BtnFinish"
             android:text="关闭"
             android:textColor="#ffffff"
-            android:textSize="18sp"/>
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/tv_header_title"
@@ -49,33 +49,31 @@
             android:gravity="center"
             android:text=""
             android:textColor="#ffffff"
-            android:textSize="18sp"/>
+            android:textSize="18sp" />
 
         <LinearLayout
+            android:id="@+id/music_img"
             android:layout_width="80dp"
             android:layout_height="50dp"
             android:gravity="right"
             android:orientation="horizontal">
 
-            <ImageButton
-                android:id="@+id/btn_header_right"
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/img_music"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right|center_vertical"
-                android:layout_marginRight="15dp"
-                android:text=""
-                android:textColor="#ffffff"
-                android:textSize="18sp"
-                android:visibility="gone"/>
+                android:layout_marginRight="16dp"
+                android:src="@drawable/music_right" />
             <!-- android:background="@drawable/btn_clear" -->
         </LinearLayout>
     </LinearLayout>
-    <com.jiayue.view.ProgressWebview 
+
+    <com.jiayue.view.ProgressWebview
         android:id="@+id/wv_brower"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="@color/blue"
-        />
+        android:background="@color/blue" />
 
 </LinearLayout>

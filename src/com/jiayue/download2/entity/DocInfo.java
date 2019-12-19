@@ -309,4 +309,25 @@ public class DocInfo implements Serializable {
 		this.bookId = bookId;
 	}
 
+	@Override
+	public String toString() {
+		return "DocInfo{" +
+				"chapId='" + chapId + '\'' +
+				", name='" + name + '\'' +
+				", bookName='" + bookName + '\'' +
+				", url='" + url + '\'' +
+				", id=" + id +
+				", pid=" + pid +
+				", filePath='" + filePath + '\'' +
+				", bookId='" + bookId + '\'' +
+				", isDirectoty=" + isDirectoty +
+				", hasDone=" + hasDone +
+				", downloadProgress=" + downloadProgress +
+				", completedSize=" + completedSize +
+				", fileSize=" + fileSize +
+				", isChecked=" + isChecked +
+				", speed=" + speed +
+				", status=" + status +
+				'}';
+	}
 }

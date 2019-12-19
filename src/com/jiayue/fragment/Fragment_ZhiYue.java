@@ -3,12 +3,15 @@ package com.jiayue.fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v4.widget.SwipeRefreshLayout.OnRefreshListener;
-import android.support.v7.widget.DividerItemDecoration;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout.OnRefreshListener;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,6 +20,7 @@ import android.view.ViewGroup;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.jiayue.MediaPlayerActivity;
 import com.jiayue.R;
 import com.jiayue.ZhiYueDetailActivity;
 import com.jiayue.adapter.ZhiYueAdapter;
@@ -25,6 +29,7 @@ import com.jiayue.dto.base.RecommendBean;
 import com.jiayue.model.BannerImageLoader;
 import com.jiayue.model.UserUtil;
 import com.jiayue.util.ActivityUtils;
+import com.jiayue.util.SPUtility;
 import com.jiayue.view.SuperSwipeRefreshLayout;
 import com.youth.banner.Banner;
 import com.youth.banner.BannerConfig;
@@ -36,6 +41,8 @@ import org.xutils.x;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import pl.droidsonroids.gif.GifImageView;
 
 
 /**
@@ -49,6 +56,8 @@ public class Fragment_ZhiYue extends Fragment implements OnRefreshListener {
     private RecyclerView recyclerView;
     private ZhiYueAdapter adapter;
     private Banner banner;
+    private GifImageView music_img;
+
     private List<RecommendBean.Data.OrdinaryList> ordinaryList = new ArrayList<>();
     private List<RecommendBean.Data.OrdinaryList> roundMapList = new ArrayList<>();
 
@@ -130,8 +139,26 @@ public class Fragment_ZhiYue extends Fragment implements OnRefreshListener {
             }
         });
         recyclerView.setAdapter(adapter);
+        music_img = mRootView.findViewById(R.id.music_img);
+        music_img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), MediaPlayerActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (!TextUtils.isEmpty(SPUtility.getSPString(getContext(), "isPlay")) && SPUtility.getSPString(getContext(), "isPlay").equals("true")) {
+            music_img.setImageResource(R.drawable.music_play2);
+        } else {
+            music_img.setImageResource(R.drawable.music_right);
+
+        }
+    }
 
     private void requestData() {
         RequestParams params = new RequestParams(Preferences.RECOMMEND_LIST);

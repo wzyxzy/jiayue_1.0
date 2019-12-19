@@ -204,9 +204,9 @@
         -->
     </LinearLayout>
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="27dp"
-        android:background="@drawable/bookshelf" />
+    <!--<TextView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="27dp"-->
+        <!--android:background="@drawable/bookshelf" />-->
 
 </LinearLayout>

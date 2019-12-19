@@ -2,15 +2,18 @@
 <resources>
     
     <color name="search_normal">#bfbfbf</color>
+    <color name="main_color">#36d5d3</color>
     <color name="text_grey">#898989</color>
     <color name="text_black">#1b1b1b</color>
-    <color name="background">#12bb92</color>
+    <color name="background">#36d5d3</color>
+    <color name="background1">#12bb92</color>
     <color name="setting_background">#f0f0f0</color>
     <color name="login_line">#DCDCDC</color>
     <color name="login_hint_color">#D2D2D2</color>
     <color name="red">#FFD700</color>
     <color name="white">#ffffff</color>
     <color name="grey">#C3BFBF</color>
+    <color name="grey_new">#F7F7F7</color>
     <color name="grey01">#888888</color>
     <color name="brown">#F6B344</color>
     <color name="brown01">#460C0C</color>

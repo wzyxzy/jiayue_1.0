@@ -11,9 +11,11 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.provider.Settings;
-import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
+
+import androidx.annotation.NonNull;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import android.view.View;
@@ -30,6 +32,7 @@ import com.jiayue.constants.Preferences;
 import com.jiayue.dto.base.Bean;
 import com.jiayue.dto.base.SmsBean;
 import com.jiayue.util.ActivityUtils;
+import com.jiayue.util.AesUtil;
 import com.jiayue.util.DialogUtils;
 import com.jiayue.util.MyPreferences;
 import com.jiayue.util.SPUtility;
@@ -38,6 +41,8 @@ import org.xutils.common.Callback;
 import org.xutils.common.Callback.CommonCallback;
 import org.xutils.http.RequestParams;
 import org.xutils.x;
+
+import java.lang.reflect.Type;
 
 import static com.jiayue.constants.Preferences.phoneMatcher;
 
@@ -258,12 +263,38 @@ public class RegistActivity extends BaseActivity {
 
     }
 
+    /**
+     * 获取设备唯一标识符(Android 10)
+     *
+     * @return 唯一标识符
+     */
+    public String getDeviceId() {
+        return Settings.System.getString(
+                getContentResolver(), Settings.Secure.ANDROID_ID);
+    }
+
 
     private void reginst() {
         userName = et_phone.getText().toString().trim();
         userPwd = et_password01.getText().toString().trim();
         TelephonyManager telephonyManager = (TelephonyManager) this.getSystemService(Context.TELEPHONY_SERVICE);
-        String imei = telephonyManager.getDeviceId();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (checkSelfPermission(Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED) {
+                // TODO: Consider calling
+                //    Activity#requestPermissions
+                // here to request the missing permissions, and then overriding
+                //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                //                                          int[] grantResults)
+                // to handle the case where the user grants the permission. See the documentation
+                // for Activity#requestPermissions for more details.
+                return;
+            }
+        }
+        String imei = "";
+        if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.P)
+            imei = telephonyManager.getDeviceId();
+        else
+            imei = getDeviceId();
         RequestParams params = new RequestParams(Preferences.REGINST_URL);
         params.addQueryStringParameter("userName", userName);
         params.addQueryStringParameter("userPwd", userPwd);
@@ -276,7 +307,7 @@ public class RegistActivity extends BaseActivity {
             @Override
             public void onSuccess(String s) {
                 Gson gson = new Gson();
-                java.lang.reflect.Type type = new TypeToken<Bean>() {
+                Type type = new TypeToken<Bean>() {
                 }.getType();
                 Bean bean = gson.fromJson(s, type);
 
@@ -337,8 +368,14 @@ public class RegistActivity extends BaseActivity {
                 }
 
                 if (!TextUtils.isEmpty(phone) && phone.matches(phoneMatcher)) {
-                    RequestParams params = new RequestParams(Preferences.SEND_SMS);
-                    params.addQueryStringParameter("phone", phone);
+                    RequestParams params = new RequestParams(Preferences.SEND_SMS1);
+//                    RequestParams params = new RequestParams(Preferences.SEND_SMS);
+                    try {
+                        params.addQueryStringParameter("phone", AesUtil.getInstance().encrypt(phone));
+//                        params.addQueryStringParameter("phone", phone);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
 
                     ActivityUtils.showToast(RegistActivity.this, "正在发送中...");
                     x.http().post(params, new Callback.CommonCallback<String>() {
@@ -352,7 +389,8 @@ public class RegistActivity extends BaseActivity {
                             if (bean != null && bean.getCode().equals("SUCCESS")) {
                                 verifCode = bean.getData().getCheckCode();
                             } else {
-                                ActivityUtils.showToast(RegistActivity.this, "验证码获取失败" + bean.getCodeInfo());
+                                assert bean != null;
+                                ActivityUtils.showToast(RegistActivity.this, "验证码获取失败:" + bean.getCodeInfo());
                             }
                             DialogUtils.dismissMyDialog();
                             time.start();

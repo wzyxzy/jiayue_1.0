@@ -73,5 +73,14 @@ public class UpdateBean implements Serializable{
         public String getDesc() {
             return desc;
         }
+
+        @Override
+        public String toString() {
+            return "Data{" +
+                    "isUpdate='" + isUpdate + '\'' +
+                    ", url='" + url + '\'' +
+                    ", desc='" + desc + '\'' +
+                    '}';
+        }
     }
 }

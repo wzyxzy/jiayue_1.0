@@ -107,12 +107,12 @@
                         android:layout_marginTop="15dp"
                         android:orientation="horizontal" >
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="简介"
-                            android:textColor="@color/text_grey"
-                            android:textSize="15.00sp" />
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="简介"-->
+                            <!--android:textColor="@color/text_grey"-->
+                            <!--android:textSize="15.00sp" />-->
 
                         <TextView
                             android:id="@+id/tv_desc"
@@ -122,7 +122,7 @@
                             android:singleLine="true"
                             android:text="用于3d,分别为Android和ios"
                             android:textColor="@color/text_grey"
-                            android:textSize="15.00sp" />
+                            android:textSize="15sp" />
                     </LinearLayout>
 
                     <TextView
@@ -131,11 +131,11 @@
                         android:layout_height="wrap_content"
                         android:text="北京交通大学出版社"
                         android:textColor="@color/text_grey"
-                        android:textSize="15.00sp" />
+                        android:textSize="15sp" />
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
                         android:background="@drawable/search_book_icon" />
                 </LinearLayout>
             </LinearLayout>
@@ -146,16 +146,16 @@
                 android:background="@color/grey" />
 
             <RelativeLayout
-                android:layout_width="285.00dp"
-                android:layout_height="38.67dp"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="23.33dp"
-                android:background="@drawable/search_box" >
+                android:background="@drawable/btn_bg" >
 
                 <TextView
                     android:id="@+id/tv_photo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
                     android:background="@drawable/ktou"
                     android:clickable="true"
                     android:focusable="true"
@@ -163,12 +163,12 @@
                     android:onClick="space"
                     android:text="图"
                     android:textColor="@color/white"
-                    android:textSize="15.94sp" />
+                    android:textSize="16sp" />
 
                 <EditText
                     android:id="@+id/et_input"
                     android:layout_width="match_parent"
-                    android:layout_height="45.33dp"
+                    android:layout_height="match_parent"
                     android:layout_toRightOf="@id/tv_photo"
                     android:background="@null"
                     android:hint="  在此输入图或表编号"

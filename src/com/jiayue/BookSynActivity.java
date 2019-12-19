@@ -5,6 +5,7 @@ import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.app.NotificationManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -12,44 +13,57 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
+import android.os.Looper;
 import android.os.Message;
+import android.os.Parcelable;
 import android.provider.Settings;
-import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v4.view.ViewPager.OnPageChangeListener;
-import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v4.widget.SwipeRefreshLayout.OnRefreshListener;
+
+import androidx.annotation.NonNull;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+import androidx.viewpager.widget.ViewPager.OnPageChangeListener;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout.OnRefreshListener;
+
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.ContextMenu;
+import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnLongClickListener;
 import android.view.View.OnTouchListener;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.jiayue.adapter.MusicListAdapter;
+import com.jiayue.adapter.MusicListAdapter2;
 import com.jiayue.adapter.ScanAdapter;
 import com.jiayue.chat.login.InitBusiness;
 import com.jiayue.chat.login.LoginBusiness;
@@ -70,12 +84,15 @@ import com.jiayue.dto.base.BookDetailBean;
 import com.jiayue.dto.base.BookLiveAllBean;
 import com.jiayue.dto.base.BookLiveBean;
 import com.jiayue.dto.base.BookVO;
+import com.jiayue.dto.base.MusicListBean;
 import com.jiayue.dto.base.OrderBean;
 import com.jiayue.dto.base.PhotoBean;
 import com.jiayue.dto.base.SiftBean;
 import com.jiayue.dto.base.SiftVO;
 import com.jiayue.dto.base.ZhiboInfoBean;
+import com.jiayue.model.MusicList;
 import com.jiayue.model.UserUtil;
+import com.jiayue.service.MusicPlayerService;
 import com.jiayue.service.ZipService;
 import com.jiayue.util.ActivityUtils;
 import com.jiayue.util.DialogUtils;
@@ -83,6 +100,7 @@ import com.jiayue.util.MyDbUtils;
 import com.jiayue.util.MyFilter;
 import com.jiayue.util.MyPreferences;
 import com.jiayue.util.SPUtility;
+import com.jiayue.view.PercentCircle;
 import com.jiayue.view.SwpipeListViewOnScrollListener;
 import com.jiayue.view.camera.AutoFocusActivity;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
@@ -137,26 +155,27 @@ public class BookSynActivity extends BaseActivity implements OnRefreshListener, 
     FileAttachAdapter adapte_fujian;
     DisplayImageOptions options;
     int flag_download = -1;
-    ImageView iv_point;
+    PercentCircle iv_point;
     List<AttachOne> attachOnes;
     ImageLoadingListener animateFirstListener = new AnimateFirstDisplayListener();
     BroadcastReceiver broadcastReciver;
     DownloadManager downloadManager;
     private String image_url_str;
     private TextView tv_header_title;
-    private ViewPager viewPager;
+    //    private ViewPager viewPager;
     private ArrayList<View> pageview;
     private int iv_bookId;
     private ImageView iv_book;
+    private ImageView book_download;
     private String bookSaveName;
-    private LinearLayout ll_communication;
+    //    private LinearLayout ll_communication;
     long lastClick;
     private TextView tv_bookname;
     private TextView tv_author;
-    private ImageView iv_wdian;
-    private ImageView iv_dian;
+    //    private ImageView iv_wdian;
+//    private ImageView iv_dian;
     private ImageButton btn_header_right;
-    private TextView tv_loading;
+    //    private TextView tv_loading;
     private TextView tv_size;
     private SwipeRefreshLayout refresh_view;
     //    private DocInfo info;
@@ -166,9 +185,10 @@ public class BookSynActivity extends BaseActivity implements OnRefreshListener, 
     // private boolean isShop = false;// 是否已经付费
     // private Button mBtn_Shop;
     private TextView tv_progress;
-    private ImageView iv_read;
+    //    private ImageView iv_read;
     private BookLiveBean livebean;
-    private LinearLayout btn_download, btn_read;
+    private LinearLayout btn_download;
+//    private ImageView btn_read;
     private ListView listview;
 
     private final int CMD_DOWNLOAD = 0x02;
@@ -450,6 +470,14 @@ public class BookSynActivity extends BaseActivity implements OnRefreshListener, 
                 intent.putExtra("bundle", bundle);
                 intent.putExtra("flag", "success");
                 sendBroadcast(intent);
+                // 正在播放音乐
+                if (SPUtility.getSPString(BookSynActivity.this, "isPlay").equals("true")) {
+                    NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+                    manager.cancel(MusicPlayerService.TYPE_Customer);
+                    Intent mIntent = new Intent("com.jiayue.startservice");
+                    mIntent.setPackage(getPackageName());
+                    stopService(mIntent);
+                }
                 docInfo = info;
                 String substring = info.getName().substring(info.getName().length() - 4);
                 new Thread() {
@@ -502,11 +530,11 @@ public class BookSynActivity extends BaseActivity implements OnRefreshListener, 
         refresh_view.setOnRefreshListener(this);
         refresh_view.setColorSchemeResources(android.R.color.holo_blue_light, android.R.color.holo_red_light, android.R.color.holo_orange_light, android.R.color.holo_green_light);
         btn_download = (LinearLayout) findViewById(R.id.btn_download);
-        btn_read = (LinearLayout) findViewById(R.id.btn_read);
+//        btn_read = (ImageView) findViewById(R.id.btn_read);
         tv_header_title = (TextView) findViewById(R.id.tv_header_title);
 
-        tv_loading = (TextView) findViewById(R.id.tv_loading);
-        iv_read = (ImageView) findViewById(R.id.iv_read);
+//        tv_loading = (TextView) findViewById(R.id.tv_loading);
+//        iv_read = (ImageView) findViewById(R.id.iv_read);
 
         tv_header_title.setText("图书详情");
         btn_header_right = (ImageButton) findViewById(R.id.btn_header_right);
@@ -516,7 +544,7 @@ public class BookSynActivity extends BaseActivity implements OnRefreshListener, 
         listview.setOnScrollListener(new SwpipeListViewOnScrollListener(refresh_view));
 
         ll_fujian = (LinearLayout) findViewById(R.id.ll_fujian);
-        ll_communication = (LinearLayout) findViewById(R.id.ll_communication);
+//        ll_communication = (LinearLayout) findViewById(R.id.ll_communication);
 
         adapte_fujian = new FileAttachAdapter(this);
         listview.setAdapter(adapte_fujian);
@@ -548,14 +576,15 @@ public class BookSynActivity extends BaseActivity implements OnRefreshListener, 
         // mBtn_Shop = (Button) findViewById(R.id.btn_shop);
         tv_progress = (TextView) findViewById(R.id.tv_progress);
 
-        iv_bookId = getResources().getIdentifier("iv_book", "id", getPackageName());
-        iv_book = (ImageView) this.findViewById(iv_bookId);
+//        iv_bookId = getResources().getIdentifier("iv_book", "id", getPackageName());
+        iv_book = (ImageView) this.findViewById(R.id.iv_book);
+        book_download = (ImageView) this.findViewById(R.id.book_download);
         imageLoader.displayImage(image_url_str, iv_book, options);
-        iv_point = (ImageView) findViewById(R.id.iv_point);
-        iv_wdian = (ImageView) findViewById(R.id.iv_wdian);
-        iv_dian = (ImageView) findViewById(R.id.iv_dian);
-        viewPager = (ViewPager) findViewById(R.id.viewPager);
-        loadViewPager();
+        iv_point = (PercentCircle) findViewById(R.id.iv_point);
+//        iv_wdian = (ImageView) findViewById(R.id.iv_wdian);
+//        iv_dian = (ImageView) findViewById(R.id.iv_dian);
+//        viewPager = (ViewPager) findViewById(R.id.viewPager);
+//        loadViewPager();
         try {
             getBookIntroduction();
             getAttachOne();
@@ -579,21 +608,32 @@ public class BookSynActivity extends BaseActivity implements OnRefreshListener, 
                             // "下载完成");
                             flag_download = 1;
                             iv_point.setVisibility(View.GONE);
-                            tv_loading.setText("悦读");
-                            int booksyn_read_button = getResources().getIdentifier("booksyn_read_button", "drawable", getPackageName());
-                            iv_read.setBackgroundResource(booksyn_read_button);
+                            book_download.setVisibility(View.GONE);
+                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                                iv_book.setForeground(null);
+                            }
+                            iv_book.setAlpha(1f);
+//                            tv_loading.setText("悦读");
+                            int booksyn_read_button = getResources().getIdentifier("finish_download", "drawable", getPackageName());
+//                            btn_read.setImageResource(booksyn_read_button);
+//                            iv_read.setBackgroundResource(booksyn_read_button);
                             tv_progress.setText("");
-                            btn_read.setClickable(true);
+//                            btn_read.setClickable(true);
                         }
                         if (flag.equals("update")) {
-                            tv_progress.setText(info.getDownloadProgress() + "%");
-                            if (tv_progress.getText().toString().trim().equals("100%")) {
-                                tv_progress.setText("");
-                                btn_read.setClickable(false);
-                            }
+                            iv_point.setVisibility(View.VISIBLE);
+                            book_download.setVisibility(View.GONE);
+//                            tv_progress.setText(info.getDownloadProgress() + "%");
+                            iv_point.setTargetPercent(100);
+//                            if (tv_progress.getText().toString().trim().equals("100%")) {
+//                                tv_progress.setText("");
+////                                btn_read.setClickable(false);
+//                            }
                         }
                     }
                     if (flag.equals("success") && isFileDownloaded(info.getName())) {
+//                        iv_point.setVisibility(View.GONE);
+//                        book_download.setVisibility(View.GONE);
                         adapte_fujian.notifyDataSetChanged();
                         listview.invalidateViews();
                     }
@@ -625,76 +665,76 @@ public class BookSynActivity extends BaseActivity implements OnRefreshListener, 
      * Title: loadViewPager Description: 加载viewpager
      */
 
-    private void loadViewPager() {
+//    private void loadViewPager() {
+//
+//        // 查找布局文件用LayoutInflater.inflate
+//        LayoutInflater inflater = getLayoutInflater();
+//        View view1 = inflater.inflate(R.layout.item01, null);
+//        View view2 = inflater.inflate(R.layout.item02, null);
+//        pageview = new ArrayList<View>();
+//        pageview.add(view1);
+//        pageview.add(view2);
+//        PagerAdapter mPagerAdapter = new PagerAdapter() {
+//
+//            // 获取当前窗体界面数
+//            @Override
+//            public int getCount() {
+//                return pageview.size();
+//            }
+//
+//            // 断是否由对象生成界面
+//            @Override
+//            public boolean isViewFromObject(View arg0, Object arg1) {
+//                return arg0 == arg1;
+//            }
+//
+//            // 是从ViewGroup中移出当前View
+//            @Override
+//            public void destroyItem(View arg0, int arg1, Object arg2) {
+//                ((ViewPager) arg0).removeView(pageview.get(arg1));
+//            }
+//
+//            // 返回一个对象，这个对象表明了PagerAdapter适配器选择哪个对象放在当前的ViewPager中
+//            @Override
+//            public Object instantiateItem(View arg0, int arg1) {
+//                ((ViewPager) arg0).addView(pageview.get(arg1));
+//                return pageview.get(arg1);
+//            }
+//
+//        };
+//        viewPager.setAdapter(mPagerAdapter);
+//        viewPager.setOnPageChangeListener(new OnPageChangeListener() {
+//
+//            @Override
+//            public void onPageSelected(int arg0) {
+//                switchViewpager(arg0);
+//            }
+//
+//            @Override
+//            public void onPageScrolled(int arg0, float arg1, int arg2) {
+//            }
+//
+//            @Override
+//            public void onPageScrollStateChanged(int arg0) {
+//            }
+//        });
+//    }
 
-        // 查找布局文件用LayoutInflater.inflate
-        LayoutInflater inflater = getLayoutInflater();
-        View view1 = inflater.inflate(R.layout.item01, null);
-        View view2 = inflater.inflate(R.layout.item02, null);
-        pageview = new ArrayList<View>();
-        pageview.add(view1);
-        pageview.add(view2);
-        PagerAdapter mPagerAdapter = new PagerAdapter() {
-
-            // 获取当前窗体界面数
-            @Override
-            public int getCount() {
-                return pageview.size();
-            }
-
-            // 断是否由对象生成界面
-            @Override
-            public boolean isViewFromObject(View arg0, Object arg1) {
-                return arg0 == arg1;
-            }
-
-            // 是从ViewGroup中移出当前View
-            @Override
-            public void destroyItem(View arg0, int arg1, Object arg2) {
-                ((ViewPager) arg0).removeView(pageview.get(arg1));
-            }
-
-            // 返回一个对象，这个对象表明了PagerAdapter适配器选择哪个对象放在当前的ViewPager中
-            @Override
-            public Object instantiateItem(View arg0, int arg1) {
-                ((ViewPager) arg0).addView(pageview.get(arg1));
-                return pageview.get(arg1);
-            }
-
-        };
-        viewPager.setAdapter(mPagerAdapter);
-        viewPager.setOnPageChangeListener(new OnPageChangeListener() {
-
-            @Override
-            public void onPageSelected(int arg0) {
-                switchViewpager(arg0);
-            }
-
-            @Override
-            public void onPageScrolled(int arg0, float arg1, int arg2) {
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int arg0) {
-            }
-        });
-    }
-
-    private void switchViewpager(int position) {
-        int wdian = context.getResources().getIdentifier("wdian", "drawable", context.getPackageName());
-        int dian = context.getResources().getIdentifier("dian", "drawable", context.getPackageName());
-        if (position == 0) {
-            ll_fujian.setVisibility(View.VISIBLE);
-            ll_communication.setVisibility(View.GONE);
-            iv_wdian.setImageResource(wdian);
-            iv_dian.setImageResource(dian);
-        } else if (position == 1) {
-            ll_fujian.setVisibility(View.GONE);
-            ll_communication.setVisibility(View.VISIBLE);
-            iv_wdian.setImageResource(dian);
-            iv_dian.setImageResource(wdian);
-        }
-    }
+//    private void switchViewpager(int position) {
+//        int wdian = context.getResources().getIdentifier("wdian", "drawable", context.getPackageName());
+//        int dian = context.getResources().getIdentifier("dian", "drawable", context.getPackageName());
+//        if (position == 0) {
+//            ll_fujian.setVisibility(View.VISIBLE);
+//            ll_communication.setVisibility(View.GONE);
+//            iv_wdian.setImageResource(wdian);
+//            iv_dian.setImageResource(dian);
+//        } else if (position == 1) {
+//            ll_fujian.setVisibility(View.GONE);
+//            ll_communication.setVisibility(View.VISIBLE);
+//            iv_wdian.setImageResource(dian);
+//            iv_dian.setImageResource(wdian);
+//        }
+//    }
 
     /**
      * 判断后台发出的下载成功广播是否是当前界面中的附件信息
@@ -807,7 +847,7 @@ public class BookSynActivity extends BaseActivity implements OnRefreshListener, 
             Intent it = new Intent(BookSynActivity.this, AutoFocusActivity.class);// 跳转到相机Activity
             it.putExtra(AutoFocusActivity.BOOKID, bookId);
             startActivityForResult(it, 102);
-            String result = TextUtils.isEmpty(SPUtility.getSPString(this, "switchKey"))?"false":SPUtility.getSPString(this, "switchKey");
+            String result = TextUtils.isEmpty(SPUtility.getSPString(this, "switchKey")) ? "false" : SPUtility.getSPString(this, "switchKey");
             if (ActivityUtils.NetSwitch(this, Boolean.parseBoolean(result))) {
                 getImageDownload();
             }
@@ -1110,15 +1150,25 @@ public class BookSynActivity extends BaseActivity implements OnRefreshListener, 
     @Override
     protected void onResume() {
         if (ActivityUtils.isExistAndRead(bookId) || ActivityUtils.epubIsExistAndRead(bookId, bookSaveName)) {
-            iv_point.setVisibility(View.GONE);
-            tv_loading.setText("悦读");
-            int booksyn_read_button = getResources().getIdentifier("booksyn_read_button", "drawable", getPackageName());
-            iv_read.setBackgroundResource(booksyn_read_button);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                iv_book.setForeground(null);
+            }
+            iv_book.setAlpha(1f);
+            book_download.setVisibility(View.GONE);
+//            tv_loading.setText("悦读");
+//            int booksyn_read_button = getResources().getIdentifier("finish_download", "drawable", getPackageName());
+//            btn_read.setImageResource(booksyn_read_button);
+//            iv_read.setBackgroundResource(booksyn_read_button);
         } else {
-            iv_point.setVisibility(View.VISIBLE);
-            tv_loading.setText("下载");
-            int booksyn_download_button = getResources().getIdentifier("booksyn_download_button", "drawable", getPackageName());
-            iv_read.setBackgroundResource(booksyn_download_button);
+            book_download.setVisibility(View.VISIBLE);
+            iv_book.setAlpha(0.4f);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                iv_book.setForeground(new ColorDrawable(0xFF000000));
+            }
+//            tv_loading.setText("下载");
+//            int booksyn_download_button = getResources().getIdentifier("no_download", "drawable", getPackageName());
+//            btn_read.setImageResource(booksyn_download_button);
+//            iv_read.setBackgroundResource(booksyn_download_button);
         }
         // try {
         // BookVO bookVO =
@@ -1165,7 +1215,7 @@ public class BookSynActivity extends BaseActivity implements OnRefreshListener, 
                         if (bb.getLivePression() == 1) {
                             livebean = bean.getData().get(0);
                             btn_download.setClickable(true);
-                            btn_download.setBackgroundResource(R.drawable.booksyn_btn_selector);
+//                            btn_download.setBackgroundResource(R.drawable.booksyn_btn_selector);
                             InitBusiness.start(BookSynActivity.this, 0);
                             TlsBusiness.init(BookSynActivity.this);
 
@@ -1447,6 +1497,13 @@ public class BookSynActivity extends BaseActivity implements OnRefreshListener, 
         }
     }
 
+    public void choose_all(View view) {
+        Intent intent = new Intent(BookSynActivity.this, ChooseMusicAll.class);
+        intent.putParcelableArrayListExtra("attachOnes", (ArrayList<? extends Parcelable>) attachOnes);
+        startActivity(intent);
+
+    }
+
     abstract class MyOnLongClickListener implements OnLongClickListener, OnTouchListener {
     }
 
@@ -1485,7 +1542,7 @@ public class BookSynActivity extends BaseActivity implements OnRefreshListener, 
         /**
          * 把当前item对应的view对象返回回去
          */
-        public View getView(final int position, View convertView, ViewGroup parent) {
+        public View getView(final int position, final View convertView, ViewGroup parent) {
             if (convertView != null) {
                 view = convertView;
             } else {
@@ -1586,13 +1643,13 @@ public class BookSynActivity extends BaseActivity implements OnRefreshListener, 
                                     if (docInfo.getStatus() == DataBaseFiledParams.LOADING) {
                                         docInfo.setStatus(DataBaseFiledParams.PAUSING);
                                         downloadManager.pause(docInfo);
-                                    } else if (docInfo.getStatus() == DataBaseFiledParams.PAUSING ) {
+                                    } else if (docInfo.getStatus() == DataBaseFiledParams.PAUSING) {
                                         docInfo.setStatus(DataBaseFiledParams.LOADING);
                                         downloadManager.startForActivity(docInfo);
-                                    }else if(docInfo.getStatus() == DataBaseFiledParams.WAITING ){
+                                    } else if (docInfo.getStatus() == DataBaseFiledParams.WAITING) {
                                         docInfo.setStatus(DataBaseFiledParams.LOADING);
                                         downloadManager.startForActivity(docInfo);
-                                    }else if(docInfo.getStatus() == DataBaseFiledParams.FAILED){
+                                    } else if (docInfo.getStatus() == DataBaseFiledParams.FAILED) {
                                         docInfo.setStatus(DataBaseFiledParams.LOADING);
                                         downloadManager.startForActivity(docInfo);
                                     }
@@ -1625,8 +1682,12 @@ public class BookSynActivity extends BaseActivity implements OnRefreshListener, 
                                     try {
                                         unLock(position);
                                     } catch (Exception e) {
-                                        // TODO Auto-generated catch block
-                                        e.printStackTrace();
+                                        DialogUtils.dismissMyDialog();
+//                                        Looper.prepare();
+                                        Toast.makeText(getApplication(), "文件损坏，请重新下载！", Toast.LENGTH_LONG).show();
+                                        ActivityUtils.deleteBookFormSD(bookId, attachOnes.get(position).getAttachOneSaveName());
+                                        ActivityUtils.deleteBookFormSD(bookId, attachOnes.get(position).getAttachOneSaveName() + ".zip");
+//                                        Looper.loop();
                                     }
                                 }
                             }
@@ -1647,9 +1708,9 @@ public class BookSynActivity extends BaseActivity implements OnRefreshListener, 
 
             });
             // 设置书的封面
-            ImageView iv = (ImageView) view.findViewById(R.id.iv_fujian);
-            String type = attachOnes.get(position).getAttachOneType();
-            String saveName = attachOnes.get(position).getAttachOneSaveName();
+            final ImageView iv = (ImageView) view.findViewById(R.id.iv_fujian);
+            final String type = attachOnes.get(position).getAttachOneType();
+            final String saveName = attachOnes.get(position).getAttachOneSaveName();
 
             TextView tv_download = (TextView) view.findViewById(R.id.tv_baifen);
             tv_download.setText("");
@@ -1684,26 +1745,289 @@ public class BookSynActivity extends BaseActivity implements OnRefreshListener, 
             tv_fujian.setText(attachOnes.get(position).getAttachOneName());
 
             LinearLayout layout_buy = ((LinearLayout) view.findViewById(R.id.layout_buy));
-            LinearLayout layout_download = ((LinearLayout) view.findViewById(R.id.layout_download));
+            final LinearLayout layout_download = ((LinearLayout) view.findViewById(R.id.layout_download));
             if (attachOnes.get(position).getIsPay() == 0) {
-                layout_download.setVisibility(View.VISIBLE);
-                layout_buy.setVisibility(View.GONE);
-                // 下载
-                ImageView iv_point_fujian = (ImageView) view.findViewById(R.id.iv_point_fujian);
                 if (attachOnes.get(position).getAttachOneIspackage() == 0) {
-                    iv_point_fujian.setVisibility((ActivityUtils.isExistByName(bookId, attachOnes.get(position).getAttachOneSaveName()) || ActivityUtils.isExistByName(bookId, attachOnes.get(position)
+                    if ((ActivityUtils.isExistByName(bookId, attachOnes.get(position).getAttachOneSaveName()) || ActivityUtils.isExistByName(bookId, attachOnes.get(position)
                             .getAttachOneName()) || ActivityUtils.isExistByName(bookId, new_name) || ActivityUtils.isExistByName(bookId, attachOnes.get(position).getAttachOneName() + "." + attachOnes
-                            .get(position).getAttachOneType())) ? View.GONE : View.VISIBLE);
+                            .get(position).getAttachOneType()))) {
+                        tv_fujian.setTextColor(context.getResources().getColor(R.color.background));
+                    } else {
+                        tv_fujian.setTextColor(0xff333333);
+                    }
+
                 } else {
-                    iv_point_fujian.setVisibility(View.GONE);
+                    tv_fujian.setTextColor(0xff333333);
                 }
+                if (attachOnes.get(position).getAttachOneIspackage() == 1 || type == null || TextUtils.isEmpty(type) || (type.equals("ulr") || type.equals("html"))) {
+                    layout_download.setVisibility(View.GONE);
+//                    tv_fujian.setTextColor(0xff36d5d3);
+                } else {
+                    layout_download.setVisibility(View.VISIBLE);
+//                    tv_fujian.setTextColor(0xff333333);
+                }
+                layout_buy.setVisibility(View.GONE);
+                layout_download.setOnClickListener(new OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        final PopupWindow popupWindow = new PopupWindow(context);
+
+                        View view = LayoutInflater.from(context).inflate(R.layout.layout_popup_window_menu, null);
+
+                        //下载
+                        TextView menuItem1 = view.findViewById(R.id.tv_option1);
+                        menuItem1.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                if (System.currentTimeMillis() - lastClick <= 1000)
+                                    return;
+
+                                if (attachOnes.get(position).getIsPay() == 1)
+                                    return;
+                                lastClick = System.currentTimeMillis();
+                                Log.i("attachOnes", attachOnes.get(position).toString());
+                                new_name = attachOnes.get(position).getAttachOneName();
+                                if (new_name.startsWith("图")) {
+                                    new_name = new_name.replace("图", "pic");
+                                }
+                                if (attachOnes.get(position).getAttachOneIspackage() == 0) {
+
+                                    if (!ActivityUtils.isExistByName(bookId, attachOnes.get(position).getAttachOneSaveName()) && !ActivityUtils.isExistByName(bookId, attachOnes.get(position).getAttachOneName()) && !ActivityUtils
+                                            .isExistByName(bookId, new_name) && !ActivityUtils.isExistByName(bookId, attachOnes.get(position).getAttachOneName() + "." + attachOnes.get(position)
+                                            .getAttachOneType())) {
+                                        if (!ActivityUtils.NetSwitch(BookSynActivity.this, Boolean.parseBoolean(SPUtility.getSPString(BookSynActivity.this, "switchKey")))) {
+                                            ActivityUtils.showToastForFail(BookSynActivity.this, "请在有WIFI的情况下下载");
+                                            return;
+                                        }
+                                        unConnectedShowDialog();
+                                        if (ActivityUtils.isNetworkAvailable(context)) {
+                                            if (TextUtils.isEmpty(attachOnes.get(position).getShareUrl()) || attachOnes.get(position).getIsSendAtta1().equals("0")) {
+//                                    DialogUtils.showMyDialog(BookSynActivity.this, MyPreferences.SHOW_CONFIRM_DIALOG, "文件同步", "该文件未同步，是否开始同步？", new OnClickListener() {
+//                                        @Override
+//                                        public void onClick(View v) {
+                                                permission(MY_PERMISSION_REQUEST_CODE_2, position);
+
+//                                        }
+//                                    });
+                                            } else {
+                                                String content = "长按此文件可分享给您的好友，是否直接同步？";
+                                                DialogUtils.showMyDialog(BookSynActivity.this, MyPreferences.SHOW_CONFIRM_DIALOG, "分享&同步", content, new OnClickListener() {
+                                                    @Override
+                                                    public void onClick(View v) {
+                                                        ActivityUtils.showToast(BookSynActivity.this, "加入同步列表");
+                                                        if (attachOnes.get(position).getAttachOneType().endsWith("lrc")) {
+                                                            downLoadFile(attachOnes.get(position).getAttachOnePath() + attachOnes.get(position).getAttachOneSaveName(), TEMP + attachOnes.get(position)
+                                                                    .getAttachOneName() + "." + attachOnes.get(position).getAttachOneType(), fujianName);
+                                                        } else {
+                                                            downLoadFile(attachOnes.get(position).getAttachOnePath() + attachOnes.get(position).getAttachOneSaveName(), TEMP + attachOnes.get(position)
+                                                                    .getAttachOneSaveName(), fujianName);
+                                                        }
+                                                        DialogUtils.dismissMyDialog();
+                                                    }
+                                                });
+                                            }
+                                        }
+
+                                    } else {
+                                        DataBaseHelper helper = new DataBaseHelper(context);
+                                        List<DocInfo> infos = helper.getInfo2(bookId);
+                                        for (DocInfo docInfo : infos) {
+                                            if (fujianName.equals(docInfo.getBookName())) {
+                                                if (docInfo.getStatus() == DataBaseFiledParams.LOADING) {
+                                                    docInfo.setStatus(DataBaseFiledParams.PAUSING);
+                                                    downloadManager.pause(docInfo);
+                                                } else if (docInfo.getStatus() == DataBaseFiledParams.PAUSING) {
+                                                    docInfo.setStatus(DataBaseFiledParams.LOADING);
+                                                    downloadManager.startForActivity(docInfo);
+                                                } else if (docInfo.getStatus() == DataBaseFiledParams.WAITING) {
+                                                    docInfo.setStatus(DataBaseFiledParams.LOADING);
+                                                    downloadManager.startForActivity(docInfo);
+                                                } else if (docInfo.getStatus() == DataBaseFiledParams.FAILED) {
+                                                    docInfo.setStatus(DataBaseFiledParams.LOADING);
+                                                    downloadManager.startForActivity(docInfo);
+                                                }
+                                            }
+                                        }
+
+                                        adapte_fujian.notifyDataSetChanged();
+
+                                        // 文件是否正在同步
+                                        if (downloadManager.isDownloading(attachOnes.get(position))) {
+                                            ActivityUtils.showToast(BookSynActivity.this, "该文件正在同步请稍后。");
+                                        } else {
+                                            ActivityUtils.showToast(BookSynActivity.this, "该文件已经下载完毕，点击条目即可打开使用。");
+                                        }
+                                    }
+                                }
+                                popupWindow.dismiss();
+                            }
+                        });
+
+                        //分享
+                        TextView menuItem2 = view.findViewById(R.id.tv_option2);
+                        menuItem2.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                if (TextUtils.isEmpty(attachOnes.get(position).getShareUrl()) || attachOnes.get(position).getIsSendAtta1().equals("0")) {
+                                    ActivityUtils.showToastForFail(BookSynActivity.this, "此文件不能分享！");
+                                } else {
+                                    shareAttachFile(position);
+                                }
+//                                Toast.makeText(context, "Option 2", Toast.LENGTH_SHORT).show();
+                                popupWindow.dismiss();
+                            }
+                        });
+
+                        //删除
+                        TextView menuItem3 = view.findViewById(R.id.tv_option3);
+                        menuItem3.setOnClickListener(new View.OnClickListener() {
+                            @SuppressLint("DefaultLocale")
+                            @Override
+                            public void onClick(View view) {
+                                DialogUtils.showMyDialog(BookSynActivity.this, MyPreferences.SHOW_BUY_DIALOG, "删除文件", String.format("确定要删除文件\"%s\"吗？", attachOnes.get(position).getAttachOneName()), new OnClickListener() {
+
+                                    @Override
+                                    public void onClick(View v) {
+                                        // TODO Auto-generated method stub
+                                        DialogUtils.dismissMyDialog();
+                                        ActivityUtils.deleteBookFormSD(bookId, attachOnes.get(position).getAttachOneSaveName());
+                                        ActivityUtils.deleteBookFormSD(bookId, attachOnes.get(position).getAttachOneSaveName() + ".zip");
+                                        ActivityUtils.showToastForFail(BookSynActivity.this, String.format("文件\"%s\"删除完毕！", attachOnes.get(position).getAttachOneName()));
+                                    }
+
+                                });
+
+                                popupWindow.dismiss();
+                            }
+                        });
+
+                        //加入歌单
+                        TextView menuItem4 = view.findViewById(R.id.tv_option4);
+                        menuItem4.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                List<MusicList> musicLists = null;
+                                final DbManager db = MyDbUtils.getMusicDb(BookSynActivity.this);
+                                try {
+                                    musicLists = db.findAll(MusicList.class);
+                                } catch (DbException e) {
+                                    e.printStackTrace();
+                                }
+                                if (musicLists == null || musicLists.size() == 0) {
+                                    ActivityUtils.showToast(BookSynActivity.this, "您还没有创建歌单!");
+                                    return;
+                                }
+                                final MusicListAdapter2 musicListAdapter = new MusicListAdapter2(musicLists, BookSynActivity.this, R.layout.item_music_list, false);
+                                final ListView listView = new ListView(BookSynActivity.this);
+                                listView.setPadding(60, 96, 60, 96);
+                                listView.setAdapter(musicListAdapter);
+                                final androidx.appcompat.app.AlertDialog alertDialog = new androidx.appcompat.app.AlertDialog.Builder(BookSynActivity.this).setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        dialog.dismiss();
+                                    }
+                                }).create();
+
+                                final List<MusicList> finalMusicLists = musicLists;
+                                listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                                    @Override
+                                    public void onItemClick(AdapterView<?> parent, View view, final int position1, long id) {
+                                        new androidx.appcompat.app.AlertDialog.Builder(BookSynActivity.this)
+                                                .setIcon(android.R.drawable.ic_dialog_info)
+                                                .setTitle("加入歌单")
+                                                .setMessage(String.format("您是否将%s加入到%s歌单中？", attachOnes.get(position).getAttachOneName(), finalMusicLists.get(position1).getName()))
+                                                .setPositiveButton("确认", new DialogInterface.OnClickListener() {
+                                                    @Override
+                                                    public void onClick(DialogInterface dialog, int which) {
+                                                        finalMusicLists.get(position1).setMusic_num(finalMusicLists.get(position1).getMusic_num() + 1);
+                                                        try {
+                                                            db.update(finalMusicLists);
+                                                        } catch (DbException e) {
+                                                            e.printStackTrace();
+                                                        }
+                                                        musicListAdapter.notifyDataSetChanged();
+                                                        MusicListBean musicListBean = new MusicListBean();
+                                                        musicListBean.setList_id(finalMusicLists.get(position1).getId());
+                                                        musicListBean.setList_name(finalMusicLists.get(position1).getName());
+                                                        musicListBean.setMusic_name(attachOnes.get(position).getAttachOneName());
+                                                        musicListBean.setNow_path(ActivityUtils.getSDPath(bookId) + File.separator + "copy_" + attachOnes.get(position).getAttachOneSaveName());
+                                                        musicListBean.setOld_path(attachOnes.get(position).getAttachOnePath() + attachOnes.get(position).getAttachOneSaveName());
+                                                        musicListBean.setBook_id(bookId);
+                                                        musicListBean.setSave_name(attachOnes.get(position).getAttachOneSaveName());
+                                                        try {
+                                                            db.save(musicListBean);
+                                                        } catch (DbException e) {
+                                                            e.printStackTrace();
+                                                        }
+
+
+                                                        alertDialog.dismiss();
+                                                        dialog.dismiss();
+                                                    }
+                                                }).setNegativeButton("取消", null).create().show();
+                                    }
+                                });
+                                alertDialog.setView(listView);
+                                alertDialog.setTitle("收藏到歌单");
+                                alertDialog.show();
+
+                                popupWindow.dismiss();
+                            }
+                        });
+
+                        popupWindow.setContentView(view);
+                        popupWindow.setWidth(250);
+                        popupWindow.setHeight(WindowManager.LayoutParams.WRAP_CONTENT);
+                        popupWindow.setTouchable(true);
+                        popupWindow.setOutsideTouchable(true);
+                        popupWindow.showAsDropDown(v);
+                        if (!popupWindow.isShowing()) {
+                            popupWindow.showAtLocation(layout_download, Gravity.CENTER, 0, 0);
+                        }
+                        if (attachOnes.get(position).getAttachOneIspackage() == 0) {
+                            if ((ActivityUtils.isExistByName(bookId, attachOnes.get(position).getAttachOneSaveName()) || ActivityUtils.isExistByName(bookId, attachOnes.get(position)
+                                    .getAttachOneName()) || ActivityUtils.isExistByName(bookId, new_name) || ActivityUtils.isExistByName(bookId, attachOnes.get(position).getAttachOneName() + "." + attachOnes
+                                    .get(position).getAttachOneType()))) {
+                                menuItem1.setVisibility(View.GONE);
+                                menuItem3.setVisibility(View.VISIBLE);
+                            } else {
+                                menuItem1.setVisibility(View.VISIBLE);
+                                menuItem3.setVisibility(View.GONE);
+                            }
+
+                        } else {
+                            menuItem1.setVisibility(View.GONE);
+                            menuItem3.setVisibility(View.GONE);
+                        }
+                        if (TextUtils.isEmpty(attachOnes.get(position).getShareUrl()) || attachOnes.get(position).getIsSendAtta1().equals("0"))
+                            menuItem2.setVisibility(View.GONE);
+                        else
+                            menuItem2.setVisibility(View.VISIBLE);
+
+                        if (type != null && (type.equalsIgnoreCase("mp3") | type.equalsIgnoreCase("wav")))
+                            menuItem4.setVisibility(View.VISIBLE);
+                        else
+                            menuItem4.setVisibility(View.GONE);
+
+                    }
+                });
+
+                // 下载
+//                ImageView iv_point_fujian = (ImageView) view.findViewById(R.id.iv_point_fujian);
+//                if (attachOnes.get(position).getAttachOneIspackage() == 0) {
+//                    iv_point_fujian.setVisibility((ActivityUtils.isExistByName(bookId, attachOnes.get(position).getAttachOneSaveName()) || ActivityUtils.isExistByName(bookId, attachOnes.get(position)
+//                            .getAttachOneName()) || ActivityUtils.isExistByName(bookId, new_name) || ActivityUtils.isExistByName(bookId, attachOnes.get(position).getAttachOneName() + "." + attachOnes
+//                            .get(position).getAttachOneType())) ? View.INVISIBLE : View.VISIBLE);
+//                } else {
+//                    iv_point_fujian.setVisibility(View.INVISIBLE);
+//                }
 
                 // 设置是否可以分享
-                ImageView iv_share = (ImageView) view.findViewById(R.id.imageView1);
-                if (TextUtils.isEmpty(attachOnes.get(position).getShareUrl()) || attachOnes.get(position).getIsSendAtta1().equals("0"))
-                    iv_share.setVisibility(View.GONE);
-                else
-                    iv_share.setVisibility(View.VISIBLE);
+//                ImageView iv_share = (ImageView) view.findViewById(R.id.imageView1);
+//                if (TextUtils.isEmpty(attachOnes.get(position).getShareUrl()) || attachOnes.get(position).getIsSendAtta1().equals("0"))
+//                    iv_share.setVisibility(View.INVISIBLE);
+//                else
+//                    iv_share.setVisibility(View.VISIBLE);
             } else {
                 layout_download.setVisibility(View.GONE);
                 layout_buy.setVisibility(View.VISIBLE);
@@ -1724,9 +2048,36 @@ public class BookSynActivity extends BaseActivity implements OnRefreshListener, 
                 });
             }
 
+//            layout_download.setOnCreateContextMenuListener(new View.OnCreateContextMenuListener() {
+//                @Override
+//                public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+//                    menu.add(Menu.NONE, 0, 0, "删除");
+//                    menu.add(Menu.NONE, 1, 0, "分享");
+//                }
+//            });
+//
             return view;
         }
     }
+
+//    @Override
+//    public boolean onContextItemSelected(MenuItem item){
+//        //关键代码在这里
+//        AdapterView.AdapterContextMenuInfo menuInfo;
+//        menuInfo =(AdapterView.AdapterContextMenuInfo)item.getMenuInfo();
+//        switch (item.getItemId()){
+//            case 0:
+//                //点击第一个菜单项要做的事，如获取点击listview的位置
+//                Toast.makeText(BookSynActivity.this, String.valueOf(menuInfo.position), Toast.LENGTH_LONG).show();
+//                break;
+//            case 1:
+//                //点击第二个菜单项要做的事，如获取点击的数据
+//                Toast.makeText(BookSynActivity.this, ""+attachOnes.get(menuInfo.position), Toast.LENGTH_LONG).show();
+//                break;
+//        }
+//        return super.onContextItemSelected(item);
+//    }
+
 
     private void getOrder(String attachId, final String attachName, final float price) {
         DialogUtils.showMyDialog(context, MyPreferences.SHOW_PROGRESS_DIALOG, null, "正在加载中，请稍后...", null);
@@ -1865,9 +2216,9 @@ public class BookSynActivity extends BaseActivity implements OnRefreshListener, 
         Log.d(TAG, "pathpath=" + path + "-----------" + ActivityUtils.getSDPath(bookId).getAbsolutePath() + "/" + savePath);
         if (TextUtils.isEmpty(path) && path.equals(ActivityUtils.getSDPath(bookId).getAbsolutePath() + "/" + savePath)) {
             Log.d(TAG, "pathpath=" + path + "-----------" + ActivityUtils.getSDPath(bookId).getAbsolutePath() + "/" + savePath);
-            Intent intent = new Intent(this, MediaPlayerActivity.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
-            startActivity(intent);
+//            Intent intent = new Intent(this, MediaPlayerActivity.class);
+//            intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+//            startActivity(intent);
             return;
         }
         DialogUtils.showMyDialog(context, MyPreferences.SHOW_PROGRESS_DIALOG, null, "正在加载中，请稍后...", null);
@@ -1906,18 +2257,22 @@ public class BookSynActivity extends BaseActivity implements OnRefreshListener, 
                             if (list_down.get(i).getAttachOneId().equals(attachOnes.get(position).getAttachOneId())) {// 确认位置
                                 index = i;
                             }
-                            ActivityUtils.unLock(bookId, list_down.get(i).getAttachOneSaveName(), "copy_" + list_down.get(i).getAttachOneSaveName());
-                            AudioItem item = new AudioItem();
-                            item.setData(ActivityUtils.getSDPath(bookId) + File.separator + "copy_" + list_down.get(i).getAttachOneSaveName());
-                            Log.d(TAG, "name====" + list_down.get(i).getAttachOneSaveName());
-                            item.setTitle(list_down.get(i).getAttachOneName());
-                            list_result.add(item);
+
                         }
+                        ActivityUtils.unLock(bookId, list_down.get(index).getAttachOneSaveName(), "copy_" + list_down.get(index).getAttachOneSaveName());
+                        AudioItem item = new AudioItem();
+                        item.setData(ActivityUtils.getSDPath(bookId) + File.separator + "copy_" + list_down.get(index).getAttachOneSaveName());
+                        Log.d(TAG, "name====" + list_down.get(index).getAttachOneSaveName());
+                        item.setOldData(list_down.get(index).getAttachOnePath() + list_down.get(index).getAttachOneSaveName());
+                        item.setBookId(bookId);
+                        item.setArtist(list_down.get(index).getAttachOneSaveName());
+                        item.setTitle(list_down.get(index).getAttachOneName());
+                        list_result.add(item);
                         Message msg = new Message();
                         msg.what = CMD_MP3;
                         Bundle bundle = new Bundle();
                         bundle.putParcelableArrayList("list", list_result);
-                        bundle.putInt("index", index);
+                        bundle.putInt("index", 0);
                         bundle.putString("bookId", bookId);
                         msg.setData(bundle);
                         mHandler.sendMessage(msg);

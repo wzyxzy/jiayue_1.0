@@ -39,14 +39,23 @@ public class MyDbUtils {
                                     db.getDatabase().execSQL("alter table BookVO add bookImg char(50)");
                                     db.getDatabase().execSQL("alter table BookVO add bookImgPath char(50)");
                                     db.getDatabase().execSQL("alter table BookVO add isImage int");
+                                    db.getDatabase().execSQL("alter table BookVO add sort int");
                                     break;
                                 case 2:
                                     db.getDatabase().execSQL("alter table BookVO add bookImg char(50)");
                                     db.getDatabase().execSQL("alter table BookVO add bookImgPath char(50)");
                                     db.getDatabase().execSQL("alter table BookVO add isImage int");
+                                    db.getDatabase().execSQL("alter table BookVO add sort int");
                                     break;
                                 case 3:
                                     db.getDatabase().execSQL("alter table BookVO add isImage int");
+                                    db.getDatabase().execSQL("alter table BookVO add sort int");
+                                    break;
+//                                case 4:
+//                                case 5:
+//                                    db.getDatabase().execSQL("alter table BookVO add sort int");
+//                                    break;
+
                             }
                         } catch (Exception e) {
                             e.printStackTrace();
@@ -113,6 +122,54 @@ public class MyDbUtils {
         return db;
     }
 
+    public static DbManager getMusicDb(Context context) {
+
+        DbManager.DaoConfig daoConfig = new DbManager.DaoConfig()
+                //设置数据库名，默认xutils.db
+                .setDbName("music_list.db")
+//        //设置表创建的监听
+                .setTableCreateListener(new DbManager.TableCreateListener() {
+                    @Override
+                    public void onTableCreated(DbManager db, TableEntity<?> table) {
+                        Log.i("JAVA", "onTableCreated：" + table.getName());
+                    }
+                })
+                //设置是否允许事务，默认true
+                .setAllowTransaction(true)
+                //设置数据库路径，默认安装程序路径下
+//        .setDbDir(ActivityUtils.getSDPath())
+                //设置数据库的版本号
+                .setDbVersion(1)
+                //设置数据库更新的监听
+                .setDbUpgradeListener(new DbManager.DbUpgradeListener() {
+                    @Override
+                    public void onUpgrade(DbManager db, int oldVersion,
+                                          int newVersion) {
+                        try {
+//                            switch (oldVersion) {
+//                                case 1:
+//                                    db.getDatabase().execSQL("alter table siftvo add confidence int");
+//                                    db.getDatabase().execSQL("alter table siftvo add imageName char(50)");
+//                                    break;
+//                            }
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+                })
+                //设置数据库打开的监听
+                .setDbOpenListener(new DbManager.DbOpenListener() {
+                    @Override
+                    public void onDbOpened(DbManager db) {
+                        //开启数据库支持多线程操作，提升性能
+                        db.getDatabase().enableWriteAheadLogging();
+                    }
+                });
+        DbManager db = x.getDb(daoConfig);
+        return db;
+    }
+
+
     public static DbManager getOneAttachDb(Context context) {
         DbManager.DaoConfig daoConfig = new DbManager.DaoConfig()
                 //设置数据库名，默认xutils.db
@@ -122,7 +179,7 @@ public class MyDbUtils {
                     @Override
                     public void onTableCreated(DbManager db, TableEntity<?> table) {
                         Log.i("JAVA", "onTableCreated：" + table.getName());
-                        
+
                     }
                 })
                 //设置是否允许事务，默认true
@@ -136,7 +193,7 @@ public class MyDbUtils {
                     @Override
                     public void onUpgrade(DbManager db, int oldVersion,
                                           int newVersion) {
-                    	try {
+                        try {
                             switch (oldVersion) {
                                 case 1:
                                     db.getDatabase().execSQL("alter table AttachOne add isPay int");
@@ -188,7 +245,7 @@ public class MyDbUtils {
                     @Override
                     public void onUpgrade(DbManager db, int oldVersion,
                                           int newVersion) {
-                    	try {
+                        try {
                             switch (oldVersion) {
                                 case 1:
                                     db.getDatabase().execSQL("alter table AttachTwo add isPay int");

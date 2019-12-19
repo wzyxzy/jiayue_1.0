@@ -4,117 +4,129 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 /**
- * ����һ����Ƶ
- * @author Administrator
+ * 音乐条目
  *
+ * @author Administrator
  */
-public class AudioItem  implements Parcelable{
+public class AudioItem implements Parcelable {
 
-	private String title;//��Ƶ����
-	
-	private String duration;//��Ƶ����ʱ��
-	
-	private String size;//��Ƶ���ļ���С
-	
-	private String data;//��Ƶ�Ĳ��ž���·��
-	
-	private String artist;//�ݳ���
+    private String title;//音频的名称
 
-	
-	
-	public AudioItem() {
-		super();
-	}
+    private String duration;//音乐描述
 
-	public String getTitle() {
-		return title;
-	}
+    private String size;//音乐大小
 
-	public void setTitle(String title) {
-		this.title = title;
-	}
+    private String data;//音乐路径
 
-	public String getDuration() {
-		return duration;
-	}
+    private String oldData;//音乐下载路径
 
-	public void setDuration(String duration) {
-		this.duration = duration;
-	}
+    private String bookId;//bookId
 
-	public String getSize() {
-		return size;
-	}
+    private String artist;//艺术家名字
 
-	public void setSize(String size) {
-		this.size = size;
-	}
+    protected AudioItem(Parcel in) {
+        title = in.readString();
+        duration = in.readString();
+        size = in.readString();
+        data = in.readString();
+        oldData = in.readString();
+        bookId = in.readString();
+        artist = in.readString();
+    }
 
-	public String getData() {
-		return data;
-	}
+    public static final Creator<AudioItem> CREATOR = new Creator<AudioItem>() {
+        @Override
+        public AudioItem createFromParcel(Parcel in) {
+            return new AudioItem(in);
+        }
 
-	public void setData(String data) {
-		this.data = data;
-	}
-	
-	
+        @Override
+        public AudioItem[] newArray(int size) {
+            return new AudioItem[size];
+        }
+    };
 
-	public String getArtist() {
-		return artist;
-	}
+    public String getOldData() {
+        return oldData;
+    }
 
-	public void setArtist(String artist) {
-		this.artist = artist;
-	}
+    public void setOldData(String oldData) {
+        this.oldData = oldData;
+    }
 
-	@Override
-	public String toString() {
-		return "VideoItem [title=" + title + ", duration=" + duration
-				+ ", size=" + size + ", data=" + data + "]";
-	}
+    public String getBookId() {
+        return bookId;
+    }
 
-	@Override
-	public int describeContents() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+    public void setBookId(String bookId) {
+        this.bookId = bookId;
+    }
 
-	@Override
-	public void writeToParcel(Parcel dest, int flags) {
-		// TODO Auto-generated method stub
-		dest.writeString(title);
-		dest.writeString(duration);
-		dest.writeString(size);
-		dest.writeString(data);
-		dest.writeString(artist);
-	}
-	
-	public static final Parcelable.Creator<AudioItem> CREATOR = new Creator<AudioItem>()
-		    {
-		        @Override
-		        public AudioItem[] newArray(int size)
-		        {
-		            return new AudioItem[size];
-		        }
-		        
-		        @Override
-		        public AudioItem createFromParcel(Parcel in)
-		        {
-		            return new AudioItem(in);
-		        }
-		    };
-		    
-		    public AudioItem(Parcel in)
-		    {
-		    	title = in.readString();
-		    	duration = in.readString();
-		    	size = in.readString();
-		    	data = in.readString();
-		    	artist = in.readString();
-		    }
-	
-	
-	
-	
+    public AudioItem() {
+        super();
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getDuration() {
+        return duration;
+    }
+
+    public void setDuration(String duration) {
+        this.duration = duration;
+    }
+
+    public String getSize() {
+        return size;
+    }
+
+    public void setSize(String size) {
+        this.size = size;
+    }
+
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
+    }
+
+
+    public String getArtist() {
+        return artist;
+    }
+
+    public void setArtist(String artist) {
+        this.artist = artist;
+    }
+
+    @Override
+    public String toString() {
+        return "VideoItem [title=" + title + ", duration=" + duration
+                + ", size=" + size + ", data=" + data + "]";
+    }
+
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(title);
+        dest.writeString(duration);
+        dest.writeString(size);
+        dest.writeString(data);
+        dest.writeString(oldData);
+        dest.writeString(bookId);
+        dest.writeString(artist);
+    }
 }

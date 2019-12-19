@@ -1,102 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.jiayue"
-          xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:tools="http://schemas.android.com/tools"
-          android:versionCode="34"
-          android:versionName="1.5.4">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jiayue"
+    android:versionCode="40"
+    android:versionName="1.6.0">
 
     <uses-feature
         android:glEsVersion="0x00020000"
-        android:required="true"/>
-    <uses-feature android:name="android.hardware.camera"/>
-    <uses-feature android:name="android.hardware.camera.autofocus"/>
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <permission
         android:name="com.jiayue.permission.JPUSH_MESSAGE"
-        android:protectionLevel="signature"/>
-
-    <!-- Required  一些系统要求的权限，如访问网络等 -->
-    <uses-permission android:name="com.jiayue.permission.JPUSH_MESSAGE"/>
-    <!-- Optional for location -->
+        android:protectionLevel="signature" /> <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="com.jiayue.permission.JPUSH_MESSAGE" /> <!-- Optional for location -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission
-        android:name="android.permission.SYSTEM_ALERT_WINDOW"/> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.VIBRATE"/>
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
-    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
         android:name=".MyApplication"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
-        android:usesCleartextTraffic="true"
-        android:theme="@style/AppTheme">
-
-        <!-- 启动界面 -->
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".PDFViewActivity"
+            android:theme="@style/MyTheme1" />
+        <activity
+            android:name=".ChooseMusicAll"
+            android:theme="@style/MyTheme1" /> <!-- Sample AdMob App ID: ca-app-pub-9285530747449763~5852215453 -->
+        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.gms.ads.APPLICATION_ID" -->
+        <!-- android:value="ca-app-pub-9285530747449763~5852215453" /> -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" /> <!-- 启动界面 -->
         <activity
             android:name=".SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/MyTheme"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".MyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="adjustResize">
+
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
         </activity>
         <activity
             android:name=".DataActivity"
             android:screenOrientation="portrait">
             <intent-filter>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.DEFAULT" />
 
-                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.VIEW" />
 
-                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
                     android:host="jiayue"
                     android:path="/home"
                     android:port="8888"
-                    android:scheme="pndoo"/>
+                    android:scheme="pndoo" />
             </intent-filter>
         </activity>
 
         <meta-data
             android:name="pndoo"
-            android:value="Channel ID"/>
-        <!-- 添加书籍界面 -->
-
+            android:value="Channel ID" /> <!-- 添加书籍界面 -->
         <activity
             android:name=".AddBookActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/MyTheme"
-            android:windowSoftInputMode="adjustPan">
-        </activity>
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name="io.vov.vitamio.activity.InitActivity"
             android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
             android:launchMode="singleTop"
             android:theme="@android:style/Theme.NoTitleBar"
-            android:windowSoftInputMode="stateAlwaysHidden"/>
-
-        <!-- android:screenOrientation="landscape" -->
+            android:windowSoftInputMode="stateAlwaysHidden" /> <!-- android:screenOrientation="landscape" -->
         <!-- 书架界面 -->
         <activity
             android:name=".BookActivity"
@@ -104,27 +122,18 @@
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/MyTheme"
-            android:windowSoftInputMode="adjustPan">
-        </activity>
-
-        <!-- 购物车界面 -->
+            android:windowSoftInputMode="adjustPan" /> <!-- 购物车界面 -->
         <activity
             android:name=".PayTotalActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait">
-        </activity>
-
-        <!-- 提交支付界面 -->
+            android:screenOrientation="portrait" /> <!-- 提交支付界面 -->
         <activity
             android:name=".PaySubmitActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/MyTheme"
-            android:windowSoftInputMode="adjustPan">
-        </activity>
-
-        <!-- 支付选择界面 -->
+            android:windowSoftInputMode="adjustPan" /> <!-- 支付选择界面 -->
         <activity
             android:name=".PayChooseActivity"
             android:label="@string/app_name"
@@ -133,11 +142,11 @@
             android:theme="@style/MyTheme"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.VIEW" />
 
-                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.DEFAULT" />
 
-                <data android:scheme="wxb5c69e77124b6557"/>
+                <data android:scheme="wxb5c69e77124b6557" />
             </intent-filter>
         </activity>
         <activity
@@ -146,8 +155,7 @@
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/MyTheme"
-            android:windowSoftInputMode="adjustPan">
-        </activity>
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".vr.VRPlayActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -155,9 +163,7 @@
             android:screenOrientation="landscape"
             android:theme="@style/MyAppTheme"
             android:windowActionBarOverlay="true"
-            android:windowSoftInputMode="stateHidden|adjustResize">
-        </activity>
-
+            android:windowSoftInputMode="stateHidden|adjustResize" />
         <!--
         <activity
             android:name="com.jiayue.view.carema.ActivityCapture"
@@ -167,229 +173,180 @@
             android:windowSoftInputMode="adjustResize|stateHidden" >
         </activity>
         -->
-
         <activity
             android:name=".view.camera.AutoFocusActivity"
-            android:screenOrientation="portrait">
-        </activity>
-
-        <!-- alipay sdk begin -->
+            android:screenOrientation="portrait" /> <!-- alipay sdk begin -->
         <activity
             android:name="com.alipay.sdk.app.H5PayActivity"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:exported="false"
-            android:screenOrientation="behind">
-        </activity>
+            android:screenOrientation="behind" />
         <activity
             android:name="com.alipay.sdk.auth.AuthActivity"
             android:configChanges="orientation|keyboardHidden|navigation"
             android:exported="false"
-            android:screenOrientation="behind">
-        </activity>
-
-        <!-- alipay sdk end -->
-
+            android:screenOrientation="behind" /> <!-- alipay sdk end -->
         <activity
             android:name=".ZhiboActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/MyTheme"
-            android:windowSoftInputMode="adjustPan">
-        </activity>
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".YuGaoActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/MyTheme"
-            android:windowSoftInputMode="adjustPan">
-        </activity>
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".PlayActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:launchMode="singleTop"
             android:theme="@style/MyTheme"
-            android:windowSoftInputMode="adjustPan">
-        </activity>
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".BookAllActivity"
             android:launchMode="singleTop"
-            android:theme="@style/MyTheme">
-        </activity>
+            android:theme="@style/MyTheme1" />
         <activity
             android:name=".DianPlayActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:launchMode="singleTop"
             android:theme="@style/MyTheme"
-            android:windowSoftInputMode="adjustPan">
-        </activity>
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".GoodsListActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/MyTheme"
-            android:windowSoftInputMode="adjustPan">
-        </activity>
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".VipActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/MyTheme"
-            android:windowSoftInputMode="adjustPan">
-        </activity>
-
-        <!-- 书籍附件 -->
+            android:windowSoftInputMode="adjustPan" /> <!-- 书籍附件 -->
         <activity
             android:name=".BookAttachActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
-            android:theme="@style/MyTheme"
-            android:windowSoftInputMode="adjustPan">
-        </activity>
-
-        <!-- 书籍简介 -->
+            android:theme="@style/MyTheme1"
+            android:windowSoftInputMode="adjustPan" /> <!-- 书籍简介 -->
         <activity
             android:name=".BookDescriptionActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/MyTheme"
-            android:windowSoftInputMode="adjustPan">
-        </activity>
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".AuthorCommunicationActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
-            android:theme="@style/MyTheme">
-        </activity>
+            android:theme="@style/MyTheme" />
         <activity
             android:name=".ReaderCommunicationActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
-            android:theme="@style/MyTheme">
-        </activity>
+            android:theme="@style/MyTheme" />
         <activity
             android:name=".ReaderDescriptionItemActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
-            android:theme="@style/MyTheme">
-        </activity>
+            android:theme="@style/MyTheme" />
         <activity
             android:name=".AuthorDescriptionItemActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
-            android:theme="@style/MyTheme">
-        </activity>
+            android:theme="@style/MyTheme" />
         <activity
             android:name=".AuthorCommentInfoActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
-            android:theme="@style/MyTheme">
-        </activity>
+            android:theme="@style/MyTheme" />
         <activity
             android:name=".ReaderSendActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
-            android:theme="@style/MyTheme">
-        </activity>
+            android:theme="@style/MyTheme" />
         <activity
             android:name=".AuthorSendActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
-            android:theme="@style/MyTheme">
-        </activity>
+            android:theme="@style/MyTheme" />
         <activity
             android:name=".AuthorReplyActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
-            android:theme="@style/MyTheme">
-        </activity>
+            android:theme="@style/MyTheme" />
         <activity
             android:name=".ReaderJoinActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
-            android:theme="@style/MyTheme">
-        </activity>
-
-        <!-- 书籍阅读 -->
+            android:theme="@style/MyTheme" /> <!-- 书籍阅读 -->
         <activity
             android:name=".BookReadActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/MyTheme"
-            android:windowSoftInputMode="adjustPan">
-        </activity>
-
-        <!-- 书籍同步 -->
+            android:windowSoftInputMode="adjustPan" /> <!-- 书籍同步 -->
         <activity
             android:name=".BookSynActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
-            android:theme="@style/MyTheme"
-            android:windowSoftInputMode="adjustPan">
-        </activity>
-
-        <!-- 帮助与反馈 -->
+            android:theme="@style/MyTheme1"
+            android:windowSoftInputMode="adjustPan" /> <!-- 帮助与反馈 -->
         <activity
             android:name=".FeedbackActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/MyTheme"
-            android:windowSoftInputMode="adjustPan">
-        </activity>
-
-        <!-- 引导界面 -->
+            android:windowSoftInputMode="adjustPan" /> <!-- 引导界面 -->
         <activity
             android:name=".GuideActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/MyTheme"
-            android:windowSoftInputMode="adjustResize">
-        </activity>
-
-        <!-- 主界面 -->
+            android:windowSoftInputMode="adjustResize" /> <!-- 主界面 -->
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:theme="@style/MyTheme"
-            android:windowSoftInputMode="adjustPan"
-        >
-        </activity>
-
-        <!-- 视频播放界面 -->
+            android:windowSoftInputMode="adjustPan" /> <!-- 视频播放界面 -->
         <activity
             android:name=".VideoPlayerActivity"
             android:configChanges="orientation|keyboardHidden"
             android:process=":vitamio"
             android:screenOrientation="landscape"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
-        </activity>
-        <!-- 音频播放界面 -->
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" /> <!-- 音频播放界面 -->
         <activity
             android:name=".MediaPlayerActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar">
-        </activity>
-
-        <!-- 扫描界面 -->
+            android:theme="@style/MyTheme1" />
+        <activity
+            android:name=".MusicListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme1" /> <!-- 扫描界面 -->
         <activity
             android:name=".MipcaActivityCapture"
             android:configChanges="orientation|keyboardHidden"
@@ -397,19 +354,13 @@
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/MyTheme"
-            android:windowSoftInputMode="stateAlwaysHidden">
-        </activity>
-
-        <!-- 登录界面 -->
+            android:windowSoftInputMode="stateAlwaysHidden" /> <!-- 登录界面 -->
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_main"
             android:launchMode="singleTop"
             android:theme="@style/MyTheme"
-            android:windowSoftInputMode="adjustUnspecified|stateHidden">
-        </activity>
-
-        <!-- 书籍阅读界面 -->
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" /> <!-- 书籍阅读界面 -->
         <!--
              <activity
             android:name="com.jiayue.OpenBookActivity"
@@ -420,8 +371,6 @@
             android:windowSoftInputMode="adjustPan" >
         </activity>
         -->
-
-
         <!-- opencv -->
         <!--
              <activity
@@ -434,8 +383,6 @@
             android:windowSoftInputMode="adjustPan" >
         </activity>
         -->
-
-
         <!-- 注册界面 -->
         <activity
             android:name=".RegistActivity"
@@ -443,30 +390,21 @@
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/MyTheme"
-            android:windowSoftInputMode="adjustPan">
-        </activity>
-
-        <!-- 设置界面 -->
+            android:windowSoftInputMode="adjustPan" /> <!-- 设置界面 -->
         <activity
             android:name=".SettingActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/MyTheme"
-            android:windowSoftInputMode="adjustPan">
-        </activity>
-
-        <!-- 同步管理 -->
+            android:windowSoftInputMode="adjustPan" /> <!-- 同步管理 -->
         <activity
             android:name=".SynManageActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/MyTheme"
-            android:windowSoftInputMode="adjustPan">
-        </activity>
-
-        <!-- 测试界面 -->
+            android:windowSoftInputMode="adjustPan" /> <!-- 测试界面 -->
         <!--
         <activity
             android:name="com.jiayue.TestActivity"
@@ -477,8 +415,6 @@
             android:windowSoftInputMode="adjustPan" >
         </activity>
         -->
-
-
         <!-- 已同步列表界面 -->
         <activity
             android:name=".SynManageActivity01"
@@ -486,40 +422,28 @@
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/MyTheme"
-            android:windowSoftInputMode="adjustPan">
-        </activity>
-
-        <!-- 版本更新 -->
+            android:windowSoftInputMode="adjustPan" /> <!-- 版本更新 -->
         <activity
             android:name=".UpdateActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/MyTheme"
-            android:windowSoftInputMode="adjustPan">
-        </activity>
-
-        <!-- 我的信息 -->
+            android:windowSoftInputMode="adjustPan" /> <!-- 我的信息 -->
         <activity
             android:name=".UserInfoActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/MyTheme"
-            android:windowSoftInputMode="adjustPan">
-        </activity>
-
-        <!-- 更新用户信息设置 -->
+            android:windowSoftInputMode="adjustPan" /> <!-- 更新用户信息设置 -->
         <activity
             android:name=".UpdateUserInfoActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/MyTheme"
-            android:windowSoftInputMode="adjustPan">
-        </activity>
-
-        <!-- untiy3d播放界面 -->
+            android:windowSoftInputMode="adjustPan" /> <!-- untiy3d播放界面 -->
         <activity
             android:name=".Unity3DPlayerActivity"
             android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
@@ -530,147 +454,131 @@
             android:theme="@style/MyTheme">
             <meta-data
                 android:name="unityplayer.UnityActivity"
-                android:value="true"/>
+                android:value="true" />
             <meta-data
                 android:name="unityplayer.ForwardNativeEventsToDalvik"
-                android:value="true"/>
-        </activity>
-
-        <!-- pdf阅读界面 -->
+                android:value="true" />
+        </activity> <!-- pdf阅读界面 -->
         <activity
             android:name="com.artifex.mupdf.viewer.DocumentActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar">
             <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.VIEW" />
 
-                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.DEFAULT" />
 
-                <data android:mimeType="application/pdf"/>
+                <data android:mimeType="application/pdf" />
             </intent-filter>
             <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.VIEW" />
 
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
 
-                <data android:scheme="file"/>
-                <data android:mimeType="*/*"/>
-                <data android:pathPattern=".*\\.pdf"/>
-                <data android:host="*"/>
+                <data android:scheme="file" />
+                <data android:mimeType="*/*" />
+                <data android:pathPattern=".*\\.pdf" />
+                <data android:host="*" />
             </intent-filter>
-        </activity>
-        <!-- 图片播放界面 -->
-        <activity android:name=".PictureActivity"/>
+        </activity> <!-- 图片播放界面 -->
+        <activity android:name=".PictureActivity" />
         <activity
             android:name=".CastUpdateActivity"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Translucent"/>
-        <!-- 密码重置页面 -->
+            android:theme="@android:style/Theme.Translucent" /> <!-- 密码重置页面 -->
         <activity
             android:name=".UserResetActivity"
-            android:screenOrientation="portrait"/>
-        <!-- 浏览器页面 -->
+            android:screenOrientation="portrait" /> <!-- 浏览器页面 -->
         <activity
             android:name=".BrowerActivity"
             android:launchMode="standard"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <!--
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:hardwareAccelerated="true"
         -->
-
         <activity
             android:name=".SearchActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/MyTheme"
-            android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
         <activity
             android:name="com.skytree.epubtest.HomeActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar">
-        </activity>
-        <!-- android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize" -->
+            android:theme="@android:style/Theme.NoTitleBar" /> <!-- android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize" -->
         <activity
             android:name="com.skytree.epubtest.BookViewActivity"
             android:label="BookView"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Light.NoTitleBar">
-        </activity>
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
         <activity
             android:name="com.skytree.epubtest.MagazineActivity"
             android:label="Magazine"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar">
-        </activity>
+            android:theme="@android:style/Theme.NoTitleBar" />
         <activity
             android:name="com.skytree.epubtest.SettingActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize"
-            android:label="@string/title_activity_setting">
-        </activity>
+            android:label="@string/title_activity_setting" />
         <activity
             android:name=".TeacherBindLoginActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".TeacherQuizActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan"/>
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".TeacherCurriculumActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".TeacherTestResultActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".TeacherSelectActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan"/>
+            android:windowSoftInputMode="adjustPan" />
 
         <service
             android:name="com.skytree.epubtest.LocalService"
-            android:enabled="true">
-        </service>
+            android:enabled="true" />
         <service
             android:name=".download.TestService"
             android:enabled="true"
             android:exported="false"
             android:label="VersionUpdateService">
             <intent-filter>
-                <action android:name="com.shopin.android.services.TestService"/>
+                <action android:name="com.shopin.android.services.TestService" />
 
-                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </service>
         <service
             android:name=".service.MusicPlayerService"
             android:exported="false">
             <intent-filter>
-                <action android:name="com.jiayue.startservice"/>
+                <action android:name="com.jiayue.startservice" />
             </intent-filter>
         </service>
 
-        <uses-library android:name="android.test.runner"/>
+        <uses-library android:name="android.test.runner" />
 
         <meta-data
             android:name="UMENG_APPKEY"
-            android:value="56e67fca67e58e06e800148a">
-        </meta-data>
+            android:value="56e67fca67e58e06e800148a" />
         <meta-data
             android:name="UMENG_CHANNEL"
-            android:value="index"/>
-
-        <!-- /***********************************************************************/ -->
+            android:value="index" /> <!-- /***********************************************************************/ -->
         <activity
             android:name=".WBShareActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait">
             <intent-filter>
-                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
 
-                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
@@ -678,200 +586,179 @@
             android:launchMode="singleTask"
             android:noHistory="true">
             <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.VIEW" />
 
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
 
-                <data android:scheme="tencent100371282"/>
+                <data android:scheme="tencent100371282" />
             </intent-filter>
         </activity>
         <activity
             android:name="com.umeng.qq.tencent.AssistActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
-
-        <!-- 微信分享回调 -->
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- 微信分享回调 -->
         <activity
             android:name=".wxapi.WXEntryActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="true"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
             android:name=".wxapi.WXPayEntryActivity"
             android:exported="true"
-            android:launchMode="singleTop"/>
-
-        <!-- Required SDK核心功能 -->
+            android:launchMode="singleTop" /> <!-- Required SDK核心功能 -->
         <activity
             android:name="cn.jpush.android.ui.PushActivity"
             android:configChanges="orientation|keyboardHidden"
             android:exported="false"
             android:theme="@android:style/Theme.NoTitleBar">
             <intent-filter>
-                <action android:name="cn.jpush.android.ui.PushActivity"/>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
 
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="com.jiayue"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.jiayue" />
             </intent-filter>
-        </activity>
-        <!-- Required  SDK核心功能 -->
+        </activity> <!-- Required  SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.jiayue" />
+            </intent-filter>
+        </activity> <!-- Required  SDK核心功能 -->
         <service
             android:name="cn.jpush.android.service.DownloadService"
             android:enabled="true"
-            android:exported="false">
-        </service>
-
-        <!-- Required SDK 核心功能 -->
+            android:exported="false" /> <!-- Required SDK 核心功能 -->
         <!-- 可配置android:process参数将PushService放在其他进程中 -->
         <service
             android:name="cn.jpush.android.service.PushService"
             android:enabled="true"
             android:exported="false">
             <intent-filter>
-                <action android:name="cn.jpush.android.intent.REGISTER"/>
-                <action android:name="cn.jpush.android.intent.REPORT"/>
-                <action android:name="cn.jpush.android.intent.PushService"/>
-                <action android:name="cn.jpush.android.intent.PUSH_TIME"/>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
             </intent-filter>
-        </service>
-
-        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        </service> <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
         <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
         <service
             android:name="cn.jpush.android.service.DaemonService"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="cn.jpush.android.intent.DaemonService"/>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
 
-                <category android:name="com.jiayue"/>
+                <category android:name="com.jiayue" />
             </intent-filter>
-        </service>
-
-        <!-- Required SDK核心功能 -->
+        </service> <!-- Required SDK核心功能 -->
         <receiver
             android:name="cn.jpush.android.service.PushReceiver"
             android:enabled="true"
             android:exported="false">
             <intent-filter android:priority="1000">
-                <action
-                    android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY"/> <!-- Required  显示通知栏 -->
-                <category android:name="com.jiayue"/>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" /> <!-- Required  显示通知栏 -->
+                <category android:name="com.jiayue" />
             </intent-filter>
             <intent-filter>
-                <action android:name="android.intent.action.USER_PRESENT"/>
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
             </intent-filter>
             <!-- Optional -->
             <intent-filter>
-                <action android:name="android.intent.action.PACKAGE_ADDED"/>
-                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
 
-                <data android:scheme="package"/>
+                <data android:scheme="package" />
             </intent-filter>
-        </receiver>
-
-        <!-- Required SDK核心功能 -->
+        </receiver> <!-- Required SDK核心功能 -->
         <receiver
             android:name="cn.jpush.android.service.AlarmReceiver"
-            android:exported="false"/>
-
-        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+            android:exported="false" /> <!-- User defined.  For test only  用户自定义的广播接收器 -->
         <receiver
             android:name=".MyReceiver"
             android:enabled="true"
             android:exported="false">
             <intent-filter>
-                <action
-                    android:name="cn.jpush.android.intent.REGISTRATION"/> <!-- Required  用户注册SDK的intent -->
-                <action android:name="cn.jpush.android.intent.UNREGISTRATION"/>
-                <action
-                    android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/> <!-- Required  用户接收SDK消息的intent -->
-                <action
-                    android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/> <!-- Required  用户接收SDK通知栏信息的intent -->
-                <action
-                    android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/> <!-- Required  用户打开自定义通知栏的intent -->
-                <action
-                    android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK"/> <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
-                <action
-                    android:name="cn.jpush.android.intent.CONNECTION"/> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
-                <category android:name="com.jiayue"/>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.jiayue" />
             </intent-filter>
-        </receiver>
-
-        <!-- Required  . Enable it you can get statistics data with channel -->
+        </receiver> <!-- Required  . Enable it you can get statistics data with channel -->
         <meta-data
             android:name="JPUSH_CHANNEL"
-            android:value="developer-default"/>
+            android:value="developer-default" />
         <meta-data
             android:name="JPUSH_APPKEY"
-            android:value="0c156bca7cb25f94cd6b45c4"/> <!-- </>值来自开发者平台取得的AppKey -->
-
+            android:value="0c156bca7cb25f94cd6b45c4" /> <!-- </>值来自开发者平台取得的AppKey -->
         <meta-data
             android:name="channeltest"
-            android:value="1"/>
+            android:value="1" />
 
-        <activity android:name=".chat.VideoActivity"/>
-        <activity android:name=".chat.ImageViewActivity"/>
-        <activity android:name=".chat.ImagePreviewActivity"/>
-
-        <!-- 消息收发service -->
+        <activity android:name=".chat.VideoActivity" />
+        <activity android:name=".chat.ImageViewActivity" />
+        <activity android:name=".chat.ImagePreviewActivity" /> <!-- 消息收发service -->
         <service
             android:name="com.tencent.qalsdk.service.QalService"
             android:exported="false"
-            android:process=":QALSERVICE">
-        </service>
-        <!-- 消息收发辅助service -->
+            android:process=":QALSERVICE" /> <!-- 消息收发辅助service -->
         <service
             android:name="com.tencent.qalsdk.service.QalAssistService"
             android:exported="false"
-            android:process=":QALSERVICE">
-        </service>
-        <!-- 离线消息广播接收器 -->
+            android:process=":QALSERVICE" /> <!-- 离线消息广播接收器 -->
         <receiver
             android:name="com.tencent.qalsdk.QALBroadcastReceiver"
             android:exported="false">
             <intent-filter>
-                <action android:name="com.tencent.qalsdk.broadcast.qal"/>
+                <action android:name="com.tencent.qalsdk.broadcast.qal" />
             </intent-filter>
-        </receiver>
-        <!-- 系统消息广播接收器 -->
+        </receiver> <!-- 系统消息广播接收器 -->
         <receiver
             android:name="com.tencent.qalsdk.core.NetConnInfoCenter"
             android:process=":QALSERVICE">
             <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
             <intent-filter>
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
             </intent-filter>
             <intent-filter>
-                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIME_SET" />
             </intent-filter>
             <intent-filter>
-                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
             </intent-filter>
         </receiver>
 
-        <activity android:name=".AccountActivity"
-                  android:launchMode="singleTop"
-                  android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".PayRecordActivity"
-                  android:launchMode="singleTop"
-                  android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".WorkWebActivity"
-        android:launchMode="singleTop"
-        android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".ZhiYueDetailActivity"
-                  android:launchMode="singleTop"
-                  android:screenOrientation="portrait">
-        </activity>
+        <activity
+            android:name=".AccountActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PayRecordActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WorkWebActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ZhiYueDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

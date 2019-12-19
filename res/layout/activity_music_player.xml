@@ -1,103 +1,178 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
-    <include layout="@layout/activity_my_title" />
-
-    <RelativeLayout
+    <include
+        android:id="@+id/inc"
+        layout="@layout/activity_my_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/mediaplayer_base_bg" >
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:id="@+id/bac"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/inc"
+        android:foreground="#000000"
+        android:alpha="0.6"
+        android:layout_marginBottom="160dp"
+        android:contentDescription="TODO"
+        android:scaleType="centerInside" />
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/inc">
+
 
         <com.jiayue.lrcview.LrcView
             android:id="@+id/show_lyric_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="100dp"
             android:layout_marginLeft="18dp"
-            android:layout_marginRight="18dp" />
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="200dp"
+            android:visibility="gone" />
 
         <LinearLayout
+            android:id="@+id/add_music_list"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="33dp"
+            android:layout_marginRight="33dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:onClick="createMusicList"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="创建歌单"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/add_music_list" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/add_music_list"
+            android:layout_marginLeft="33dp"
+            android:layout_marginRight="33dp"
+            android:background="#cdcdcd" />
+
+
+        <ListView
+            android:id="@+id/music_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/bottom_layout"
+            android:layout_below="@id/add_music_list"
+            android:layout_marginLeft="33dp"
+            android:layout_marginRight="33dp"
+            android:divider="#cdcdcd"
+            android:dividerHeight="1dp" />
+
+        <LinearLayout
+            android:id="@+id/bottom_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+            android:paddingBottom="30dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#f6f6f6" />
 
             <LinearLayout
                 android:id="@+id/ll_progress"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:background="#9b9b9b"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginRight="20dp"
                 android:gravity="center"
-                android:orientation="horizontal" >
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/start_time"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dip"
                     android:text="00:00"
-                    android:textColor="#ffffff"
-                    android:textSize="16sp" />
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
 
                 <SeekBar
                     android:id="@+id/seekBar_audio"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dip"
-                    android:layout_marginRight="5dip"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
                     android:layout_weight="1"
                     android:max="100"
-                    android:maxHeight="6dip"
-                    android:minHeight="6dip"
+                    android:maxHeight="6dp"
+                    android:minHeight="6dp"
                     android:progress="0"
-                    android:progressDrawable="@drawable/audio_progress_horizontal"
-                    android:thumb="@drawable/mediaplayer_seek_thumb"
+                    android:progressDrawable="@drawable/audio_progress_horizontal1"
+                    android:thumb="@drawable/shape_circle"
                     android:thumbOffset="0dp" />
 
                 <TextView
                     android:id="@+id/end_time"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="5dip"
                     android:text="00:00"
-                    android:textColor="#ffffff"
-                    android:textSize="16sp" />
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:background="#707070"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
                 android:gravity="center"
-                android:orientation="horizontal" >
+                android:orientation="horizontal">
 
                 <LinearLayout
                     android:id="@+id/btn_status"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:orientation="horizontal" >
-                    
+                    android:orientation="horizontal">
+
                     <ImageButton
                         android:id="@+id/play_status"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:clickable="false"/>
+                        android:clickable="false" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/btn_pre"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:clickable="true"
                     android:gravity="center"
-                    android:orientation="horizontal" >
+                    android:orientation="horizontal">
 
                     <ImageButton
                         android:layout_width="wrap_content"
@@ -107,11 +182,11 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:orientation="horizontal" >
+                    android:orientation="horizontal">
 
                     <ImageButton
                         android:id="@+id/btn_play"
@@ -122,12 +197,12 @@
 
                 <LinearLayout
                     android:id="@+id/btn_next"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:clickable="true"
                     android:gravity="center"
-                    android:orientation="horizontal" >
+                    android:orientation="horizontal">
 
                     <ImageButton
                         android:layout_width="wrap_content"
@@ -138,21 +213,21 @@
 
                 <LinearLayout
                     android:id="@+id/btn_list"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:clickable="true"
                     android:gravity="center"
-                    android:orientation="horizontal" >
+                    android:orientation="horizontal">
 
                     <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/liebiao" 
-                        android:clickable="false"/>
+                        android:background="@drawable/liebiao"
+                        android:clickable="false" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
 
-</LinearLayout>
+</RelativeLayout>

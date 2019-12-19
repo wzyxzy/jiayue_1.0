@@ -1,6 +1,7 @@
 package com.jiayue;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -19,12 +20,15 @@ import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
 import android.provider.Settings;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v4.widget.SwipeRefreshLayout.OnRefreshListener;
+
+import androidx.core.content.ContextCompat;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout.OnRefreshListener;
+
 import android.text.Html;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -32,18 +36,23 @@ import android.view.View.OnClickListener;
 import android.view.View.OnLongClickListener;
 import android.view.View.OnTouchListener;
 import android.view.ViewGroup;
+import android.view.WindowManager;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.jiayue.adapter.MusicListAdapter;
+import com.jiayue.adapter.MusicListAdapter2;
 import com.jiayue.constants.Preferences;
 import com.jiayue.download.TestService;
 import com.jiayue.download2.Utils.DownloadManager;
@@ -56,8 +65,10 @@ import com.jiayue.dto.base.AttachTwo;
 import com.jiayue.dto.base.AttachTwoBean;
 import com.jiayue.dto.base.AudioItem;
 import com.jiayue.dto.base.Bean;
+import com.jiayue.dto.base.MusicListBean;
 import com.jiayue.dto.base.OrderBean;
 import com.jiayue.dto.base.PaperNumBean;
+import com.jiayue.model.MusicList;
 import com.jiayue.model.UserUtil;
 import com.jiayue.service.ZipService;
 import com.jiayue.util.ActivityUtils;
@@ -103,6 +114,7 @@ public class BookAttachActivity extends BaseActivity implements OnRefreshListene
     AttachTwo attachTwo;
     DownloadManager downloadManager;
     List<AttachTwo> attachTwos;
+    long lastClick;
 
     private ListView listview;
     private final String TAG = getClass().getSimpleName();
@@ -377,6 +389,9 @@ public class BookAttachActivity extends BaseActivity implements OnRefreshListene
      */
     public void downLoadFile(String url, String saveName, String fileName) {
         String path = getPath(Preferences.FILE_DOWNLOAD_URL + url);
+        Log.i("BookSynActivity", "url=" + path);
+        Log.i("BookSynActivity", "saveName=" + saveName);
+        Log.i("BookSynActivity", "fileName=" + fileName);
         if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
             Intent intent = new Intent(this, TestService.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -659,11 +674,15 @@ public class BookAttachActivity extends BaseActivity implements OnRefreshListene
                                 return;
                             }
                             ActivityUtils.showToast(BookAttachActivity.this, "加入同步列表");
-                            if (attachTwos.get(position).getAttachTwoType().endsWith("lrc")) {
+                            if (attachTwos.get(position).getAttachTwoType() != null && attachTwos.get(position).getAttachTwoType().endsWith("lrc")) {
                                 downLoadFile(attachTwos.get(position).getAttachTwoPath() + attachTwos.get(position).getAttachTwoSaveName(), attachTwos.get(position).getAttachTwoName() + "." + attachTwos
                                         .get(position).getAttachTwoType(), fujianName);
                             } else {
-                                downLoadFile(attachTwos.get(position).getAttachTwoPath() + attachTwos.get(position).getAttachTwoSaveName(), attachTwos.get(position).getAttachTwoSaveName(), fujianName);
+                                if (attachTwos.get(position).getAttachTwoIspackage() == 2) {
+                                    String url = attachTwos.get(position).getAttachTwoSaveName();
+                                    ActivityUtils.readURL(BookAttachActivity.this, bookId, url, false);
+                                } else
+                                    downLoadFile(attachTwos.get(position).getAttachTwoPath() + attachTwos.get(position).getAttachTwoSaveName(), attachTwos.get(position).getAttachTwoSaveName(), fujianName);
                             }
 //                                    dismissMyDialog();
 //                                }
@@ -757,14 +776,19 @@ public class BookAttachActivity extends BaseActivity implements OnRefreshListene
                                     unLock(position);
                                 } catch (Exception e) {
                                     // TODO Auto-generated catch block
-                                    e.printStackTrace();
+                                    DialogUtils.dismissMyDialog();
+//                                        Looper.prepare();
+                                    Toast.makeText(getApplication(), "文件损坏，请重新下载！", Toast.LENGTH_LONG).show();
+                                    ActivityUtils.deleteBookFormSD(bookId, attachTwos.get(position).getAttachTwoSaveName());
+                                    ActivityUtils.deleteBookFormSD(bookId, attachTwos.get(position).getAttachTwoSaveName() + ".zip");
+//
                                 }
                             }
                         }
                     }
                 }
             });
-            String type = attachTwos.get(position).getAttachTwoType();
+            final String type = attachTwos.get(position).getAttachTwoType();
             String saveName = attachTwos.get(position).getAttachTwoSaveName();
             // 设置书的封面
             ImageView iv = (ImageView) view.findViewById(R.id.iv_fujian);
@@ -774,17 +798,12 @@ public class BookAttachActivity extends BaseActivity implements OnRefreshListene
 
             DataBaseHelper helper = new DataBaseHelper(getBaseContext());
             List<DocInfo> infos = helper.getInfo2(bookId);
-            for (
-                    DocInfo docInfo : infos)
-
-            {
+            for (DocInfo docInfo : infos) {
                 if (fujianName.equals(docInfo.getBookName()) && saveName.equals(docInfo.getName())) {
                     getStateSetView(tv_download, docInfo);
                 }
             }
-            if (type != null && (type.equalsIgnoreCase("jpg") || type.equalsIgnoreCase("png") || type.equalsIgnoreCase("gif")))
-
-            {
+            if (type != null && (type.equalsIgnoreCase("jpg") || type.equalsIgnoreCase("png") || type.equalsIgnoreCase("gif"))) {
                 if (ActivityUtils.isExistByName(bookId, saveName)) {
                     ActivityUtils.unLock(bookId, saveName, "copy_" + saveName);
                     iv.setBackground(Drawable.createFromPath(ActivityUtils.getSDPath(bookId) + File.separator + "copy_" + saveName));
@@ -800,12 +819,11 @@ public class BookAttachActivity extends BaseActivity implements OnRefreshListene
                     iv.setBackgroundResource(ActivityUtils
                             .getFilePackageImageId(BookAttachActivity.this, attachTwos.get(position).getAttachTwoIspackage(), attachTwos.get(position).getAttachTwoType()));
                 }
-            } else
-
-            {
-                if (attachTwos.get(position).getAttachTwoType().equals("zip")) {
+            } else {
+                if (attachTwos.get(position).getAttachTwoType() != null && attachTwos.get(position).getAttachTwoType().equals("zip")) {
                     iv.setBackgroundResource(ActivityUtils.getFileImageId(BookAttachActivity.this, "html"));
                 } else {
+
                     iv.setBackgroundResource(ActivityUtils.getFileImageId(BookAttachActivity.this, attachTwos.get(position).getAttachTwoType()));
                     // android.view.ViewGroup.LayoutParams layoutParams =
                     // iv.getLayoutParams();
@@ -820,36 +838,337 @@ public class BookAttachActivity extends BaseActivity implements OnRefreshListene
 
             // 附件名称
             TextView tv_fujian = (TextView) view.findViewById(R.id.tv_fujian);
-            tv_fujian.setText(attachTwos.get(position).
+            tv_fujian.setText(attachTwos.get(position).getAttachTwoName());
 
-                    getAttachTwoName());
-            LinearLayout layout_download = (LinearLayout) view.findViewById(R.id.layout_download);
+            final LinearLayout layout_download = (LinearLayout) view.findViewById(R.id.layout_download);
             LinearLayout layout_buy = (LinearLayout) view.findViewById(R.id.layout_buy);
-            if (attachTwos.get(position).
-
-                    getIsPay() == 0)
-
-            {
-
-                layout_download.setVisibility(View.VISIBLE);
-                layout_buy.setVisibility(View.GONE);
-                // 修饰文件包
-                ImageView iv_point_fujian = (ImageView) view.findViewById(R.id.iv_point_fujian);
-                if (ActivityUtils.isExistByName(bookId, attachTwos.get(position).getAttachTwoSaveName()) || ActivityUtils.isExistByName(bookId, attachTwos.get(position).getAttachTwoName()) || ActivityUtils
-                        .isExistByName(bookId, new_name) || ActivityUtils.isExistByName(bookId, attachTwos.get(position).getAttachTwoName() + "." + attachTwos.get(position).getAttachTwoType())) {
-                    iv_point_fujian.setVisibility(View.GONE);
+            if (attachTwos.get(position).getIsPay() == 0) {
+                if ((ActivityUtils.isExistByName(bookId, attachTwos.get(position).getAttachTwoSaveName()) || ActivityUtils.isExistByName(bookId, attachTwos.get(position)
+                        .getAttachTwoName()) || ActivityUtils.isExistByName(bookId, new_name) || ActivityUtils.isExistByName(bookId, attachTwos.get(position).getAttachTwoName() + "." + attachTwos
+                        .get(position).getAttachTwoType()))) {
+                    tv_fujian.setTextColor(0xff36d5d3);
                 } else {
-                    iv_point_fujian.setVisibility(View.VISIBLE);
+                    tv_fujian.setTextColor(0xff333333);
                 }
-                // 设置是否可以分享
-                ImageView iv_share = (ImageView) view.findViewById(R.id.imageView1);
-                if (TextUtils.isEmpty(attachTwos.get(position).getShareUrl()) || attachTwos.get(position).getIsSendAtta2().equals("0"))
-                    iv_share.setVisibility(View.GONE);
-                else
-                    iv_share.setVisibility(View.VISIBLE);
-            } else
+                if (attachTwos.get(position).getAttachTwoIspackage() == 1 || type == null || TextUtils.isEmpty(type) || (type.equals("ulr") || type.equals("html"))) {
+                    layout_download.setVisibility(View.GONE);
+                } else {
+                    layout_download.setVisibility(View.VISIBLE);
+                }
+//                layout_download.setVisibility(View.VISIBLE);
+                layout_buy.setVisibility(View.GONE);
+                layout_download.setOnClickListener(new OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        final PopupWindow popupWindow = new PopupWindow(BookAttachActivity.this);
 
-            {
+                        View view = LayoutInflater.from(BookAttachActivity.this).inflate(R.layout.layout_popup_window_menu, null);
+
+                        //下载
+                        TextView menuItem1 = view.findViewById(R.id.tv_option1);
+                        menuItem1.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                if (System.currentTimeMillis() - lastClick <= 1000) {
+                                    Log.i("onclick", "您点击的太快了");
+                                    return;
+                                }
+                                if (attachTwos.get(position).getIsPay() == 1)
+                                    return;
+
+                                lastClick = System.currentTimeMillis();
+                                btn_lookjd.setVisibility(View.VISIBLE);
+
+                                new_name = attachTwos.get(position).getAttachTwoName();
+                                if (new_name.startsWith("图")) {
+                                    new_name = new_name.replace("图", "pic");
+                                }
+                                if (!ActivityUtils.isExistByName(bookId, attachTwos.get(position).getAttachTwoSaveName()) && !ActivityUtils.isExistByName(bookId, attachTwos.get(position).getAttachTwoName()) && !ActivityUtils
+                                        .isExistByName(bookId, new_name) && !ActivityUtils.isExistByName(bookId, attachTwos.get(position).getAttachTwoName() + "." + attachTwos.get(position).getAttachTwoType())) {
+                                    if (!ActivityUtils.NetSwitch(BookAttachActivity.this, Boolean.parseBoolean(SPUtility.getSPString(BookAttachActivity.this, "switchKey")))) {
+                                        ActivityUtils.showToastForFail(BookAttachActivity.this, "请在有WIFI的情况下下载");
+                                        return;
+                                    }
+                                    if (TextUtils.isEmpty(attachTwos.get(position).getShareUrl()) || attachTwos.get(position).getIsSendAtta2().equals("0")) {
+//                            DialogUtils.showMyDialog(BookAttachActivity.this, MyPreferences.SHOW_CONFIRM_DIALOG, "文件同步", "该文件未同步，是否开始同步？", new OnClickListener() {
+//                                @Override
+//                                public void onClick(View v) {
+                                        Boolean isAllGranted = checkPermissionAllGranted(myPermissions);
+                                        if (!isAllGranted) {
+                                            openAppDetails();
+                                            return;
+                                        }
+                                        ActivityUtils.showToast(BookAttachActivity.this, "加入同步列表");
+                                        if (attachTwos.get(position).getAttachTwoType() != null && attachTwos.get(position).getAttachTwoType().endsWith("lrc")) {
+                                            downLoadFile(attachTwos.get(position).getAttachTwoPath() + attachTwos.get(position).getAttachTwoSaveName(), attachTwos.get(position).getAttachTwoName() + "." + attachTwos
+                                                    .get(position).getAttachTwoType(), fujianName);
+                                        } else {
+                                            if (attachTwos.get(position).getAttachTwoIspackage() == 2) {
+                                                String url = attachTwos.get(position).getAttachTwoSaveName();
+                                                ActivityUtils.readURL(BookAttachActivity.this, bookId, url, false);
+                                            } else
+                                                downLoadFile(attachTwos.get(position).getAttachTwoPath() + attachTwos.get(position).getAttachTwoSaveName(), attachTwos.get(position).getAttachTwoSaveName(), fujianName);
+                                        }
+//                                    dismissMyDialog();
+//                                }
+//                            });
+                                    } else {
+                                        // String s1 = "暂不支持%s格式文件，";
+                                        // String s3 = String.format(s1,
+                                        // attachTwos.get(position).getAttachTwoType());
+                                        // SpannableString s4 = new
+                                        // SpannableString("可下载用其他应用打开或返回长按文件分享至电脑打开。");
+                                        // s4.setSpan(new ForegroundColorSpan(Color.BLUE),
+                                        // 0, 3, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
+
+                                        String content = "长按此文件可分享给您的好友，是否开始同步？";
+                                        DialogUtils.showMyDialog(BookAttachActivity.this, MyPreferences.SHOW_CONFIRM_DIALOG, "分享&同步", content, new OnClickListener() {
+                                            @Override
+                                            public void onClick(View v) {
+                                                ActivityUtils.showToast(BookAttachActivity.this, "加入同步列表");
+                                                if (attachTwos.get(position).getAttachTwoType().endsWith("lrc")) {
+                                                    downLoadFile(attachTwos.get(position).getAttachTwoPath() + attachTwos.get(position).getAttachTwoSaveName(), attachTwos.get(position).getAttachTwoName() + "." + attachTwos
+                                                            .get(position).getAttachTwoType(), fujianName);
+                                                } else {
+                                                    downLoadFile(attachTwos.get(position).getAttachTwoPath() + attachTwos.get(position).getAttachTwoSaveName(), attachTwos.get(position).getAttachTwoSaveName(), fujianName);
+                                                }
+                                                dismissMyDialog();
+                                            }
+                                        });
+                                    }
+
+                                } else {
+                                    DataBaseHelper helper = new DataBaseHelper(getBaseContext());
+                                    List<DocInfo> infos = helper.getInfo2(bookId);
+//                        if (info != null) {
+//
+//                            if (fujianName.equals(info.getBookName())) {
+//                                if (info.getStatus() == DataBaseFiledParams.LOADING) {
+//                                    downloadManager.pause(info);
+//                                    info.setStatus(DataBaseFiledParams.PAUSING);
+//                                } else if (info.getStatus() == DataBaseFiledParams.PAUSING) {
+//                                    downloadManager.startForActivity(info);
+//                                    info.setStatus(DataBaseFiledParams.LOADING);
+//                                }
+//                            }
+//
+//                        }
+                                    for (DocInfo docInfo : infos) {
+                                        if (fujianName.equals(docInfo.getBookName())) {
+                                            if (docInfo.getStatus() == DataBaseFiledParams.LOADING) {
+                                                docInfo.setStatus(DataBaseFiledParams.PAUSING);
+                                                downloadManager.pause(docInfo);
+                                            } else if (docInfo.getStatus() == DataBaseFiledParams.PAUSING) {
+                                                docInfo.setStatus(DataBaseFiledParams.LOADING);
+                                                downloadManager.startForActivity(docInfo);
+                                            } else if (docInfo.getStatus() == DataBaseFiledParams.WAITING) {
+                                                docInfo.setStatus(DataBaseFiledParams.LOADING);
+                                                downloadManager.startForActivity(docInfo);
+                                            } else if (docInfo.getStatus() == DataBaseFiledParams.FAILED) {
+                                                docInfo.setStatus(DataBaseFiledParams.LOADING);
+                                                downloadManager.startForActivity(docInfo);
+                                            }
+                                        }
+                                    }
+
+                                    adapter.notifyDataSetChanged();
+
+                                    // 文件是否正在同步
+                                    if (downloadManager.isDownloading(attachTwos.get(position))) {
+                                        ActivityUtils.showToast(BookAttachActivity.this, "该文件正在同步请稍后。");
+                                    } else {
+                                        ActivityUtils.showToast(BookAttachActivity.this, "该文件已经下载完毕，点击条目即可打开使用。");
+                                    }
+
+                                }
+                                popupWindow.dismiss();
+                            }
+                        });
+
+                        //分享
+                        TextView menuItem2 = view.findViewById(R.id.tv_option2);
+                        menuItem2.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                tv_header_title.setText(attachTwos.get(position).getAttachTwoName());
+                                if (TextUtils.isEmpty(attachTwos.get(position).getShareUrl()) || attachTwos.get(position).getIsSendAtta2().equals("0")) {
+                                    ActivityUtils.showToastForFail(BookAttachActivity.this, "此文件不能分享！");
+
+                                } else {
+                                    DialogUtils.showMyDialog(BookAttachActivity.this, MyPreferences.SHOW_CONFIRM_DIALOG, attachTwos.get(position).getAttachTwoName(), "您要分享此文件给好友吗？", new OnClickListener() {
+                                        @Override
+                                        public void onClick(View v) {
+                                            dismissMyDialog();
+                                            // ActivityUtils.ShareLink(BookAttachActivity.this,
+                                            // attachTwos.get(position).getShareUrl());
+
+                                            UMWeb web = new UMWeb(attachTwos.get(position).getShareUrl());
+                                            web.setTitle(attachTwos.get(position).getAttachTwoName());// 标题
+                                            int ic_id = getResources().getIdentifier("ic_launcher", "drawable", getPackageName());
+                                            UMImage thumb = new UMImage(BookAttachActivity.this, ic_id);
+                                            thumb.compressStyle = UMImage.CompressStyle.SCALE;// 大小压缩，默认为大小压缩，适合普通很大的图
+                                            thumb.compressStyle = UMImage.CompressStyle.QUALITY;// 质量压缩，适合长图的分享
+                                            thumb.compressFormat = Bitmap.CompressFormat.PNG;// 用户分享透明背景的图片可以设置这种方式，但是qq好友，微信朋友圈，不支持透明背景图片，会变成黑色
+                                            web.setThumb(thumb); // 缩略图
+                                            web.setDescription("(分享来自加阅)");// 描述
+
+                                            new ShareAction(BookAttachActivity.this).withText("")
+                                                    .setDisplayList(SHARE_MEDIA.WEIXIN, SHARE_MEDIA.WEIXIN_CIRCLE, SHARE_MEDIA.WEIXIN_FAVORITE, SHARE_MEDIA.QQ, SHARE_MEDIA.QZONE, SHARE_MEDIA.SINA).withMedia(web)
+                                                    .setCallback(umShareListener).open();
+                                        }
+                                    });
+                                }
+//                                Toast.makeText(context, "Option 2", Toast.LENGTH_SHORT).show();
+                                popupWindow.dismiss();
+                            }
+                        });
+
+                        //删除
+                        TextView menuItem3 = view.findViewById(R.id.tv_option3);
+                        menuItem3.setOnClickListener(new View.OnClickListener() {
+                            @SuppressLint("DefaultLocale")
+                            @Override
+                            public void onClick(View view) {
+                                DialogUtils.showMyDialog(BookAttachActivity.this, MyPreferences.SHOW_BUY_DIALOG, "删除文件", String.format("确定要删除文件\"%s\"吗？", attachTwos.get(position).getAttachTwoName()), new OnClickListener() {
+
+                                    @Override
+                                    public void onClick(View v) {
+                                        // TODO Auto-generated method stub
+                                        DialogUtils.dismissMyDialog();
+                                        ActivityUtils.deleteBookFormSD(bookId, attachTwos.get(position).getAttachTwoSaveName());
+                                        ActivityUtils.deleteBookFormSD(bookId, attachTwos.get(position).getAttachTwoSaveName() + ".zip");
+                                        ActivityUtils.showToastForFail(BookAttachActivity.this, String.format("文件\"%s\"删除完毕！", attachTwos.get(position).getAttachTwoName()));
+                                    }
+
+                                });
+
+                                popupWindow.dismiss();
+                            }
+                        });
+
+                        //加入歌单
+                        TextView menuItem4 = view.findViewById(R.id.tv_option4);
+                        menuItem4.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                List<MusicList> musicLists = null;
+                                final DbManager db = MyDbUtils.getMusicDb(BookAttachActivity.this);
+                                try {
+                                    musicLists = db.findAll(MusicList.class);
+                                } catch (DbException e) {
+                                    e.printStackTrace();
+                                }
+                                if (musicLists == null || musicLists.size() == 0) {
+                                    ActivityUtils.showToast(BookAttachActivity.this, "您还没有创建歌单!");
+                                    return;
+                                }
+                                final MusicListAdapter2 musicListAdapter = new MusicListAdapter2(musicLists, BookAttachActivity.this, R.layout.item_music_list, false);
+                                final ListView listView = new ListView(BookAttachActivity.this);
+                                listView.setPadding(60, 96, 60, 96);
+                                listView.setAdapter(musicListAdapter);
+                                final androidx.appcompat.app.AlertDialog alertDialog = new androidx.appcompat.app.AlertDialog.Builder(BookAttachActivity.this).setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        dialog.dismiss();
+                                    }
+                                }).create();
+
+                                final List<MusicList> finalMusicLists = musicLists;
+                                listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                                    @Override
+                                    public void onItemClick(AdapterView<?> parent, View view, final int position1, long id) {
+                                        new androidx.appcompat.app.AlertDialog.Builder(BookAttachActivity.this)
+                                                .setIcon(android.R.drawable.ic_dialog_info)
+                                                .setTitle("加入歌单")
+                                                .setMessage(String.format("您是否将%s加入到%s歌单中？", attachTwos.get(position).getAttachTwoName(), finalMusicLists.get(position1).getName()))
+                                                .setPositiveButton("确认", new DialogInterface.OnClickListener() {
+                                                    @Override
+                                                    public void onClick(DialogInterface dialog, int which) {
+                                                        finalMusicLists.get(position1).setMusic_num(finalMusicLists.get(position1).getMusic_num() + 1);
+                                                        try {
+                                                            db.update(finalMusicLists);
+                                                        } catch (DbException e) {
+                                                            e.printStackTrace();
+                                                        }
+                                                        musicListAdapter.notifyDataSetChanged();
+                                                        MusicListBean musicListBean = new MusicListBean();
+                                                        musicListBean.setList_id(finalMusicLists.get(position1).getId());
+                                                        musicListBean.setList_name(finalMusicLists.get(position1).getName());
+                                                        musicListBean.setMusic_name(attachTwos.get(position).getAttachTwoName());
+                                                        musicListBean.setNow_path(ActivityUtils.getSDPath(bookId) + File.separator + "copy_" + attachTwos.get(position).getAttachTwoSaveName());
+                                                        musicListBean.setOld_path(attachTwos.get(position).getAttachTwoPath() + attachTwos.get(position).getAttachTwoSaveName());
+                                                        musicListBean.setBook_id(bookId);
+                                                        musicListBean.setSave_name(attachTwos.get(position).getAttachTwoSaveName());
+                                                        try {
+                                                            db.save(musicListBean);
+                                                        } catch (DbException e) {
+                                                            e.printStackTrace();
+                                                        }
+
+
+                                                        alertDialog.dismiss();
+                                                        dialog.dismiss();
+                                                    }
+                                                }).setNegativeButton("取消", null).create().show();
+                                    }
+                                });
+                                alertDialog.setView(listView);
+                                alertDialog.setTitle("收藏到歌单");
+                                alertDialog.show();
+
+                                popupWindow.dismiss();
+                            }
+                        });
+
+                        popupWindow.setContentView(view);
+                        popupWindow.setWidth(250);
+                        popupWindow.setHeight(WindowManager.LayoutParams.WRAP_CONTENT);
+                        popupWindow.setTouchable(true);
+                        popupWindow.setOutsideTouchable(true);
+                        popupWindow.showAsDropDown(v);
+                        if (!popupWindow.isShowing()) {
+                            popupWindow.showAtLocation(layout_download, Gravity.CENTER, 0, 0);
+                        }
+                        if (attachTwos.get(position).getAttachTwoIspackage() == 0) {
+                            if ((ActivityUtils.isExistByName(bookId, attachTwos.get(position).getAttachTwoSaveName()) || ActivityUtils.isExistByName(bookId, attachTwos.get(position)
+                                    .getAttachTwoName()) || ActivityUtils.isExistByName(bookId, new_name) || ActivityUtils.isExistByName(bookId, attachTwos.get(position).getAttachTwoName() + "." + attachTwos
+                                    .get(position).getAttachTwoType()))) {
+                                menuItem1.setVisibility(View.GONE);
+                                menuItem3.setVisibility(View.VISIBLE);
+                            } else {
+                                menuItem1.setVisibility(View.VISIBLE);
+                                menuItem3.setVisibility(View.GONE);
+                            }
+                        } else {
+                            menuItem1.setVisibility(View.GONE);
+                            menuItem3.setVisibility(View.GONE);
+                        }
+                        if (TextUtils.isEmpty(attachTwos.get(position).getShareUrl()) || attachTwos.get(position).getIsSendAtta2().equals("0"))
+                            menuItem2.setVisibility(View.GONE);
+                        else
+                            menuItem2.setVisibility(View.VISIBLE);
+                        if (type != null && (type.equalsIgnoreCase("mp3") | type.equalsIgnoreCase("wav")))
+                            menuItem4.setVisibility(View.VISIBLE);
+                        else
+                            menuItem4.setVisibility(View.GONE);
+                    }
+                });
+
+                // 修饰文件包
+//                ImageView iv_point_fujian = (ImageView) view.findViewById(R.id.iv_point_fujian);
+//                if (ActivityUtils.isExistByName(bookId, attachTwos.get(position).getAttachTwoSaveName()) || ActivityUtils.isExistByName(bookId, attachTwos.get(position).getAttachTwoName()) || ActivityUtils
+//                        .isExistByName(bookId, new_name) || ActivityUtils.isExistByName(bookId, attachTwos.get(position).getAttachTwoName() + "." + attachTwos.get(position).getAttachTwoType())) {
+//                    iv_point_fujian.setVisibility(View.INVISIBLE);
+//                } else {
+//                    iv_point_fujian.setVisibility(View.VISIBLE);
+//                }
+                // 设置是否可以分享
+//                ImageView iv_share = (ImageView) view.findViewById(R.id.imageView1);
+//                if (TextUtils.isEmpty(attachTwos.get(position).getShareUrl()) || attachTwos.get(position).getIsSendAtta2().equals("0"))
+//                    iv_share.setVisibility(View.GONE);
+//                else
+//                    iv_share.setVisibility(View.VISIBLE);
+            } else {
                 layout_download.setVisibility(View.GONE);
                 layout_buy.setVisibility(View.VISIBLE);
                 layout_buy.setOnClickListener(new OnClickListener() {
@@ -1220,7 +1539,7 @@ public class BookAttachActivity extends BaseActivity implements OnRefreshListene
     private void unLock(final int position) throws Exception {
         showWaitDialog("正在加载中，请稍后...");
         if (attachTwos.get(position).getAttachTwoType().equalsIgnoreCase("mp3")
-        /* ||attachTwos.get(position).getAttachTwoType().equalsIgnoreCase("wav") */) {
+            /* ||attachTwos.get(position).getAttachTwoType().equalsIgnoreCase("wav") */) {
             List<AttachTwo> list_mp3 = new ArrayList<AttachTwo>();// 同目录下全部MP3文件
             for (AttachTwo bean : attachTwos) {
                 if (bean.getAttachTwoType() != null && bean.getAttachTwoType().equalsIgnoreCase("mp3") || bean.getAttachTwoType().equalsIgnoreCase("wav"))
@@ -1253,17 +1572,21 @@ public class BookAttachActivity extends BaseActivity implements OnRefreshListene
                             if (list_down.get(i).getAttachTwoId().equals(attachTwos.get(position).getAttachTwoId())) {// 确认位置
                                 index = i;
                             }
-                            ActivityUtils.unLock(bookId, list_down.get(i).getAttachTwoSaveName(), "copy_" + list_down.get(i).getAttachTwoSaveName());
-                            AudioItem item = new AudioItem();
-                            item.setData(ActivityUtils.getSDPath(bookId) + File.separator + "copy_" + list_down.get(i).getAttachTwoSaveName());
-                            item.setTitle(list_down.get(i).getAttachTwoName());
-                            list_result.add(item);
+
                         }
+                        ActivityUtils.unLock(bookId, list_down.get(index).getAttachTwoSaveName(), "copy_" + list_down.get(index).getAttachTwoSaveName());
+                        AudioItem item = new AudioItem();
+                        item.setData(ActivityUtils.getSDPath(bookId) + File.separator + "copy_" + list_down.get(index).getAttachTwoSaveName());
+                        item.setOldData(list_down.get(index).getAttachTwoPath() + list_down.get(index).getAttachTwoSaveName());
+                        item.setBookId(bookId);
+                        item.setTitle(list_down.get(index).getAttachTwoName());
+                        item.setArtist(list_down.get(index).getAttachTwoSaveName());
+                        list_result.add(item);
                         Message msg = new Message();
                         msg.what = CMD_MP3;
                         Bundle bundle = new Bundle();
                         bundle.putParcelableArrayList("list", list_result);
-                        bundle.putInt("index", index);
+                        bundle.putInt("index", 0);
                         bundle.putString("bookId", bookId);
                         msg.setData(bundle);
                         mHandler.sendMessage(msg);

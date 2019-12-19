@@ -54,13 +54,9 @@ public class MusicUtils {
 	 * @return
 	 */
 	public boolean isNetUri(Uri uri){
-		boolean result = false;
-		if (uri != null && uri.toString().contains("http")
+		return uri != null && uri.toString().contains("http")
 				|| uri.toString().contains("mms")||
-				uri.toString().contains("rtps")){
-			result = true;
-		}
-		return result;
+				uri.toString().contains("rtps");
 		
 	}
 }

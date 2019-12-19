@@ -2,11 +2,14 @@ package com.jiayue;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.Window;
+import android.webkit.DownloadListener;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -72,39 +75,59 @@ public class BrowerActivity extends BaseActivity {
 			tv_header_title.setText("商城");
 		}
 		int wv_brower = getResources().getIdentifier("wv_brower", "id", getPackageName());
-		mWebView = (ProgressWebview) findViewById(wv_brower);
+		mWebView = (ProgressWebview) findViewById(R.id.wv_brower);
 		WebSettings ws = mWebView.getSettings();
 
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+			ws.setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
+		}
 		ws.setJavaScriptEnabled(false);
 		ws.setAllowFileAccess(true);
 		ws.setAllowFileAccessFromFileURLs(true);
-		ws.setAllowUniversalAccessFromFileURLs(true);	
+		ws.setAllowUniversalAccessFromFileURLs(true);
 		// 是否允许缩放
 		ws.setBuiltInZoomControls(true);
 		ws.setSupportZoom(true);
-
+		ws.setDomStorageEnabled(true);
+//		mWebView.setDownloadListener(new DownloadListener() {
+//			@Override
+//			public void onDownloadStart(String url, String userAgent, String contentDisposition, String mimeType, long contentLength) {
+//				// TODO: 2017-5-6 处理下载事件
+//				Intent intent = new Intent(Intent.ACTION_VIEW);
+//				intent.addCategory(Intent.CATEGORY_BROWSABLE);
+//				intent.setData(Uri.parse(url));
+//				startActivity(intent);
+//			}
+//		});
 		mWebView.setWebViewClient(new WebViewClient() {
 			// 这个函数我们可以做很多操作，比如我们读取到某些特殊的URL，于是就可以不打开地址，取消这个操作，进行预先定义的其他操作，这对一个程序是非常必要的。
 			@Override
 			public boolean shouldOverrideUrlLoading(WebView view, String url) {
 				// TODO Auto-generated method stub
 				// 返回值是true的时候控制去WebView打开，为false调用系统浏览器或第三方浏览器
-//				Log.d(TAG, "url====" + url);
+				Log.d(TAG, "url====" + url);
 //				// ActivityUtils.showToast(JDWebViewActivity.this,
 //				// webView.getUrl().equals(URL)+url);
-//				if (model == MODEL_SHANGCHENG && !url.equals("http://www.pndoo.com/link_list.html")) {
-//					Log.d(TAG, "111111111111111111111====" + url);
-//					Intent intent = new Intent(BrowerActivity.this, BrowerActivity.class);
-//					intent.putExtra("filePath", url);
-//					intent.putExtra("model", BrowerActivity.MODEL_BROWSER);
-//					startActivity(intent);
-//					return true;
-//				}
+				if (model == MODEL_SHANGCHENG && !url.equals("http://www.pndoo.com/link_list.html")) {
+					Log.d(TAG, "111111111111111111111====" + url);
+					Intent intent = new Intent(BrowerActivity.this, BrowerActivity.class);
+					intent.putExtra("filePath", url);
+					intent.putExtra("model", BrowerActivity.MODEL_BROWSER);
+					startActivity(intent);
+					return true;
+				}else if (url.startsWith("http://www.pndoo.com/download")){
+					Intent intent = new Intent(Intent.ACTION_VIEW);
+					intent.addCategory(Intent.CATEGORY_BROWSABLE);
+					intent.setData(Uri.parse(url));
+					startActivity(intent);
+					return true;
+				}
 				return false;
 			}
 		});
-		
+
 		mWebView.loadUrl(filepath);
+
 	}
 
 	@Override

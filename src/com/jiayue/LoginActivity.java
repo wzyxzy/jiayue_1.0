@@ -17,9 +17,11 @@ import android.os.CountDownTimer;
 import android.os.Handler;
 import android.os.Message;
 import android.provider.Settings;
-import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
+
+import androidx.annotation.NonNull;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import android.util.Log;
@@ -45,6 +47,7 @@ import com.jiayue.dto.base.SmsBean;
 import com.jiayue.dto.base.UpdateBean;
 import com.jiayue.dto.base.UpdateBean.Data;
 import com.jiayue.util.ActivityUtils;
+import com.jiayue.util.AesUtil;
 import com.jiayue.util.DialogUtils;
 import com.jiayue.util.MyPreferences;
 import com.jiayue.util.SPUtility;
@@ -227,7 +230,10 @@ public class LoginActivity extends BaseActivity {
         // 本文主旨是讲解如果动态申请权限, 具体备份代码不再展示, 就假装备份一下
         TelephonyManager tm = (TelephonyManager) this.getSystemService(Context.TELEPHONY_SERVICE);
         try {
-            imei = tm.getDeviceId();
+            if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.P)
+                imei = tm.getDeviceId();
+            else
+                imei = getDeviceId();
         } catch (Exception e) {
             // TODO: handle exception
         }
@@ -238,6 +244,17 @@ public class LoginActivity extends BaseActivity {
             login(userName, userPwd);
         }
     }
+
+    /**
+     * 获取设备唯一标识符(Android 10)
+     *
+     * @return 唯一标识符
+     */
+    public String getDeviceId() {
+        return Settings.System.getString(
+                getContentResolver(), Settings.Secure.ANDROID_ID);
+    }
+
 
     /**
      * 打开 APP 的详情设置
@@ -340,6 +357,8 @@ public class LoginActivity extends BaseActivity {
                 java.lang.reflect.Type type = new TypeToken<UpdateBean>() {
                 }.getType();
                 UpdateBean bean = gson.fromJson(s, type);
+                SPUtility.putSPString(LoginActivity.this, "isUpdate", bean.getData().getIsUpdate());
+
                 if (bean != null && bean.getCode().equals("SUCCESS")) {
                     handler.sendMessage(handler.obtainMessage(2, bean.getData()));
                 } else {
@@ -388,7 +407,11 @@ public class LoginActivity extends BaseActivity {
         String username = SPUtility.getSPString(this, "username");
 
         // mIs_Register = getIntent().getBooleanExtra(IS_REGISTER, false);
-
+//        try {
+//            Log.e("aes", AesUtil.getInstance().decrypt(AesUtil.getInstance().encrypt("18010480093")));
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
     }
 
     @Override
@@ -626,8 +649,13 @@ public class LoginActivity extends BaseActivity {
         }
         if (!TextUtils.isEmpty(phone) && phone.matches(phoneMatcher)) {
 
-            RequestParams params = new RequestParams(Preferences.SEND_SMS);
-            params.addQueryStringParameter("phone", phone);
+            RequestParams params = new RequestParams(Preferences.SEND_SMS1);
+            try {
+                params.addQueryStringParameter("phone", AesUtil.getInstance().encrypt(phone));
+//                params.addQueryStringParameter("phone", phone);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
 
             ActivityUtils.showToast(LoginActivity.this, "正在发送中...");
             x.http().post(params, new Callback.CommonCallback<String>() {
@@ -642,7 +670,8 @@ public class LoginActivity extends BaseActivity {
                     if (bean != null && bean.getCode().equals("SUCCESS")) {
                         verifCode = bean.getData().getCheckCode();
                     } else {
-                        ActivityUtils.showToast(LoginActivity.this, "验证码获取失败");
+                        assert bean != null;
+                        ActivityUtils.showToast(LoginActivity.this, "验证码获取失败:" + bean.getCodeInfo());
                     }
                     time.start();
                 }

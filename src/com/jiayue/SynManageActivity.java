@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -121,6 +122,9 @@ public class SynManageActivity extends BaseActivity {
 		if (null != broadcastReciver) {
 			this.unregisterReceiver(broadcastReciver);
 		}
+
+//		String android_id = Settings.System.getString(
+//				getContentResolver(), Settings.Secure.ANDROID_ID);
 		setResult(1000);
 		super.onDestroy();
 	}

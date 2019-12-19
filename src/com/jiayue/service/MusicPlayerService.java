@@ -5,28 +5,47 @@ import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.Service;
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
 import android.media.MediaPlayer.OnErrorListener;
 import android.media.MediaPlayer.OnPreparedListener;
+import android.os.Bundle;
+import android.os.Environment;
 import android.os.IBinder;
 import android.os.RemoteException;
-import android.support.v4.app.NotificationCompat;
+
+import androidx.core.app.NotificationCompat;
+
+import android.text.TextUtils;
 import android.util.Log;
 import android.widget.RemoteViews;
 
+import com.jiayue.BookSynActivity;
 import com.jiayue.MediaPlayerActivity;
 import com.jiayue.R;
+import com.jiayue.constants.Preferences;
+import com.jiayue.download.TestService;
+import com.jiayue.download2.Utils.DownloadManager;
+import com.jiayue.download2.entity.DocInfo;
 import com.jiayue.dto.base.AudioItem;
+import com.jiayue.model.UserUtil;
 import com.jiayue.util.ActivityUtils;
-import com.skytree.epubtest.SPUtility;
+import com.jiayue.util.DialogUtils;
+import com.jiayue.util.FileUtil;
+import com.jiayue.util.MyPreferences;
+import com.jiayue.util.SPUtility;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
 import java.util.Random;
+import java.util.zip.ZipException;
 
 /**
  * 播放歌曲
@@ -43,6 +62,7 @@ public class MusicPlayerService extends Service {
     public static final String PREPARED_MESSAGE = "com.jiayue.PREPARED_MESSAGE";
     public static final String PREPARED_CLOSE = "com.jiayue.CLOSE";
     public static final String PREPARED_STATUSA = "com.jiayue.STATUSA";
+
     private IMusicPlayerService.Stub iBinder = new IMusicPlayerService.Stub() {
 
         MusicPlayerService playerService = MusicPlayerService.this;
@@ -226,6 +246,7 @@ public class MusicPlayerService extends Service {
         return "";
     }
 
+
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         // TODO Auto-generated method stub
@@ -260,6 +281,11 @@ public class MusicPlayerService extends Service {
         return super.onUnbind(intent);
     }
 
+    @Override
+    public void onRebind(Intent intent) {
+        super.onRebind(intent);
+    }
+
     /**
      * 判断当前是否真正播放音乐
      *
@@ -280,7 +306,9 @@ public class MusicPlayerService extends Service {
         super.onCreate();
         initData();
 
+
     }
+
 
     /**
      * 初始化数据
@@ -288,7 +316,14 @@ public class MusicPlayerService extends Service {
     private void initData() {
         sp = getSharedPreferences("config", MODE_PRIVATE);
         playMode = sp.getInt("playmode", REPEATE_NORMAL);
+
+
     }
+
+
+    /**
+     *
+     */
 
     public void stop() {
         if (mediaPlayer != null) {
@@ -302,9 +337,10 @@ public class MusicPlayerService extends Service {
     @Override
     public void onDestroy() {
         super.onDestroy();
+
         try {
             stop();
-            deleteAll();
+//            deleteAll();
         } catch (Exception e) {
             // TODO: handle exception
         }
@@ -373,6 +409,42 @@ public class MusicPlayerService extends Service {
         setCurrentPosition(position);
         currentAudio = new AudioItem();
         currentAudio.setData(audioLists.get(currentPosition).getData());
+        Log.d("audioaudioaudio", audioLists.get(currentPosition).getData());
+        currentAudio.setTitle(audioLists.get(currentPosition).getTitle());
+        if (!FileUtil.fileIsExists(audioLists.get(currentPosition).getData())) {
+            downloadAndUnlock();
+            pause();
+            return;
+        }
+        Log.d("audioaudioaudio", "audioLists.get(currentPosition).getData()==" + audioLists.get(currentPosition).getData() + "-------audioLists.get(currentPosition).getTitle()=" + audioLists
+                .get(currentPosition).getTitle());
+        // 释放资源
+        if (mediaPlayer != null) {
+            mediaPlayer.reset();
+        } else {
+            mediaPlayer = new MediaPlayer();
+        }
+        try {
+            if (currentAudio.getData() == null)
+                return;
+            mediaPlayer.setDataSource(currentAudio.getData());
+            mediaPlayer.setOnPreparedListener(mOnPreparedListener);
+            mediaPlayer.setOnCompletionListener(mOnCompletionListener);
+            mediaPlayer.setOnErrorListener(mOnErrorListener);
+            mediaPlayer.prepareAsync();
+
+        } catch (Exception e) {
+
+            e.printStackTrace();
+        }
+
+    }
+
+    private void openAudio() {
+        // path = SPUtility.getSPString(this, "mPath");
+        // bookName = SPUtility.getSPString(this, "mName");
+        currentAudio = new AudioItem();
+        currentAudio.setData(audioLists.get(currentPosition).getData());
         currentAudio.setTitle(audioLists.get(currentPosition).getTitle());
         Log.d("audioaudioaudio", "audioLists.get(currentPosition).getData()==" + audioLists.get(currentPosition).getData() + "-------audioLists.get(currentPosition).getTitle()=" + audioLists
                 .get(currentPosition).getTitle());
@@ -396,6 +468,48 @@ public class MusicPlayerService extends Service {
             e.printStackTrace();
         }
 
+    }
+
+    private void downloadAndUnlock() {
+        downLoadFile(audioLists.get(currentPosition).getOldData(), audioLists.get(currentPosition).getArtist(), audioLists.get(currentPosition).getTitle(), audioLists.get(currentPosition).getBookId());
+    }
+
+    /**
+     * 下载附件
+     *
+     * @param url      附件的服务器地址
+     * @param saveName 附件要保存的名字
+     * @param fileName 附件要现实的名字
+     */
+    public void downLoadFile(String url, String saveName, String fileName, String bookId) {
+
+        if (TextUtils.isEmpty(url)) {
+            ActivityUtils.showToast(MusicPlayerService.this, "扫码的音乐不能在这里下载，请扫码下载！");
+            next();
+            return;
+        }
+        ActivityUtils.showToast(MusicPlayerService.this, "正在下载音乐，请稍等！");
+//        DialogUtils.showMyDialog(this.getApplicationContext(), MyPreferences.SHOW_PROGRESS_DIALOG, null, "正在下载音乐，请稍等...", null);
+        String path = Preferences.FILE_DOWNLOAD_URL + url + "&userId=" + UserUtil.getInstance(this).getUserId() + "&bookId=" + bookId;
+        Log.i("BookSynActivity", "url=" + path);
+        Log.i("BookSynActivity", "saveName=" + saveName);
+        Log.i("BookSynActivity", "fileName=" + fileName);
+        if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
+            Intent intent = new Intent(this, TestService.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            Bundle bundle = new Bundle();
+            DocInfo d = new DocInfo();
+            d.setUrl(path);
+            d.setDirectoty(false);
+            d.setName(saveName);
+            d.setBookId(bookId);
+            d.setBookName(fileName);
+            bundle.putSerializable("info", d);
+            intent.putExtra("bundle", bundle);
+            startService(intent);
+        } else {
+            ActivityUtils.showToastForFail(MusicPlayerService.this, "未检测到SD卡,或未赋予应用存储权限");
+        }
     }
 
     private OnPreparedListener mOnPreparedListener = new OnPreparedListener() {
@@ -698,13 +812,14 @@ public class MusicPlayerService extends Service {
         if (playMode == MusicPlayerService.REPEATE_NORMAL) {
             // 顺序播放
             if (audioLists != null && audioLists.size() > 0) {
-                if (currentPosition != audioLists.size()) {
-                    if (isNormalEnd) {
-                        pause();
-                        notifyChange(PREPARED_STATUSA);
-                    } else
-                        openAudio(currentPosition);
-                }
+//                if (currentPosition != audioLists.size()) {
+//                    if (isNormalEnd) {
+//                        pause();
+//                        notifyChange(PREPARED_STATUSA);
+//                    } else
+//                        openAudio(currentPosition);
+//                }
+                openAudio(currentPosition);
             }
         } else if (playMode == MusicPlayerService.REPEATE_CURRENT) {
             // 单曲播放
@@ -736,8 +851,9 @@ public class MusicPlayerService extends Service {
                 currentPosition++;
                 // 屏蔽非法值
                 if (currentPosition > audioLists.size() - 1) {
-                    currentPosition--;
-                    isNormalEnd = true;
+//                    currentPosition--;
+//                    isNormalEnd = true;
+                    currentPosition = 0;
                 }
             }
         } else if (playMode == MusicPlayerService.REPEATE_CURRENT) {

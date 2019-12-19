@@ -32,7 +32,7 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="知阅"
+            android:text="知阅知乐"
             android:textColor="@color/tab_text_click"
             android:textSize="10dp"
         android:layout_marginTop="10dp"/>
@@ -63,7 +63,7 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="书架"
+            android:text="添加图书"
             android:textColor="@color/tab_text_normal"
             android:textSize="10dp"
             android:layout_marginTop="10dp"/>

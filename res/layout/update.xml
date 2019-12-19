@@ -4,16 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
-     <LinearLayout
+    <LinearLayout
         android:id="@+id/ll_title"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@color/background"
-        android:gravity="center" >
-
-        
+        android:gravity="center">
 
         <TextView
             android:id="@+id/tv_header_title"
@@ -24,8 +22,6 @@
             android:text="版本更新"
             android:textColor="#ffffff"
             android:textSize="18sp" />
-
-        
     </LinearLayout>
 
     <ScrollView
@@ -37,21 +33,21 @@
         android:fillViewport="true"
         android:gravity="center"
         android:measureAllChildren="true"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <LinearLayout
             android:id="@+id/ll_container"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <LinearLayout
                 android:id="@+id/ll_content"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -67,33 +63,90 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="25dp"
-                    android:text="已有新版本：wyst2.0" />
+                    android:text="已有新版本：2.0" />
 
-                <Button
-                    android:id="@+id/btn_update"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
                     android:layout_marginTop="35dp"
-                    android:background="@color/background"
-                    android:gravity="center"
-                    android:onClick="updateApp"
-                    android:text="立即更新"
-                    android:textColor="@color/white"
-                    android:textSize="20dp" />
+                    android:layout_marginRight="10dp">
 
-                <ProgressBar
-                    android:id="@+id/pb_syn"
-                    style="@style/myProgressBar"
+                    <Button
+                        android:id="@+id/btn_update"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/background"
+                        android:gravity="center"
+                        android:onClick="updateApp"
+                        android:text="立即更新"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/btn_cancel"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/background"
+                        android:gravity="center"
+                        android:onClick="cancelApp"
+                        android:text="取消更新"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+
+
+                <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="15dp"
-                    android:layout_marginBottom="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="50dp"
+                    android:text="更新内容"
+                    android:textColor="#333"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/update_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:textColor="#333"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_pb"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
                     android:layout_marginRight="10dp"
-                    android:max="100"
-                    android:progress="0"
-                    android:visibility="gone" />
+                    android:layout_marginBottom="5dp"
+                    android:visibility="gone">
+
+                    <ProgressBar
+                        android:id="@+id/pb_syn"
+                        style="@style/myProgressBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:max="100"
+                        android:progress="0" />
+
+                    <Button
+                        android:id="@+id/btn_plan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@null"
+                        android:text="" />
+                </RelativeLayout>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

@@ -9,6 +9,20 @@
         <item name="colorAccent">@color/background</item>
     </style>
 
+    <style name="MyTheme1" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="colorPrimary">@color/background</item>
+        <item name="colorPrimaryDark">@color/background</item>
+        <item name="colorAccent">@color/background</item>
+    </style>
+
+    <style name="MyTheme2" parent="Theme.AppCompat.Light">
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="colorPrimary">@color/background</item>
+        <item name="colorPrimaryDark">@color/background</item>
+        <item name="colorAccent">@color/background</item>
+    </style>
+
     <style name="AnimationActivity">
         <item name="android:activityOpenEnterAnimation">@anim/push_left_in</item>
         <item name="android:activityOpenExitAnimation">@anim/push_left_out</item>
@@ -32,8 +46,11 @@
     </style>
 
     <style name="MediaController_SeekBar" parent="android:Widget.SeekBar">
-        <item name="android:progressDrawable">@drawable/scrubber_progress_horizontal_holo_dark</item>
-        <item name="android:indeterminateDrawable">@drawable/scrubber_progress_horizontal_holo_dark</item>
+        <item name="android:progressDrawable">@drawable/scrubber_progress_horizontal_holo_dark
+        </item>
+        <item name="android:indeterminateDrawable">
+            @drawable/scrubber_progress_horizontal_holo_dark
+        </item>
         <item name="android:minHeight">13dip</item>
         <item name="android:maxHeight">13dip</item>
         <item name="android:thumb">@drawable/scrubber_control_selector_holo</item>
@@ -140,10 +157,10 @@
 
     <style name="mystyle" parent="android:Animation">
         <item name="@android:windowEnterAnimation">@anim/dialog_enter</item>
-  //进入时的动画   
+        //进入时的动画
         <item name="@android:windowExitAnimation">@anim/dialog_exit</item>
-    //退出时的动画   
-</style>
+        //退出时的动画
+    </style>
 
     <style name="Widget.DiscreteIndicatorTextAppearance" parent="android:TextAppearance.Small">
         <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
@@ -151,7 +168,8 @@
     </style>
 
     <style name="Widget.DiscreteSeekBar" parent="android:Widget">
-        <item name="dsb_indicatorTextAppearance">@style/Widget.DiscreteIndicatorTextAppearance</item>
+        <item name="dsb_indicatorTextAppearance">@style/Widget.DiscreteIndicatorTextAppearance
+        </item>
         <item name="dsb_progressColor">@color/dsb_progress_color_list</item>
         <item name="dsb_trackColor">@color/dsb_track_color_list</item>
         <item name="dsb_rippleColor">@color/dsb_ripple_color_list</item>
@@ -172,14 +190,14 @@
         <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
         <item name="android:gravity">center</item>
     </style>
-    
+
     <style name="MyAppTheme" parent="android:Theme.Holo">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
-        <item name="android:actionBarStyle">@style/MyActionBarTheme</item>   
+        <item name="android:actionBarStyle">@style/MyActionBarTheme</item>
     </style>
 
     <style name="MyActionBarTheme" parent="@android:style/Widget.Holo.ActionBar">
-         <item name="android:background">#C0000000</item> 
+        <item name="android:background">#C0000000</item>
     </style>
 
 </resources>

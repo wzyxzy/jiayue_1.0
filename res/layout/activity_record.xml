@@ -57,7 +57,7 @@
                 android:visibility="gone"/>
         </LinearLayout>
     </LinearLayout>
-    <android.support.v4.widget.SwipeRefreshLayout
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/refresh_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -72,5 +72,5 @@
         android:overScrollMode="never"
         android:scrollbars="none"
     />
-    </android.support.v4.widget.SwipeRefreshLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 </LinearLayout>

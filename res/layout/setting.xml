@@ -2,9 +2,47 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:background="@color/grey_new"
+    android:orientation="vertical">
 
-    <include layout="@layout/activity_no_return_title" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:text="帮助中心"
+            android:textColor="#eeeeee"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <TextView
+
+            android:id="@+id/tv_publishName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/music_click"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="16dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/music_right" />
+
+    </RelativeLayout>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -20,42 +58,45 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:layout_marginTop="20dp"
-                    android:background="@color/grey"/>
 
                 <LinearLayout
                     android:id="@+id/userManage"
                     android:layout_width="match_parent"
-                    android:layout_height="64dp"
+                    android:layout_height="116dp"
                     android:background="@color/white"
                     android:clickable="true"
                     android:focusable="true"
-                    android:gravity="center"
-                >
+                    android:gravity="center">
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="right|center_vertical"
-                        android:layout_marginLeft="22.67dp"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/default_img"
-                        android:visibility="visible"/>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/tv_username"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:layout_weight="2"
-                        android:background="@android:color/transparent"
-                        android:gravity="center_vertical"
-                        android:text="15888888888"
-                        android:textColor="#707070"
-                        android:textSize="18sp"/>
+                        <ImageView
+                            android:layout_width="52dp"
+                            android:layout_height="52dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/head"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/tv_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="2"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:text="15888888888"
+                            android:textColor="#333333"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -64,32 +105,26 @@
                         android:gravity="right"
                         android:text=""
                         android:textColor="@color/grey01"
-                        android:textSize="15dp"/>
+                        android:textSize="15dp" />
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="38dp"
+                        android:layout_marginRight="16dp"
                         android:gravity="right"
                         android:scaleType="fitXY"
-                        android:src="@drawable/setting_position"
-                        android:visibility="visible"/>
+                        android:src="@drawable/icon_set_07"
+                        android:visibility="visible" />
                 </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:layout_marginBottom="15dp"
-                    android:background="@color/grey"/>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:background="@color/grey"/>
+                    android:layout_height="10dp"
+                    android:background="@color/grey_new" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="64dp"
+                    android:layout_height="50dp"
                     android:background="@color/white"
                     android:clickable="true"
                     android:focusable="true"
@@ -100,21 +135,21 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right|center_vertical"
-                        android:layout_marginLeft="22.67dp"
+                        android:layout_marginLeft="16dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/setting_one"
-                        android:visibility="visible"/>
+                        android:src="@drawable/icon_set_11"
+                        android:visibility="visible" />
 
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="14dp"
                         android:layout_weight="2"
                         android:background="@android:color/transparent"
                         android:gravity="center_vertical"
                         android:text="3/4G网络下载"
-                        android:textColor="#707070"
-                        android:textSize="18sp"/>
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -123,34 +158,36 @@
                         android:gravity="right"
                         android:text=""
                         android:textColor="@color/grey01"
-                        android:textSize="15dp"/>
+                        android:textSize="15dp" />
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="2"
+                        android:layout_weight="0.8"
                         android:gravity="center"
                         android:orientation="horizontal">
 
                         <ToggleButton
                             android:id="@+id/online"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:background="@drawable/switch_button"
                             android:checked="true"
                             android:scaleType="fitXY"
                             android:textOff=""
-                            android:textOn=""/>
+                            android:textOn="" />
                     </LinearLayout>
                 </LinearLayout>
+
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:background="@color/grey"/>
+                    android:layout_height="10dp"
+                    android:background="@color/grey_new" />
+
                 <LinearLayout
                     android:id="@+id/myAccount"
                     android:layout_width="match_parent"
-                    android:layout_height="64dp"
+                    android:layout_height="50dp"
                     android:background="@color/white"
                     android:clickable="true"
                     android:focusable="true"
@@ -161,21 +198,22 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right|center_vertical"
-                        android:layout_marginLeft="27dp"
+                        android:layout_marginLeft="16dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/zhanghu"
-                        android:visibility="visible"/>
+                        android:src="@drawable/icon_set_14"
+                        android:visibility="visible" />
 
                     <TextView
                         android:id="@+id/textView22"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="22dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="14dp"
                         android:layout_weight="2"
                         android:background="@android:color/transparent"
                         android:gravity="center_vertical"
                         android:text="我的账户 　　"
-                        android:textColor="#707070" android:textSize="18sp"/>
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -184,12 +222,12 @@
                         android:gravity="right"
                         android:text=""
                         android:textColor="@color/grey01"
-                        android:textSize="15sp"/>
+                        android:textSize="15sp" />
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0.76"
+                        android:layout_weight="0.22"
                         android:orientation="horizontal">
 
                         <ImageView
@@ -197,18 +235,20 @@
                             android:layout_height="wrap_content"
                             android:gravity="right"
                             android:scaleType="fitXY"
-                            android:src="@drawable/setting_position"
-                            android:visibility="visible"/>
+                            android:src="@drawable/icon_set_07"
+                            android:visibility="visible" />
                     </LinearLayout>
                 </LinearLayout>
+
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:background="@color/grey"/>
+                    android:layout_height="10dp"
+                    android:background="@color/grey_new" />
+
                 <LinearLayout
                     android:id="@+id/synManage"
                     android:layout_width="match_parent"
-                    android:layout_height="64dp"
+                    android:layout_height="50dp"
                     android:background="@color/white"
                     android:clickable="true"
                     android:focusable="true"
@@ -219,21 +259,22 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right|center_vertical"
-                        android:layout_marginLeft="22.67dp"
+                        android:layout_marginLeft="16dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/setting_two"
-                        android:visibility="visible"/>
+                        android:src="@drawable/icon_set_16"
+                        android:visibility="visible" />
 
                     <TextView
                         android:id="@+id/textView21"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="14dp"
                         android:layout_weight="2"
                         android:background="@android:color/transparent"
                         android:gravity="center_vertical"
                         android:text="同步管理 　　"
-                        android:textColor="#707070" android:textSize="18sp"/>
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -242,12 +283,12 @@
                         android:gravity="right"
                         android:text=""
                         android:textColor="@color/grey01"
-                        android:textSize="15sp"/>
+                        android:textSize="15sp" />
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0.76"
+                        android:layout_weight="0.22"
                         android:orientation="horizontal">
 
                         <ImageView
@@ -255,20 +296,21 @@
                             android:layout_height="wrap_content"
                             android:gravity="right"
                             android:scaleType="fitXY"
-                            android:src="@drawable/setting_position"
-                            android:visibility="visible"/>
+                            android:src="@drawable/icon_set_07"
+                            android:visibility="visible" />
                     </LinearLayout>
                 </LinearLayout>
+
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:background="@color/grey"/>
+                    android:layout_height="1dp"
+                    android:background="@color/grey_new" />
 
 
                 <LinearLayout
                     android:id="@+id/clearCache"
                     android:layout_width="match_parent"
-                    android:layout_height="64dp"
+                    android:layout_height="50dp"
                     android:background="@color/white"
                     android:clickable="true"
                     android:focusable="true"
@@ -279,21 +321,21 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right|center_vertical"
-                        android:layout_marginLeft="22.67dp"
+                        android:layout_marginLeft="16dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/setting_three"
-                        android:visibility="visible"/>
+                        android:src="@drawable/icon_set_18"
+                        android:visibility="visible" />
 
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="14dp"
                         android:layout_weight="2"
                         android:background="@android:color/transparent"
                         android:gravity="center_vertical"
                         android:text="清空数据　　"
-                        android:textColor="#707070"
-                        android:textSize="18sp"/>
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -302,12 +344,12 @@
                         android:gravity="right"
                         android:text=""
                         android:textColor="@color/grey01"
-                        android:textSize="15dp"/>
+                        android:textSize="15dp" />
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0.76"
+                        android:layout_weight="0.22"
                         android:orientation="horizontal">
 
                         <ImageView
@@ -315,8 +357,8 @@
                             android:layout_height="wrap_content"
                             android:gravity="right"
                             android:scaleType="fitXY"
-                            android:src="@drawable/setting_position"
-                            android:visibility="visible"/>
+                            android:src="@drawable/icon_set_07"
+                            android:visibility="visible" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -330,7 +372,7 @@
                 <LinearLayout
                     android:id="@+id/onGoodsClick"
                     android:layout_width="match_parent"
-                    android:layout_height="64dp"
+                    android:layout_height="50dp"
                     android:background="@color/white"
                     android:clickable="true"
                     android:focusable="true"
@@ -342,21 +384,21 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right|center_vertical"
-                        android:layout_marginLeft="22.67dp"
+                        android:layout_marginLeft="16dp"
                         android:scaleType="fitXY"
                         android:src="@drawable/shopping_list"
-                        android:visibility="visible"/>
+                        android:visibility="visible" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginLeft="14dp"
                         android:layout_weight="2"
                         android:background="@android:color/transparent"
                         android:gravity="center_vertical"
                         android:text="购买清单 　　"
-                        android:textColor="#707070"
-                        android:textSize="18sp"/>
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -365,12 +407,12 @@
                         android:gravity="right"
                         android:text=""
                         android:textColor="@color/grey01"
-                        android:textSize="15sp"/>
+                        android:textSize="15sp" />
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0.76"
+                        android:layout_weight="0.22"
                         android:orientation="horizontal">
 
                         <ImageView
@@ -378,20 +420,20 @@
                             android:layout_height="wrap_content"
                             android:gravity="right"
                             android:scaleType="fitXY"
-                            android:src="@drawable/setting_position"
-                            android:visibility="visible"/>
+                            android:src="@drawable/icon_set_07"
+                            android:visibility="visible" />
                     </LinearLayout>
                 </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:background="@color/grey"/>
+                    android:layout_height="1dp"
+                    android:background="@color/grey_new" />
 
                 <LinearLayout
                     android:id="@+id/onBookClick"
                     android:layout_width="match_parent"
-                    android:layout_height="64dp"
+                    android:layout_height="50dp"
                     android:background="@color/white"
                     android:clickable="true"
                     android:focusable="true"
@@ -402,21 +444,21 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right|center_vertical"
-                        android:layout_marginLeft="27dp"
+                        android:layout_marginLeft="16dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/allbook"
-                        android:visibility="visible"/>
+                        android:src="@drawable/icon_set_20"
+                        android:visibility="visible" />
 
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="22dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="14dp"
                         android:layout_weight="2"
                         android:background="@android:color/transparent"
                         android:gravity="center_vertical"
                         android:text="全部书籍 　　"
-                        android:textColor="#707070"
-                        android:textSize="18sp"/>
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -425,12 +467,12 @@
                         android:gravity="right"
                         android:text=""
                         android:textColor="@color/grey01"
-                        android:textSize="15sp"/>
+                        android:textSize="15sp" />
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0.76"
+                        android:layout_weight="0.22"
                         android:orientation="horizontal">
 
                         <ImageView
@@ -438,20 +480,20 @@
                             android:layout_height="wrap_content"
                             android:gravity="right"
                             android:scaleType="fitXY"
-                            android:src="@drawable/setting_position"
-                            android:visibility="visible"/>
+                            android:src="@drawable/icon_set_07"
+                            android:visibility="visible" />
                     </LinearLayout>
                 </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:background="@color/grey"/>
+                    android:layout_height="1dp"
+                    android:background="@color/grey_new" />
 
                 <LinearLayout
                     android:id="@+id/onVipClick"
                     android:layout_width="match_parent"
-                    android:layout_height="64dp"
+                    android:layout_height="50dp"
                     android:background="@color/white"
                     android:clickable="true"
                     android:focusable="true"
@@ -462,21 +504,21 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right|center_vertical"
-                        android:layout_marginLeft="22.67dp"
+                        android:layout_marginLeft="16dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/card"
-                        android:visibility="visible"/>
+                        android:src="@drawable/icon_set_22"
+                        android:visibility="visible" />
 
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="14dp"
                         android:layout_weight="2"
                         android:background="@android:color/transparent"
                         android:gravity="center_vertical"
-                        android:text="资源获取 　　"
-                        android:textColor="#707070"
-                        android:textSize="18sp"/>
+                        android:text="资源码通道"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -485,12 +527,12 @@
                         android:gravity="right"
                         android:text=""
                         android:textColor="@color/grey01"
-                        android:textSize="15sp"/>
+                        android:textSize="15sp" />
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0.76"
+                        android:layout_weight="0.22"
                         android:orientation="horizontal">
 
                         <ImageView
@@ -498,15 +540,75 @@
                             android:layout_height="wrap_content"
                             android:gravity="right"
                             android:scaleType="fitXY"
-                            android:src="@drawable/setting_position"
-                            android:visibility="visible"/>
+                            android:src="@drawable/icon_set_07"
+                            android:visibility="visible" />
                     </LinearLayout>
                 </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:background="@color/grey"/>
+                    android:layout_height="1dp"
+                    android:background="@color/grey_new" />
+
+                <LinearLayout
+                    android:id="@+id/onFeedbackClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="16dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/send_message"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="14dp"
+                        android:layout_weight="2"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:text="意见反馈"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="right"
+                        android:text=""
+                        android:textColor="@color/grey01"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.22"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/icon_set_07"
+                            android:visibility="visible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/grey_new" />
 
                 <!--
         <LinearLayout
@@ -636,9 +738,9 @@
                 -->
 
                 <LinearLayout
-                    android:id="@+id/onFeedbackClick"
+                    android:id="@+id/checkUpdate"
                     android:layout_width="match_parent"
-                    android:layout_height="64dp"
+                    android:layout_height="50dp"
                     android:background="@color/white"
                     android:clickable="true"
                     android:focusable="true"
@@ -649,35 +751,37 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right|center_vertical"
-                        android:layout_marginLeft="22.67dp"
+                        android:layout_marginLeft="16dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/feedback"
-                        android:visibility="visible"/>
+                        android:src="@drawable/icon_set_24"
+                        android:visibility="visible" />
 
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:layout_weight="2"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="14dp"
                         android:background="@android:color/transparent"
                         android:gravity="center_vertical"
-                        android:text="意见反馈 　　"
-                        android:textColor="#707070"
-                        android:textSize="18sp"/>
+                        android:text="版本更新"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@android:color/transparent"
-                        android:gravity="right"
-                        android:text=""
-                        android:textColor="@color/grey01"
-                        android:textSize="15sp"/>
+                    <View
+                        android:id="@+id/update_red"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginLeft="6dp"
+                        android:background="@drawable/point_big" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.9" />
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0.76"
+                        android:layout_weight="0.22"
                         android:orientation="horizontal">
 
                         <ImageView
@@ -685,15 +789,15 @@
                             android:layout_height="wrap_content"
                             android:gravity="right"
                             android:scaleType="fitXY"
-                            android:src="@drawable/setting_position"
-                            android:visibility="visible"/>
+                            android:src="@drawable/icon_set_07"
+                            android:visibility="visible" />
                     </LinearLayout>
                 </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1px"
-                    android:background="@color/grey"/>
+                    android:layout_height="1dp"
+                    android:background="@color/grey_new" />
 
                 <Button
                     android:id="@+id/btnExitClick"
@@ -704,24 +808,24 @@
                     android:background="@color/background"
                     android:text="退出登录"
                     android:textColor="@color/white"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:orientation="vertical"
-            >
+                android:orientation="vertical">
+
                 <TextView
                     android:id="@+id/tv_version"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="55dp"
                     android:layout_marginTop="20dp"
+                    android:layout_marginBottom="55dp"
                     android:text="当前版本：1.0"
                     android:textColor="@color/grey"
-                    android:textSize="18sp"
-                />
+                    android:textSize="18sp" />
             </LinearLayout>
 
         </LinearLayout>

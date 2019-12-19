@@ -53,7 +53,9 @@ public class VideoPlayerActivity extends Activity {
 		if (SPUtility.getSPString(this, "isPlay").equals("true")) {
 			NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 			manager.cancel(MusicPlayerService.TYPE_Customer);
-			stopService(new Intent("com.jiayue.startservice"));
+			Intent mIntent = new Intent("com.jiayue.startservice");
+			mIntent.setPackage(getPackageName());
+			stopService(mIntent);
 		}
 		initView();
 		controller = new MediaController(this);

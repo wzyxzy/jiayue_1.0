@@ -37,5 +37,6 @@
     <item name="id_tag_autolayout_size" type="id"/>
     <item name="id_tag_autolayout_padding" type="id"/>
     <item name="id_tag_autolayout_margin" type="id"/>
+    <item name="first" type="id" />
 
 </resources>

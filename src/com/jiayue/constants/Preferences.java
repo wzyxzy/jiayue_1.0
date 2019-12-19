@@ -20,7 +20,8 @@ public class Preferences {
     //外网测试服务器
 //	public static final String BASE_URL_HTTP = "http://101.200.74.204:8080/pndoo_server";
     // 加阅正式服务器
-    public static final String BASE_URL_HTTP = "http://jiayue.pndoo.com:80/pndoo_server";
+    public static final String BASE_URL_HTTP = "http://jiayue.pndoo.com/pndoo_server";
+//    public static final String BASE_URL_HTTP = "http://123.57.188.218/pndoo_server";
 
 //	public static final String TEST_URL_HTTP ="http://123.57.188.218:8080/pndoo_server"; 
 
@@ -47,6 +48,7 @@ public class Preferences {
     public static final String VERISON_UPDATE_URL = BASE_URL_HTTP + "/login.json?_method=checkVersion";// 更新
     public static final String RESET_PASSWORD = BASE_URL_HTTP + "/user.json?_method=resetPwd";// 重置密码
     public static final String SEND_SMS = BASE_URL_HTTP + "/message.json?_method=message";// 发送短信
+    public static final String SEND_SMS1 = BASE_URL_HTTP + "/message.json?_method=sendMessage";// 发送短信
     public static final String AUTHOR_COMMENT = BASE_URL_HTTP + "/comment.json?_method=communicate";// 与作者或读者沟通接口
     public static final String AUTHOR_POST_QUESTION = BASE_URL_HTTP + "/comment.json?_method=postQuestion";// 与作者沟通中的发表问题
     public static final String AUTHOR_POST_LIST = BASE_URL_HTTP + "/comment.json?_method=getMainSubContents";// 与作者，读者沟通的列表接口
@@ -98,6 +100,7 @@ public class Preferences {
     public static final String LIVE_JUDGE = BASE_URL_HTTP + "/book.json?_method=judgeLiveStatus";
     public static final String BOOK_BACK = BASE_URL_HTTP + "/book.json?_method=recoverDelBook";
     public static final String BOOK_IAMGE_DOWNLOAD = BASE_URL_HTTP + "/book.json?_method=getBookSiftDetail";
+    public static final String BOOK_LIST_SORT = BASE_URL_HTTP + "/book.json?_method=sortBookShelf";
     public static final String TEST = BASE_URL_HTTP + "/jobsubmission.json?_method=commitJobsubmission";
     public static final String GET_ATTACHORDER = BASE_URL_HTTP + "/attachorder.json?_method=addAttachOrder";
     public static final String ATTACHORDER_RECORD = BASE_URL_HTTP + "/attachorder.json?_method=AttachOrderRecord";

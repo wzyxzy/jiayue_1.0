@@ -9,7 +9,7 @@
     <include layout="@layout/activity_my_title" />
 
 
-        <android.support.v4.widget.SwipeRefreshLayout
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
             android:id="@+id/refresh_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
@@ -22,7 +22,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:cacheColorHint="@color/transparent"
-                    android:divider="@color/line"
+                    android:divider="#e5e5e5"
                     android:dividerHeight="1dp"
                     android:listSelector="@color/transparent"
                     android:overScrollMode="never"
@@ -30,7 +30,7 @@
                 >
                 </ListView>
 
-        </android.support.v4.widget.SwipeRefreshLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 
 </LinearLayout>
