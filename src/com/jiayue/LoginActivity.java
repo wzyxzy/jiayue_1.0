@@ -110,7 +110,7 @@ public class LoginActivity extends BaseActivity {
                                 Bundle bundle = new Bundle();
                                 bundle.putSerializable("update", update);
                                 intent.putExtras(bundle);
-                                startActivity(intent);
+                                startActivityForResult(intent, 111);
 
                             } else {
                                 ActivityUtils.showToastForFail(LoginActivity.this, "请连接WIFI后进行更新~");
@@ -255,13 +255,20 @@ public class LoginActivity extends BaseActivity {
                 getContentResolver(), Settings.Secure.ANDROID_ID);
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 111 && resultCode == 222)
+            doLogin();
+
+    }
 
     /**
      * 打开 APP 的详情设置
      */
     private void openAppDetails() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("加阅需要访问 “位置” 、 “外部存储器”和“读取本机识别码”权限，请到 “设置 -> 应用权限” 中授予！");
+        builder.setMessage("M+Book需要访问 “位置” 、 “外部存储器”和“读取本机识别码”权限，请到 “设置 -> 应用权限” 中授予！");
         builder.setPositiveButton("去手动授权", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -317,7 +324,7 @@ public class LoginActivity extends BaseActivity {
                     }
                 });
             } catch (Exception e) {
-                handler.sendMessage(handler.obtainMessage(-1));
+                handler.obtainMessage(-1).sendToTarget();
             }
         }
 
@@ -354,13 +361,14 @@ public class LoginActivity extends BaseActivity {
             public void onSuccess(String s) {
                 Log.d(TAG, "getVerisonUpdate=========" + s);
                 Gson gson = new Gson();
-                java.lang.reflect.Type type = new TypeToken<UpdateBean>() {
-                }.getType();
-                UpdateBean bean = gson.fromJson(s, type);
+                UpdateBean bean = gson.fromJson(s, UpdateBean.class);
                 SPUtility.putSPString(LoginActivity.this, "isUpdate", bean.getData().getIsUpdate());
 
                 if (bean != null && bean.getCode().equals("SUCCESS")) {
-                    handler.sendMessage(handler.obtainMessage(2, bean.getData()));
+                    if (TextUtils.isEmpty(bean.getData().getUrl()) || bean.getData().getUrl().equalsIgnoreCase(SPUtility.getSPString(LoginActivity.this, "noRemind")))
+                        doLogin();
+                    else
+                        handler.obtainMessage(2, bean.getData()).sendToTarget();
                 } else {
                     doLogin();
                 }
@@ -591,7 +599,7 @@ public class LoginActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                if (editText.getText().toString().trim().equals(verifCode)) {
+//                if (editText.getText().toString().trim().equals(verifCode)) {
                     RequestParams params = new RequestParams(Preferences.JIESUO);
                     params.addQueryStringParameter("userName", et_username.getText().toString().trim());
 
@@ -628,9 +636,10 @@ public class LoginActivity extends BaseActivity {
 
                         }
                     });
-                } else {
-                    ActivityUtils.showToast(LoginActivity.this, "验证码错误");
-                }
+//                } else {
+//
+//                    ActivityUtils.showToast(LoginActivity.this, "验证码错误");
+//                }
             }
         });
         button.setOnClickListener(new View.OnClickListener() {

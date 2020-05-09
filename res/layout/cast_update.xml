@@ -99,13 +99,24 @@
 
                 </LinearLayout>
 
+                <TextView
+                    android:id="@+id/no_remind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:onClick="noRemind"
+                    android:text="不再提醒"
+                    android:textColor="#333"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
 
                 <TextView
                     android:id="@+id/content_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="50dp"
+                    android:layout_marginTop="40dp"
                     android:text="更新内容"
                     android:textColor="#333"
                     android:textSize="16sp" />

@@ -31,6 +31,7 @@ import com.jiayue.download.DownloadProgressListener;
 import com.jiayue.download.FileDownloader;
 import com.jiayue.dto.base.UpdateBean.Data;
 import com.jiayue.util.ActivityUtils;
+import com.jiayue.util.SPUtility;
 import com.jiayue.util.UpdateInfo;
 
 import java.io.File;
@@ -52,6 +53,7 @@ public class CastUpdateActivity extends BaseActivity {
     RelativeLayout rl_pb;
     Button btn_plan;
     TextView update_info;
+    TextView no_remind;
     boolean needUpdate;
     Button btn_cancel;
     Handler handler = new Handler() {
@@ -59,12 +61,12 @@ public class CastUpdateActivity extends BaseActivity {
             switch (msg.what) {
                 case 0:
                     addContent();
-                    tv_updateInfo.setText("当前已是最新版本:加阅知乐" + client_version);
+                    tv_updateInfo.setText("当前已是最新版本:M+Book" + client_version);
                     btn_update.setVisibility(View.GONE);
                     break;
                 case 1:
                     addContent();
-                    tv_updateInfo.setText("已有新版本：加阅知乐" + "");
+                    tv_updateInfo.setText("已有新版本：M+Book" + "");
                     btn_update.setVisibility(View.VISIBLE);
                     break;
                 case 2:
@@ -92,6 +94,7 @@ public class CastUpdateActivity extends BaseActivity {
                         btn_cancel.setVisibility(View.GONE);
                     } else if (update.getIsUpdate().equalsIgnoreCase("1")) {
                         btn_cancel.setVisibility(View.VISIBLE);
+                        no_remind.setVisibility(View.VISIBLE);
                     }
 
                     break;
@@ -153,6 +156,7 @@ public class CastUpdateActivity extends BaseActivity {
         rl_pb = (RelativeLayout) findViewById(R.id.rl_pb);
         btn_plan = (Button) findViewById(R.id.btn_plan);
         update_info = (TextView) findViewById(R.id.update_info);
+        no_remind = (TextView) findViewById(R.id.no_remind);
         btn_cancel = (Button) findViewById(R.id.btn_cancel);
 
         progressBar = new ProgressBar(this);
@@ -226,6 +230,7 @@ public class CastUpdateActivity extends BaseActivity {
             }
             boolean deleteState = ActivityUtils.deleteBookFormSD(Environment.getExternalStorageDirectory().getAbsoluteFile() + File.separator + "jiayue" + File.separator + "jiayue.apk");
             Toast.makeText(getApplicationContext(), deleteState ? "当前更新已取消..." : "更新失败", Toast.LENGTH_LONG).show();
+            setResult(222);
             this.finish();
         }
         return super.onKeyDown(keyCode, event);
@@ -274,6 +279,13 @@ public class CastUpdateActivity extends BaseActivity {
     }
 
     public void cancelApp(View view) {
+        setResult(222);
+        finish();
+    }
+
+    public void noRemind(View view) {
+        SPUtility.putSPString(CastUpdateActivity.this, "noRemind", update.getUrl());
+        setResult(222);
         finish();
     }
 

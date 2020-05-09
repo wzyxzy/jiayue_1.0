@@ -863,7 +863,7 @@ public class BookSynActivity extends BaseActivity implements OnRefreshListener, 
      */
     private void openAppDetails() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("加阅需要访问 “相机” 和 “外部存储器”，请到 “设置 -> 应用权限” 中授予！");
+        builder.setMessage("M+Book需要访问 “相机” 和 “外部存储器”，请到 “设置 -> 应用权限” 中授予！");
         builder.setPositiveButton("去手动授权", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -908,7 +908,7 @@ public class BookSynActivity extends BaseActivity implements OnRefreshListener, 
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                     if (!Settings.System.canWrite(BookSynActivity.this)) {
                         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                        builder.setMessage("加阅读此书籍需要允许‘修改系统设置’权限");
+                        builder.setMessage("M+Book读此书籍需要允许‘修改系统设置’权限");
                         builder.setPositiveButton("去手动授权", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
@@ -1682,11 +1682,13 @@ public class BookSynActivity extends BaseActivity implements OnRefreshListener, 
                                     try {
                                         unLock(position);
                                     } catch (Exception e) {
-                                        DialogUtils.dismissMyDialog();
 //                                        Looper.prepare();
+                                        e.printStackTrace();
                                         Toast.makeText(getApplication(), "文件损坏，请重新下载！", Toast.LENGTH_LONG).show();
                                         ActivityUtils.deleteBookFormSD(bookId, attachOnes.get(position).getAttachOneSaveName());
                                         ActivityUtils.deleteBookFormSD(bookId, attachOnes.get(position).getAttachOneSaveName() + ".zip");
+                                        DialogUtils.dismissMyDialog();
+
 //                                        Looper.loop();
                                     }
                                 }
@@ -2171,7 +2173,7 @@ public class BookSynActivity extends BaseActivity implements OnRefreshListener, 
                 thumb.compressStyle = UMImage.CompressStyle.QUALITY;// 质量压缩，适合长图的分享
                 thumb.compressFormat = Bitmap.CompressFormat.PNG;// 用户分享透明背景的图片可以设置这种方式，但是qq好友，微信朋友圈，不支持透明背景图片，会变成黑色
                 web.setThumb(thumb); // 缩略图
-                web.setDescription("(分享来自加阅)");// 描述
+                web.setDescription("(分享来自M+Book)");// 描述
 
                 new ShareAction(BookSynActivity.this).withText("")
                         .setDisplayList(SHARE_MEDIA.WEIXIN, SHARE_MEDIA.WEIXIN_CIRCLE, SHARE_MEDIA.WEIXIN_FAVORITE, SHARE_MEDIA.QQ, SHARE_MEDIA.QZONE, SHARE_MEDIA.SINA).withMedia(web)
@@ -2305,7 +2307,7 @@ public class BookSynActivity extends BaseActivity implements OnRefreshListener, 
 
 
         } else {
-            unLockFile(attachOnes.get(position).getAttachOneSaveName(), "copy_" + attachOnes.get(position).getAttachOneSaveName(), attachOnes.get(position).getAttachOneType(), attachOnes
+             unLockFile(attachOnes.get(position).getAttachOneSaveName(), "copy_" + attachOnes.get(position).getAttachOneSaveName(), attachOnes.get(position).getAttachOneType(), attachOnes
                     .get(position).getAttachOneName());
         }
     }

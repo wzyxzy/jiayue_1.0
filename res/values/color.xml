@@ -2,10 +2,10 @@
 <resources>
     
     <color name="search_normal">#bfbfbf</color>
-    <color name="main_color">#36d5d3</color>
+    <color name="main_color">#ffa42f</color>
     <color name="text_grey">#898989</color>
     <color name="text_black">#1b1b1b</color>
-    <color name="background">#36d5d3</color>
+    <color name="background">#ffa42f</color>
     <color name="background1">#12bb92</color>
     <color name="setting_background">#f0f0f0</color>
     <color name="login_line">#DCDCDC</color>
@@ -30,7 +30,7 @@
     <color name="grey_dialog">#44000000</color>
     
     <color name="tab_bg">#545252</color>
-    <color name="tab_text_click">#1eccca</color>
+    <color name="tab_text_click">#ffa42f</color>
     <color name="tab_text_normal">#9d9a9a</color>
 
     

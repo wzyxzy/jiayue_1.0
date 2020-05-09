@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.jiayue"
-    android:versionCode="40"
-    android:versionName="1.6.0">
+    package="com.jiayue">
 
     <uses-feature
         android:glEsVersion="0x00020000"
@@ -11,10 +9,10 @@
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
-    <permission
-        android:name="com.jiayue.permission.JPUSH_MESSAGE"
-        android:protectionLevel="signature" /> <!-- Required  一些系统要求的权限，如访问网络等 -->
-    <uses-permission android:name="com.jiayue.permission.JPUSH_MESSAGE" /> <!-- Optional for location -->
+    <!--<permission-->
+        <!--android:name="com.jiayue.permission.JPUSH_MESSAGE"-->
+        <!--android:protectionLevel="signature" /> &lt;!&ndash; Required  一些系统要求的权限，如访问网络等 &ndash;&gt;-->
+    <!--<uses-permission android:name="com.jiayue.permission.JPUSH_MESSAGE" /> &lt;!&ndash; Optional for location &ndash;&gt;-->
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission
@@ -47,6 +45,17 @@
         <activity
             android:name=".PDFViewActivity"
             android:theme="@style/MyTheme1" />
+        <activity
+            android:name=".SplashADActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
         <activity
             android:name=".ChooseMusicAll"
             android:theme="@style/MyTheme1" /> <!-- Sample AdMob App ID: ca-app-pub-9285530747449763~5852215453 -->
@@ -92,7 +101,7 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:host="jiayue"
+                    android:host="m+book"
                     android:path="/home"
                     android:port="8888"
                     android:scheme="pndoo" />

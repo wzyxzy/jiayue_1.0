@@ -29,7 +29,7 @@ import pl.droidsonroids.gif.GifImageView;
 public class Fragment_Browse extends Fragment {
 
 	private View mRootView;
-	private String filepath = "http://www.pndoo.com/link_list.html";
+	private String filepath = "http://www.pndoo.com/mbook_link_list.html";
 	// private String filepath =
 	// "http://www.hoopoe8.com/moudle_3d/fbxTest2/?model=3d/xsi_man_skinning.fbx.txt";
 	// String filepath =
@@ -81,7 +81,7 @@ public class Fragment_Browse extends Fragment {
 		if (model == MODEL_SHANGCHENG) {
 			close.setVisibility(View.INVISIBLE);
 			ll_header.setVisibility(View.INVISIBLE);
-			tv_header_title.setText("商城");
+			tv_header_title.setText("商城拼购");
 		}
 		int wv_brower = getResources().getIdentifier("wv_brower", "id", getActivity().getPackageName());
 		mWebView = (ProgressWebview) mRootView.findViewById(wv_brower);

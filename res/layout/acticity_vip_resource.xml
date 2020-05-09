@@ -243,7 +243,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="开通VIP后，有效期内加阅上所有的普通资源都可下载并离线使用，特殊资源赠送限量VIP付费卡。"
+                    android:text="开通VIP后，有效期内M+Book上所有的普通资源都可下载并离线使用，特殊资源赠送限量VIP付费卡。"
                     android:textColor="@color/text_black2"
                     android:textSize="12sp"/>
             </LinearLayout>

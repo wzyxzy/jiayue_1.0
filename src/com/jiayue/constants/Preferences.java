@@ -19,8 +19,10 @@ public class Preferences {
 //	public static final String BASE_URL_HTTP = "http://192.168.1.128:8080/pndoo_server";
     //外网测试服务器
 //	public static final String BASE_URL_HTTP = "http://101.200.74.204:8080/pndoo_server";
-    // 加阅正式服务器
-    public static final String BASE_URL_HTTP = "http://jiayue.pndoo.com/pndoo_server";
+    // M+Book正式服务器
+    public static final String BASE_URL_HTTP = "http://123.56.188.20/pndoo_server";
+    //数据库扫描开头
+    public static final String SCAN_FLAG_URL = "http://www.bjtup.com.cn?flag=";
 //    public static final String BASE_URL_HTTP = "http://123.57.188.218/pndoo_server";
 
 //	public static final String TEST_URL_HTTP ="http://123.57.188.218:8080/pndoo_server"; 
@@ -114,6 +116,12 @@ public class Preferences {
      * weixin appid
      */
     public static final String WX_APP_ID = "wxb5c69e77124b6557";
+
+    //广告接入
+//    public static final String APPID = "1101152570";
+    public static final String APPID = "1110086557";
+//    public static final String SplashPosID = "8863364436303842593";
+    public static final String SplashPosID = "7060596508318522";
 
     private static final int DEFAULT_NETWORK_READ_TIMEOUT = 20 * 1000;
     // private static final int DEFAULT_NETWORK_READ_TIMEOUT = 30 * 1000;

@@ -421,7 +421,7 @@ public class Fragment_Book extends Fragment implements SwipeRefreshLayout.OnRefr
      */
     private void openAppDetails() {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-        builder.setMessage("加阅需要访问 “相机”，请到 “设置 -> 应用权限” 中授予！");
+        builder.setMessage("M+Book需要访问 “相机”，请到 “设置 -> 应用权限” 中授予！");
         builder.setPositiveButton("去手动授权", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {

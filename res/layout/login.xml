@@ -113,7 +113,7 @@
                     android:layout_marginTop="31dp"
                     android:background="@drawable/btn_login_shape"
                     android:onClick="btnLogin"
-                    android:text="登录"
+                    android:text="登    录"
                     android:textColor="@color/white"
                     android:textSize="18sp" />
 

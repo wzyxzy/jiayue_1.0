@@ -285,7 +285,7 @@ public class PlayActivity extends FragmentActivity implements OnClickListener, L
      */
     private void openAppDetails() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("加阅需要访问 “麦克风”，请到 “设置 -> 应用权限” 中授予！");
+        builder.setMessage("M+Book需要访问 “麦克风”，请到 “设置 -> 应用权限” 中授予！");
         builder.setPositiveButton("去手动授权", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {

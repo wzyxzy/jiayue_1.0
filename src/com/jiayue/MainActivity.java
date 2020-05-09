@@ -69,20 +69,20 @@ public class MainActivity extends FragmentActivity {
 
 	// 点击状态变成正常状态
 	private void changeClickToNormal(int current_activity) {
-		LinearLayout ll = (LinearLayout) findViewById(getResources().getIdentifier("nav0" + current_activity, "id", "com.jiayue"));
+		LinearLayout ll = (LinearLayout) findViewById(getResources().getIdentifier("nav0" + current_activity, "id", "com.jia.yue"));
 		// ll.setBackgroundResource(R.drawable.bg_tab_normal);
 		ImageView iv = (ImageView) ll.getChildAt(0);
-		iv.setImageResource(getResources().getIdentifier("tab_normal_image" + current_activity, "drawable", "com.jiayue"));
+		iv.setImageResource(getResources().getIdentifier("tab_normal_image" + current_activity, "drawable", "com.jia.yue"));
 		TextView tv = (TextView) ll.getChildAt(1);
 		tv.setTextColor(this.getResources().getColor(R.color.tab_text_normal));
 	}
 
 	// 点击状态变成正常状态
 	private void changeNormalToClick(int current_activity) {
-		LinearLayout ll = (LinearLayout) findViewById(getResources().getIdentifier("nav0" + current_activity, "id", "com.jiayue"));
+		LinearLayout ll = (LinearLayout) findViewById(getResources().getIdentifier("nav0" + current_activity, "id", "com.jia.yue"));
 		// ll.setBackgroundResource(R.drawable.bg_tab_click);
 		ImageView iv = (ImageView) ll.getChildAt(0);
-		iv.setImageResource(getResources().getIdentifier("tab_click_image" + current_activity, "drawable", "com.jiayue"));
+		iv.setImageResource(getResources().getIdentifier("tab_click_image" + current_activity, "drawable", "com.jia.yue"));
 		TextView tv = (TextView) ll.getChildAt(1);
 		tv.setTextColor(this.getResources().getColor(R.color.tab_text_click));
 	}

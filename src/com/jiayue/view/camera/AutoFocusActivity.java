@@ -77,6 +77,8 @@ import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.Vector;
 
+import static com.jiayue.constants.Preferences.SCAN_FLAG_URL;
+
 public class AutoFocusActivity extends Activity implements Callback {
     private SurfaceView mSurfaceView;
     private QrCodeFinderView mQrCodeFinderView;
@@ -899,8 +901,8 @@ public class AutoFocusActivity extends Activity implements Callback {
             Toast.makeText(this, "Scan failed!", Toast.LENGTH_SHORT).show();
         } else {
             Log.d(TAG, "resultString====" + resultString);
-            if (resultString.contains("http://www.pndoo.com/jiayue.html?flag=")) {
-                String flag = resultString.replace("http://www.pndoo.com/jiayue.html?flag=", "");
+            if (resultString.contains(SCAN_FLAG_URL)) {
+                String flag = resultString.replace(SCAN_FLAG_URL, "");
                 PhotoBean.Data bean = new PhotoBean.Data();
                 bean.setAttachName(flag);
                 Log.d(TAG, "resultString====flag=" + flag);

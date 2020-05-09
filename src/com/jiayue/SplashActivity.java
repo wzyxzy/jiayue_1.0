@@ -92,14 +92,14 @@ public class SplashActivity extends BaseActivity {
         ImageView anim_two = (ImageView) findViewById(R.id.anim_two);
         ImageView anim_three = (ImageView) findViewById(R.id.anim_three);
 
-        ObjectAnimator.ofFloat(anim_one, "translationY", 0, -124).setDuration(2000).start();
-        ObjectAnimator.ofFloat(anim_one, "alpha", 0, 1).setDuration(2000).start();
-
-        ObjectAnimator.ofFloat(anim_two, "translationY", 0, -284).setDuration(2000).start();
-        ObjectAnimator.ofFloat(anim_two, "alpha", 0, 1).setDuration(2000).start();
-
-        ObjectAnimator.ofFloat(anim_three, "translationY", 0, -188).setDuration(2000).start();
-        ObjectAnimator.ofFloat(anim_three, "alpha", 0, 1).setDuration(2000).start();
+//        ObjectAnimator.ofFloat(anim_one, "translationY", 0, -124).setDuration(1000).start();
+//        ObjectAnimator.ofFloat(anim_one, "alpha", 0, 1).setDuration(1000).start();
+//
+//        ObjectAnimator.ofFloat(anim_two, "translationY", 0, -284).setDuration(1000).start();
+//        ObjectAnimator.ofFloat(anim_two, "alpha", 0, 1).setDuration(1000).start();
+//
+//        ObjectAnimator.ofFloat(anim_three, "translationY", 0, -188).setDuration(1000).start();
+//        ObjectAnimator.ofFloat(anim_three, "alpha", 0, 1).setDuration(1000).start();
 
 
 //		Animation a = AnimationUtils.loadAnimation(this, R.anim.rotate);
@@ -110,7 +110,7 @@ public class SplashActivity extends BaseActivity {
             @Override
             public void run() {
                 try {
-                    Thread.sleep(3000);
+                    Thread.sleep(1000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -118,12 +118,12 @@ public class SplashActivity extends BaseActivity {
                 boolean isFirstIn = preferences.getBoolean("isFirstIn2", true);
 
                 Message msg = new Message();
-                if (isFirstIn) {
-                    msg.what = GUIDE;
-                } else {
-                    msg.what = LOADMAIN;
-                }
-                // msg.what = GUIDE;
+//                if (isFirstIn) {
+//                    msg.what = GUIDE;
+//                } else {
+//                    msg.what = LOADMAIN;
+//                }
+                 msg.what = LOADMAIN;
                 handler.sendMessage(msg);
             }
         }).start();

@@ -15,7 +15,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/login_img" />
+            android:background="@drawable/logo" />
     </LinearLayout>
 
     <LinearLayout
@@ -170,7 +170,7 @@
             android:layout_width="289.00dp"
             android:layout_height="47.00dp"
             android:layout_marginTop="31dp"
-            android:background="@color/background"
+            android:background="@drawable/btn_login_shape"
             android:onClick="btnConfirm"
             android:text="立即注册"
             android:textColor="@color/white"

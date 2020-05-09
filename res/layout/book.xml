@@ -16,7 +16,7 @@
             android:layout_height="match_parent"
             android:layout_centerInParent="true"
             android:gravity="center"
-            android:text="我的书架"
+            android:text="M+ Book"
             android:textColor="#ffffff"
             android:textSize="18sp" />
 

@@ -805,7 +805,7 @@
                     android:layout_height="47.00dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="31dp"
-                    android:background="@color/background"
+                    android:background="@drawable/btn_login_shape"
                     android:text="退出登录"
                     android:textColor="@color/white"
                     android:textSize="18sp" />

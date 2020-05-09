@@ -91,7 +91,7 @@ public class WorkWebActivity extends BaseActivity {
                 if (url.startsWith("file://") || url.contains("jiayue"))
                     view.loadUrl(url);
                 else
-                    ActivityUtils.showToast(WorkWebActivity.this, "非加阅应用选项，不可操作！");
+                    ActivityUtils.showToast(WorkWebActivity.this, "非M+Book应用选项，不可操作！");
                 return true;
 //                return false;
             }

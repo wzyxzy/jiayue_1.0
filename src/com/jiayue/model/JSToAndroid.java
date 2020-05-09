@@ -137,7 +137,7 @@ public class JSToAndroid {
      */
     private void openAppDetails() {
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
-        builder.setMessage("加阅需要访问“外部存储器”和“录音”权限，请到 “设置 -> 应用权限” 中授予！");
+        builder.setMessage("M+Book需要访问“外部存储器”和“录音”权限，请到 “设置 -> 应用权限” 中授予！");
         builder.setPositiveButton("去手动授权", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {

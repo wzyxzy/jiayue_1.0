@@ -624,7 +624,7 @@ public class BookAttachActivity extends BaseActivity implements OnRefreshListene
                                 thumb.compressStyle = UMImage.CompressStyle.QUALITY;// 质量压缩，适合长图的分享
                                 thumb.compressFormat = Bitmap.CompressFormat.PNG;// 用户分享透明背景的图片可以设置这种方式，但是qq好友，微信朋友圈，不支持透明背景图片，会变成黑色
                                 web.setThumb(thumb); // 缩略图
-                                web.setDescription("(分享来自加阅)");// 描述
+                                web.setDescription("(分享来自M+Book)");// 描述
 
                                 new ShareAction(BookAttachActivity.this).withText("")
                                         .setDisplayList(SHARE_MEDIA.WEIXIN, SHARE_MEDIA.WEIXIN_CIRCLE, SHARE_MEDIA.WEIXIN_FAVORITE, SHARE_MEDIA.QQ, SHARE_MEDIA.QZONE, SHARE_MEDIA.SINA).withMedia(web)
@@ -776,6 +776,7 @@ public class BookAttachActivity extends BaseActivity implements OnRefreshListene
                                     unLock(position);
                                 } catch (Exception e) {
                                     // TODO Auto-generated catch block
+                                    e.printStackTrace();
                                     DialogUtils.dismissMyDialog();
 //                                        Looper.prepare();
                                     Toast.makeText(getApplication(), "文件损坏，请重新下载！", Toast.LENGTH_LONG).show();
@@ -1010,7 +1011,7 @@ public class BookAttachActivity extends BaseActivity implements OnRefreshListene
                                             thumb.compressStyle = UMImage.CompressStyle.QUALITY;// 质量压缩，适合长图的分享
                                             thumb.compressFormat = Bitmap.CompressFormat.PNG;// 用户分享透明背景的图片可以设置这种方式，但是qq好友，微信朋友圈，不支持透明背景图片，会变成黑色
                                             web.setThumb(thumb); // 缩略图
-                                            web.setDescription("(分享来自加阅)");// 描述
+                                            web.setDescription("(分享来自M+Book)");// 描述
 
                                             new ShareAction(BookAttachActivity.this).withText("")
                                                     .setDisplayList(SHARE_MEDIA.WEIXIN, SHARE_MEDIA.WEIXIN_CIRCLE, SHARE_MEDIA.WEIXIN_FAVORITE, SHARE_MEDIA.QQ, SHARE_MEDIA.QZONE, SHARE_MEDIA.SINA).withMedia(web)
@@ -1442,7 +1443,7 @@ public class BookAttachActivity extends BaseActivity implements OnRefreshListene
      */
     private void openAppDetails() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("加阅下载需要访问 “外部存储器”，请到 “设置 -> 应用权限” 中授予！");
+        builder.setMessage("M+Book下载需要访问 “外部存储器”，请到 “设置 -> 应用权限” 中授予！");
         builder.setPositiveButton("去手动授权", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -1542,7 +1543,7 @@ public class BookAttachActivity extends BaseActivity implements OnRefreshListene
             /* ||attachTwos.get(position).getAttachTwoType().equalsIgnoreCase("wav") */) {
             List<AttachTwo> list_mp3 = new ArrayList<AttachTwo>();// 同目录下全部MP3文件
             for (AttachTwo bean : attachTwos) {
-                if (bean.getAttachTwoType() != null && bean.getAttachTwoType().equalsIgnoreCase("mp3") || bean.getAttachTwoType().equalsIgnoreCase("wav"))
+                if (!TextUtils.isEmpty(bean.getAttachTwoType()) && bean.getAttachTwoType().equalsIgnoreCase("mp3") || bean.getAttachTwoType().equalsIgnoreCase("wav"))
                     list_mp3.add(bean);
             }
             list_down = new ArrayList<AttachTwo>();// 同目录下已下载的MP3文件

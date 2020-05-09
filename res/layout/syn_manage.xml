@@ -12,7 +12,6 @@
         android:id="@+id/ll_done"
         android:layout_width="match_parent"
         android:layout_height="66dp"
-        android:background="#33000000"
         android:clickable="true"
         android:gravity="center_vertical"
         android:onClick="btnRightClick"
@@ -33,9 +32,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:src="@drawable/book_return" />
+            android:src="@drawable/icon_set_07" />
     </LinearLayout>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background"/>
     <ScrollView
         android:id="@+id/sv_container"
         android:layout_width="fill_parent"

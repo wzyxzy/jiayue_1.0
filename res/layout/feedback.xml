@@ -80,7 +80,7 @@
         android:layout_width="fill_parent"
         android:layout_height="66dp"
         android:gravity="center"
-        android:text="加阅使用说明书" />
+        android:text="M+Book使用说明书" />
  
 
 

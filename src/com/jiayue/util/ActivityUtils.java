@@ -138,7 +138,7 @@ public class ActivityUtils {
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/html");
         intent.putExtra(Intent.EXTRA_SUBJECT, "分享");
-        intent.putExtra(Intent.EXTRA_TEXT, link + " (分享来自加阅)");
+        intent.putExtra(Intent.EXTRA_TEXT, link + " (分享来自M+Book)");
         activity.startActivity(Intent.createChooser(intent, activity.getTitle()));
     }
 

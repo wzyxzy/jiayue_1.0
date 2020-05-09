@@ -28,12 +28,12 @@ public class ZhiYueAdapter extends BaseQuickAdapter<RecommendBean.Data.OrdinaryL
     public ZhiYueAdapter(Context context, int layoutId, List<RecommendBean.Data.OrdinaryList> OrdinaryList) {
         super(layoutId, OrdinaryList);
         this.context = context;
-        int default_img = context.getResources().getIdentifier("default_img", "drawable", context.getPackageName());
-        options = new DisplayImageOptions.Builder().showStubImage(default_img)
+//        int default_img = context.getResources().getIdentifier("default_img", "drawable", context.getPackageName());
+        options = new DisplayImageOptions.Builder().showStubImage(R.drawable.head)
                 // 设置图片下载期间显示的图片
-                .showImageForEmptyUri(default_img)
+                .showImageForEmptyUri(R.drawable.head)
                 // 设置图片Uri为空或是错误的时候显示的图片
-                .showImageOnFail(default_img)
+                .showImageOnFail(R.drawable.head)
                 // 设置图片加载或解码过程中发生错误显示的图片
                 .cacheInMemory(true)
                 // 设置下载的图片是否缓存在内存中
@@ -45,7 +45,7 @@ public class ZhiYueAdapter extends BaseQuickAdapter<RecommendBean.Data.OrdinaryL
         String image_url = Preferences.IMAGE_HTTP_LOCATION + item.getCoverPath();
         ImageLoader.getInstance().displayImage(image_url,(ImageView)helper.getView(R.id.imageView8),options);
 
-        helper.setText(R.id.text1,item.getContent());
+        helper.setText(R.id.text1,item.getAttachOneName());
         DecimalFormat df = new DecimalFormat("0.00");//格式化小数，不足的补0
         String geff = df.format(item.getAttachOnePrice());//返回的是String类型的
         helper.setText(R.id.text2,"¥"+geff);

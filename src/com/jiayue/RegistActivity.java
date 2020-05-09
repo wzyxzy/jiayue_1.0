@@ -175,7 +175,7 @@ public class RegistActivity extends BaseActivity {
      */
     private void openAppDetails() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("加阅需要访问“读取本机识别码”权限，请到 “设置 -> 应用权限” 中授予！");
+        builder.setMessage("M+Book需要访问“读取本机识别码”权限，请到 “设置 -> 应用权限” 中授予！");
         builder.setPositiveButton("去手动授权", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -252,14 +252,15 @@ public class RegistActivity extends BaseActivity {
             ActivityUtils.showToastForFail(this, "无法连接网络");
             return;
         }
-        if (code.equals(verifCode)) {
+//        if (code.equals(verifCode)) {
             if (!TextUtils.isEmpty(phone) && phone.matches(phoneMatcher)) {
                 System.out.println("phone=>>" + phone);
                 doRrgist();
             }
-        } else {
-            ActivityUtils.showToast(RegistActivity.this, "验证码错误");
-        }
+//        } else {
+//
+//            ActivityUtils.showToast(RegistActivity.this, "验证码错误");
+//        }
 
     }
 
